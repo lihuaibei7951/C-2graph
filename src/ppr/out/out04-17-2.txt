@@ -1,0 +1,39 @@
+30:-------
+文件1与文件2的大小比:值为: 2.1713 , 5000 , 80
+source = 1start ------------0
+source = 11start ------------10
+source = 21start ------------20
+source = 45start ------------30
+source = 57start ------------40
+source = 124start ------------50
+source = 141start ------------60
+source = 158start ------------70
+source = 175start ------------80
+source = 189start ------------90
+source = 212end ------------100
+gpu runtime: 2.23656 seconds
+flag 已设置成 -1  终止条件以满足		iteration_num：24
+0	:act_num: 1
+1	:act_num:	2
+2	:act_num:	2
+3	:act_num:	2
+4	:act_num:	2
+5	:act_num:	2
+6	:act_num:	2
+7	:act_num:	2
+8	:act_num:	2
+9	:act_num:	2
+10	:act_num:	2
+11	:act_num:	2
+12	:act_num:	2
+13	:act_num:	2
+14	:act_num:	2
+15	:act_num:	2
+16	:act_num:	2
+17	:act_num:	2
+18	:act_num:	2
+19	:act_num:	2
+20	:act_num:	2
+21	:act_num:	2
+22	:act_num:	2
+23	:act_num:	1

@@ -1,0 +1,405 @@
+文件1与文件2的大小比值为: 5.5549 
+: 1
+: 0
+get the compressed linejiebiao over
+0 129 2929 56
+0 15 55 8
+0 01 23 0
+83 8677 1593 35
+1 23 422775952 3
+46 88
+INIT--class Graph is constructed
+The vertex num is:22744077
+The rule num is:4635204
+The edge num is:90359099
+INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== SSSP with FORWARD PUSH starts ============
+0
+flag 已设置成 -1  终止条件以满足		iteration_num：876
+0	act_num：1
+gpu runtime: 2.20266 seconds
+源顶点source = 121
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed
+0 1 52 3
+3 1 51 3
+4 1 50 3
+5 1 49 3
+6 1 48 3
+7 1 47 3
+8 1 46 3
+9 1 45 3
+10 1 44 3
+11 1 43 3
+12 1 42 3
+13 1 41 3
+14 1 40 3
+15 1 39 3
+16 1 38 3
+17 1 37 3
+18 1 36 3
+19 1 35 3
+20 2 34 6
+21 2 33 6
+文件1与文件2的大小比值为: 5.5549 
+: 1
+: 20
+get the compressed linejiebiao over
+0 129 2929 56
+0 15 55 8
+0 01 23 0
+83 8677 1593 35
+1 23 422775952 3
+46 88
+INIT--class Graph is constructed
+The vertex num is:22744077
+The rule num is:4635182
+The edge num is:90359165
+INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== SSSP with FORWARD PUSH starts ============
+0
+flag 已设置成 -1  终止条件以满足		iteration_num：885
+0	act_num：1
+gpu runtime: 2.1681 seconds
+源顶点source = 121
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed
+0 1 52 3
+3 1 51 3
+4 1 50 3
+5 1 49 3
+6 1 48 3
+7 1 47 3
+8 1 46 3
+9 1 45 3
+10 1 44 3
+11 1 43 3
+12 1 42 3
+13 1 41 3
+14 1 40 3
+15 1 39 3
+16 1 38 3
+17 1 37 3
+18 1 36 3
+19 1 35 3
+20 2 34 6
+21 2 33 6
+22 2 32 6
+26 4 31 10
+23 4 30 19
+13 4 29 24
+14 4 28 24
+24 5 27 24
+10 7 26 39
+7 8 25 45
+13 8 24 58
+14 12 23 77
+文件1与文件2的大小比值为: 5.5548 
+: 1
+: 30
+get the compressed linejiebiao over
+0 129 2929 56
+0 15 55 8
+0 01 23 0
+83 8677 1593 35
+1 23 422775949 3
+46 88
+INIT--class Graph is constructed
+The vertex num is:22744077
+The rule num is:4635124
+The edge num is:90359491
+INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== SSSP with FORWARD PUSH starts ============
+0
+flag 已设置成 -1  终止条件以满足		iteration_num：876
+0	act_num：1
+gpu runtime: 2.15962 seconds
+源顶点source = 121
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed
+0 1 52 3
+3 1 51 3
+4 1 50 3
+5 1 49 3
+6 1 48 3
+7 1 47 3
+8 1 46 3
+9 1 45 3
+10 1 44 3
+11 1 43 3
+12 1 42 3
+13 1 41 3
+14 1 40 3
+15 1 39 3
+16 1 38 3
+17 1 37 3
+18 1 36 3
+19 1 35 3
+20 2 34 6
+21 2 33 6
+22 2 32 6
+26 4 31 10
+23 4 30 19
+13 4 29 24
+14 4 28 24
+24 5 27 24
+10 7 26 39
+7 8 25 45
+13 8 24 58
+14 12 23 77
+10 20 22 174
+14 32 21 237
+8 43 20 366
+6 65 19 684
+14 104 18 1136
+文件1与文件2的大小比值为: 5.5547 
+: 1
+: 35
+get the compressed linejiebiao over
+0 129 2929 56
+0 15 55 8
+0 01 23 0
+83 8677 1593 35
+1 23 422775869 3
+46 88
+INIT--class Graph is constructed
+The vertex num is:22744077
+The rule num is:4634860
+The edge num is:90362088
+INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== SSSP with FORWARD PUSH starts ============
+0
+flag 已设置成 -1  终止条件以满足		iteration_num：876
+0	act_num：1
+gpu runtime: 2.17377 seconds
+源顶点source = 121
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed
+0 1 52 3
+3 1 51 3
+4 1 50 3
+5 1 49 3
+6 1 48 3
+7 1 47 3
+8 1 46 3
+9 1 45 3
+10 1 44 3
+11 1 43 3
+12 1 42 3
+13 1 41 3
+14 1 40 3
+15 1 39 3
+16 1 38 3
+17 1 37 3
+18 1 36 3
+19 1 35 3
+20 2 34 6
+21 2 33 6
+22 2 32 6
+26 4 31 10
+23 4 30 19
+13 4 29 24
+14 4 28 24
+24 5 27 24
+10 7 26 39
+7 8 25 45
+13 8 24 58
+14 12 23 77
+10 20 22 174
+14 32 21 237
+8 43 20 366
+6 65 19 684
+14 104 18 1136
+1 310 17 2174
+7 279 16 4496
+12 482 15 8511
+5 830 14 13235
+0 5512 13 28988
+文件1与文件2的大小比值为: 5.5524 
+: 1
+: 40
+get the compressed linejiebiao over
+0 129 2929 56
+0 15 55 8
+0 01 23 0
+83 8677 1593 35
+1 23 422775518 3
+46 88
+INIT--class Graph is constructed
+The vertex num is:22744077
+The rule num is:4627447
+The edge num is:90419492
+INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== SSSP with FORWARD PUSH starts ============
+0
+flag 已设置成 -1  终止条件以满足		iteration_num：875
+0	act_num：1
+gpu runtime: 2.16384 seconds
+源顶点source = 121
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed
+0 1 52 3
+3 1 51 3
+4 1 50 3
+5 1 49 3
+6 1 48 3
+7 1 47 3
+8 1 46 3
+9 1 45 3
+10 1 44 3
+11 1 43 3
+12 1 42 3
+13 1 41 3
+14 1 40 3
+15 1 39 3
+16 1 38 3
+17 1 37 3
+18 1 36 3
+19 1 35 3
+20 2 34 6
+21 2 33 6
+22 2 32 6
+26 4 31 10
+23 4 30 19
+13 4 29 24
+14 4 28 24
+24 5 27 24
+10 7 26 39
+7 8 25 45
+13 8 24 58
+14 12 23 77
+10 20 22 174
+14 32 21 237
+8 43 20 366
+6 65 19 684
+14 104 18 1136
+1 310 17 2174
+7 279 16 4496
+12 482 15 8511
+5 830 14 13235
+0 5512 13 28988
+10 2756 12 48182
+6 3493 11 109398
+2 12431 10 169848
+6 11216 9 414419
+0 85776 8 594535
+文件1与文件2的大小比值为: 5.4954 
+: 1
+: 45
+get the compressed linejiebiao over
+0 129 2929 56
+0 15 55 8
+0 01 23 0
+83 8677 1593 35
+1 23 422771369 3
+46 88
+INIT--class Graph is constructed
+The vertex num is:22744077
+The rule num is:4511775
+The edge num is:91755874
+INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== SSSP with FORWARD PUSH starts ============
+0
+flag 已设置成 -1  终止条件以满足		iteration_num：861
+0	act_num：1
+gpu runtime: 1.98906 seconds
+源顶点source = 121
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed
+0 1 52 3
+3 1 51 3
+4 1 50 3
+5 1 49 3
+6 1 48 3
+7 1 47 3
+8 1 46 3
+9 1 45 3
+10 1 44 3
+11 1 43 3
+12 1 42 3
+13 1 41 3
+14 1 40 3
+15 1 39 3
+16 1 38 3
+17 1 37 3
+18 1 36 3
+19 1 35 3
+20 2 34 6
+21 2 33 6
+22 2 32 6
+26 4 31 10
+23 4 30 19
+13 4 29 24
+14 4 28 24
+24 5 27 24
+10 7 26 39
+7 8 25 45
+13 8 24 58
+14 12 23 77
+10 20 22 174
+14 32 21 237
+8 43 20 366
+6 65 19 684
+14 104 18 1136
+1 310 17 2174
+7 279 16 4496
+12 482 15 8511
+5 830 14 13235
+0 5512 13 28988
+10 2756 12 48182
+6 3493 11 109398
+2 12431 10 169848
+6 11216 9 414419
+0 85776 8 594535
+6 63939 7 1023794
+2 82746 6 1951154
+3 129876 5 4436361
+0 587080 4 7786259
+1 466774 3 31311782
+文件1与文件2的大小比值为: 3.9833 
+: 1
+: 50
+get the compressed linejiebiao over
+0 129 2929 56
+0 110 1010 18
+0 01 23 5
+83 8677 1593 35
+1 23 422744082 22751827
+22744082 88
+INIT--class Graph is constructed
+The vertex num is:22744077
+The rule num is:3181360
+The edge num is:138265224
+INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== SSSP with FORWARD PUSH starts ============
+0
+flag 已设置成 -1  终止条件以满足		iteration_num：818
+0	act_num：1
+gpu runtime: 1.19861 seconds
+源顶点source = 121
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed
+0 1 52 3
+3 1 51 3
+4 1 50 3

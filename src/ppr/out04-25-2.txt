@@ -1,0 +1,1800 @@
+文件1与文件2的大小比值为: 2.4968 
+: 0
+: 1
+The vertex num is: 685231
+The rule num is: 141547
+The step is: 17
+gpu runtime: 28.1533： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4968 
+: 0
+: 2
+The vertex num is: 685231
+The rule num is: 141542
+The step is: 16
+gpu runtime: 27.471： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4968 
+: 0
+: 3
+The vertex num is: 685231
+The rule num is: 141532
+The step is: 15
+gpu runtime: 26.8585： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4968 
+: 0
+: 4
+The vertex num is: 685231
+The rule num is: 141515
+The step is: 14
+gpu runtime: 26.2919： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4967 
+: 0
+: 6
+The vertex num is: 685231
+The rule num is: 141457
+The step is: 12
+gpu runtime: 24.2936： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4962 
+: 0
+: 8
+The vertex num is: 685231
+The rule num is: 141340
+The step is: 10
+gpu runtime: 22.2756： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4950 
+: 0
+: 10
+The vertex num is: 685231
+The rule num is: 140727
+The step is: 8
+gpu runtime: 20.1183： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4877 
+: 0
+: 12
+The vertex num is: 685231
+The rule num is: 139087
+The step is: 6
+gpu runtime: 17.7802： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4462 
+: 0
+: 14
+The vertex num is: 685231
+The rule num is: 132135
+The step is: 4
+gpu runtime: 15.0659： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2316 
+: 0
+: 16
+The vertex num is: 685231
+The rule num is: 112773
+The step is: 2
+gpu runtime: 11.8142： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4968 
+: 1
+: 1
+The vertex num is: 685231
+The rule num is: 96592
+The step is: 16
+gpu runtime: 25.6911： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4968 
+: 1
+: 2
+The vertex num is: 685231
+The rule num is: 96589
+The step is: 15
+gpu runtime: 24.9966： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4968 
+: 1
+: 3
+The vertex num is: 685231
+The rule num is: 96583
+The step is: 14
+gpu runtime: 24.3027： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4968 
+: 1
+: 4
+The vertex num is: 685231
+The rule num is: 96574
+The step is: 13
+gpu runtime: 23.6075： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4966 
+: 1
+: 6
+The vertex num is: 685231
+The rule num is: 96536
+The step is: 11
+gpu runtime: 21.9242： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4959 
+: 1
+: 8
+The vertex num is: 685231
+The rule num is: 96435
+The step is: 9
+gpu runtime: 19.982： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4926 
+: 1
+: 10
+The vertex num is: 685231
+The rule num is: 96020
+The step is: 7
+gpu runtime: 17.9109： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4792 
+: 1
+: 12
+The vertex num is: 685231
+The rule num is: 95001
+The step is: 5
+gpu runtime: 15.6441： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3600 
+: 1
+: 14
+The vertex num is: 685231
+The rule num is: 88295
+The step is: 3
+gpu runtime: 13.198： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8255 
+: 1
+: 16
+The vertex num is: 685231
+The rule num is: 55116
+The step is: 1
+gpu runtime: 9.92561： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4814 
+: 2
+: 1
+The vertex num is: 685231
+The rule num is: 79094
+The step is: 16
+gpu runtime: 25.2791： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4814 
+: 2
+: 2
+The vertex num is: 685231
+The rule num is: 79092
+The step is: 15
+gpu runtime: 24.5735： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4813 
+: 2
+: 3
+The vertex num is: 685231
+The rule num is: 79088
+The step is: 14
+gpu runtime: 23.8593： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4813 
+: 2
+: 4
+The vertex num is: 685231
+The rule num is: 79079
+The step is: 13
+gpu runtime: 23.1883： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4812 
+: 2
+: 6
+The vertex num is: 685231
+The rule num is: 79061
+The step is: 11
+gpu runtime: 21.6872： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4805 
+: 2
+: 8
+The vertex num is: 685231
+The rule num is: 78974
+The step is: 9
+gpu runtime: 19.7584： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4774 
+: 2
+: 10
+The vertex num is: 685231
+The rule num is: 78717
+The step is: 7
+gpu runtime: 17.658： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4649 
+: 2
+: 12
+The vertex num is: 685231
+The rule num is: 77350
+The step is: 5
+gpu runtime: 15.4762： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3649 
+: 2
+: 14
+The vertex num is: 685231
+The rule num is: 73064
+The step is: 3
+gpu runtime: 13.0982： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8255 
+: 2
+: 16
+The vertex num is: 685231
+The rule num is: 45510
+The step is: 1
+gpu runtime: 9.68473： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4477 
+: 3
+: 1
+The vertex num is: 685231
+The rule num is: 60280
+The step is: 14
+gpu runtime: 23.1983： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4477 
+: 3
+: 2
+The vertex num is: 685231
+The rule num is: 60279
+The step is: 13
+gpu runtime: 22.4978： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4477 
+: 3
+: 3
+The vertex num is: 685231
+The rule num is: 60273
+The step is: 12
+gpu runtime: 21.8267： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4476 
+: 3
+: 4
+The vertex num is: 685231
+The rule num is: 60258
+The step is: 11
+gpu runtime: 21.1049： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4470 
+: 3
+: 6
+The vertex num is: 685231
+The rule num is: 60197
+The step is: 9
+gpu runtime: 19.4154： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4445 
+: 3
+: 8
+The vertex num is: 685231
+The rule num is: 60065
+The step is: 7
+gpu runtime: 17.3923： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4342 
+: 3
+: 10
+The vertex num is: 685231
+The rule num is: 59412
+The step is: 5
+gpu runtime: 15.2685： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3354 
+: 3
+: 12
+The vertex num is: 685231
+The rule num is: 52217
+The step is: 3
+gpu runtime: 12.7143： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7672 
+: 3
+: 14
+The vertex num is: 685231
+The rule num is: 37645
+The step is: 1
+gpu runtime: 10.2041： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4369 
+: 4
+: 1
+The vertex num is: 685231
+The rule num is: 56053
+The step is: 13
+gpu runtime: 22.1214： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4368 
+: 4
+: 2
+The vertex num is: 685231
+The rule num is: 56051
+The step is: 12
+gpu runtime: 21.4441： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4367 
+: 4
+: 3
+The vertex num is: 685231
+The rule num is: 56042
+The step is: 11
+gpu runtime: 20.7323： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4366 
+: 4
+: 4
+The vertex num is: 685231
+The rule num is: 56037
+The step is: 10
+gpu runtime: 20.0341： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4357 
+: 4
+: 6
+The vertex num is: 685231
+The rule num is: 55948
+The step is: 8
+gpu runtime: 18.3181： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.4309 
+: 4
+: 8
+The vertex num is: 685231
+The rule num is: 55652
+The step is: 6
+gpu runtime: 16.2893： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3985 
+: 4
+: 10
+The vertex num is: 685231
+The rule num is: 54227
+The step is: 4
+gpu runtime: 14.0301： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1786 
+: 4
+: 12
+The vertex num is: 685231
+The rule num is: 45834
+The step is: 2
+gpu runtime: 11.5393： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3973 
+: 5
+: 1
+The vertex num is: 685231
+The rule num is: 44666
+The step is: 12
+gpu runtime: 21.2186： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3973 
+: 5
+: 2
+The vertex num is: 685231
+The rule num is: 44662
+The step is: 11
+gpu runtime: 20.5071： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3972 
+: 5
+: 3
+The vertex num is: 685231
+The rule num is: 44659
+The step is: 10
+gpu runtime: 19.7938： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3970 
+: 5
+: 4
+The vertex num is: 685231
+The rule num is: 44634
+The step is: 9
+gpu runtime: 19.0755： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3949 
+: 5
+: 6
+The vertex num is: 685231
+The rule num is: 44583
+The step is: 7
+gpu runtime: 17.1074： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3850 
+: 5
+: 8
+The vertex num is: 685231
+The rule num is: 44207
+The step is: 5
+gpu runtime: 14.977： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2971 
+: 5
+: 10
+The vertex num is: 685231
+The rule num is: 39956
+The step is: 3
+gpu runtime: 12.6522： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7519 
+: 5
+: 12
+The vertex num is: 685231
+The rule num is: 29761
+The step is: 1
+gpu runtime: 10.6074： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3886 
+: 6
+: 1
+The vertex num is: 685231
+The rule num is: 42497
+The step is: 12
+gpu runtime: 21.0324： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3885 
+: 6
+: 2
+The vertex num is: 685231
+The rule num is: 42491
+The step is: 11
+gpu runtime: 20.3107： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3884 
+: 6
+: 3
+The vertex num is: 685231
+The rule num is: 42488
+The step is: 10
+gpu runtime: 19.657： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3882 
+: 6
+: 4
+The vertex num is: 685231
+The rule num is: 42472
+The step is: 9
+gpu runtime: 18.9543： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3864 
+: 6
+: 6
+The vertex num is: 685231
+The rule num is: 42371
+The step is: 7
+gpu runtime: 16.935： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3773 
+: 6
+: 8
+The vertex num is: 685231
+The rule num is: 42013
+The step is: 5
+gpu runtime: 14.8956： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2818 
+: 6
+: 10
+The vertex num is: 685231
+The rule num is: 40825
+The step is: 3
+gpu runtime: 12.8598： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7760 
+: 6
+: 12
+The vertex num is: 685231
+The rule num is: 27538
+The step is: 1
+gpu runtime: 10.2907： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3584 
+: 7
+: 1
+The vertex num is: 685231
+The rule num is: 36732
+The step is: 13
+gpu runtime: 21.2632： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3583 
+: 7
+: 2
+The vertex num is: 685231
+The rule num is: 36730
+The step is: 12
+gpu runtime: 20.5672： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3582 
+: 7
+: 3
+The vertex num is: 685231
+The rule num is: 36723
+The step is: 11
+gpu runtime: 19.8589： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3581 
+: 7
+: 4
+The vertex num is: 685231
+The rule num is: 36720
+The step is: 10
+gpu runtime: 19.1571： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3577 
+: 7
+: 6
+The vertex num is: 685231
+The rule num is: 36698
+The step is: 8
+gpu runtime: 17.732： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3535 
+: 7
+: 8
+The vertex num is: 685231
+The rule num is: 36559
+The step is: 6
+gpu runtime: 15.816： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3246 
+: 7
+: 10
+The vertex num is: 685231
+The rule num is: 35225
+The step is: 4
+gpu runtime: 13.6461： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1064 
+: 7
+: 12
+The vertex num is: 685231
+The rule num is: 31965
+The step is: 2
+gpu runtime: 11.9229： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3382 
+: 8
+: 1
+The vertex num is: 685231
+The rule num is: 33219
+The step is: 12
+gpu runtime: 20.5878： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3381 
+: 8
+: 2
+The vertex num is: 685231
+The rule num is: 33216
+The step is: 11
+gpu runtime: 19.8998： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3380 
+: 8
+: 3
+The vertex num is: 685231
+The rule num is: 33208
+The step is: 10
+gpu runtime: 19.2178： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3378 
+: 8
+: 4
+The vertex num is: 685231
+The rule num is: 33201
+The step is: 9
+gpu runtime: 18.5143： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3364 
+: 8
+: 6
+The vertex num is: 685231
+The rule num is: 33166
+The step is: 7
+gpu runtime: 16.7744： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3271 
+: 8
+: 8
+The vertex num is: 685231
+The rule num is: 32939
+The step is: 5
+gpu runtime: 14.7371： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2615 
+: 8
+: 10
+The vertex num is: 685231
+The rule num is: 30844
+The step is: 3
+gpu runtime: 12.5918： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7981 
+: 8
+: 12
+The vertex num is: 685231
+The rule num is: 21329
+The step is: 1
+gpu runtime: 10.2979： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3100 
+: 10
+: 1
+The vertex num is: 685231
+The rule num is: 29139
+The step is: 11
+gpu runtime: 19.7805： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3099 
+: 10
+: 2
+The vertex num is: 685231
+The rule num is: 29132
+The step is: 10
+gpu runtime: 19.0591： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3097 
+: 10
+: 3
+The vertex num is: 685231
+The rule num is: 29128
+The step is: 9
+gpu runtime: 18.3143： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3095 
+: 10
+: 4
+The vertex num is: 685231
+The rule num is: 29118
+The step is: 8
+gpu runtime: 17.6311： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.3061 
+: 10
+: 6
+The vertex num is: 685231
+The rule num is: 29041
+The step is: 6
+gpu runtime: 15.6475： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2884 
+: 10
+: 8
+The vertex num is: 685231
+The rule num is: 28519
+The step is: 4
+gpu runtime: 13.6207： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1151 
+: 10
+: 10
+The vertex num is: 685231
+The rule num is: 22270
+The step is: 2
+gpu runtime: 11.1077： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2679 
+: 12
+: 1
+The vertex num is: 685231
+The rule num is: 24350
+The step is: 11
+gpu runtime: 19.2499： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2679 
+: 12
+: 2
+The vertex num is: 685231
+The rule num is: 24347
+The step is: 10
+gpu runtime: 18.5545： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2678 
+: 12
+: 3
+The vertex num is: 685231
+The rule num is: 24344
+The step is: 9
+gpu runtime: 17.8343： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2675 
+: 12
+: 4
+The vertex num is: 685231
+The rule num is: 24341
+The step is: 8
+gpu runtime: 17.1396： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2654 
+: 12
+: 6
+The vertex num is: 685231
+The rule num is: 24237
+The step is: 6
+gpu runtime: 15.5036： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2427 
+: 12
+: 8
+The vertex num is: 685231
+The rule num is: 23823
+The step is: 4
+gpu runtime: 13.4436： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0391 
+: 12
+: 10
+The vertex num is: 685231
+The rule num is: 18503
+The step is: 2
+gpu runtime: 11.2315： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2124 
+: 15
+: 1
+The vertex num is: 685231
+The rule num is: 19083
+The step is: 10
+gpu runtime: 18.4194： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2123 
+: 15
+: 2
+The vertex num is: 685231
+The rule num is: 19081
+The step is: 9
+gpu runtime: 17.7305： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2120 
+: 15
+: 3
+The vertex num is: 685231
+The rule num is: 19078
+The step is: 8
+gpu runtime: 17.0202： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2117 
+: 15
+: 4
+The vertex num is: 685231
+The rule num is: 19063
+The step is: 7
+gpu runtime: 16.3161： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.2027 
+: 15
+: 6
+The vertex num is: 685231
+The rule num is: 18865
+The step is: 5
+gpu runtime: 14.3137： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1457 
+: 15
+: 8
+The vertex num is: 685231
+The rule num is: 18425
+The step is: 3
+gpu runtime: 12.2449： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7117 
+: 15
+: 10
+The vertex num is: 685231
+The rule num is: 13394
+The step is: 1
+gpu runtime: 10.5452： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1861 
+: 17
+: 1
+The vertex num is: 685231
+The rule num is: 16869
+The step is: 10
+gpu runtime: 18.3897： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1861 
+: 17
+: 2
+The vertex num is: 685231
+The rule num is: 16868
+The step is: 9
+gpu runtime: 17.6893： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1859 
+: 17
+: 3
+The vertex num is: 685231
+The rule num is: 16865
+The step is: 8
+gpu runtime: 16.9961： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1855 
+: 17
+: 4
+The vertex num is: 685231
+The rule num is: 16848
+The step is: 7
+gpu runtime: 16.3： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1812 
+: 17
+: 6
+The vertex num is: 685231
+The rule num is: 16735
+The step is: 5
+gpu runtime: 14.3404： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1071 
+: 17
+: 8
+The vertex num is: 685231
+The rule num is: 15489
+The step is: 3
+gpu runtime: 12.3166： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6384 
+: 17
+: 10
+The vertex num is: 685231
+The rule num is: 9201
+The step is: 1
+gpu runtime: 10.078： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1524 
+: 20
+: 1
+The vertex num is: 685231
+The rule num is: 14516
+The step is: 10
+gpu runtime: 18.3276： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1524 
+: 20
+: 2
+The vertex num is: 685231
+The rule num is: 14515
+The step is: 9
+gpu runtime: 17.6132： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1522 
+: 20
+: 3
+The vertex num is: 685231
+The rule num is: 14513
+The step is: 8
+gpu runtime: 16.9392： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1517 
+: 20
+: 4
+The vertex num is: 685231
+The rule num is: 14501
+The step is: 7
+gpu runtime: 16.2227： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1482 
+: 20
+: 6
+The vertex num is: 685231
+The rule num is: 14411
+The step is: 5
+gpu runtime: 14.2279： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0834 
+: 20
+: 8
+The vertex num is: 685231
+The rule num is: 14111
+The step is: 3
+gpu runtime: 12.2156： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6202 
+: 20
+: 10
+The vertex num is: 685231
+The rule num is: 6635
+The step is: 1
+gpu runtime: 9.99674： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1088 
+: 24
+: 1
+The vertex num is: 685231
+The rule num is: 11912
+The step is: 9
+gpu runtime: 17.382： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1088 
+: 24
+: 2
+The vertex num is: 685231
+The rule num is: 11910
+The step is: 8
+gpu runtime: 16.6901： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1084 
+: 24
+: 3
+The vertex num is: 685231
+The rule num is: 11907
+The step is: 7
+gpu runtime: 16.0226： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.1075 
+: 24
+: 4
+The vertex num is: 685231
+The rule num is: 11882
+The step is: 6
+gpu runtime: 15.3034： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0859 
+: 24
+: 6
+The vertex num is: 685231
+The rule num is: 11679
+The step is: 4
+gpu runtime: 13.3658： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9058 
+: 24
+: 8
+The vertex num is: 685231
+The rule num is: 10880
+The step is: 2
+gpu runtime: 11.3742： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0877 
+: 27
+: 1
+The vertex num is: 685231
+The rule num is: 10825
+The step is: 8
+gpu runtime: 16.9018： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0874 
+: 27
+: 2
+The vertex num is: 685231
+The rule num is: 10822
+The step is: 7
+gpu runtime: 16.1521： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0864 
+: 27
+: 3
+The vertex num is: 685231
+The rule num is: 10817
+The step is: 6
+gpu runtime: 15.4309： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0849 
+: 27
+: 4
+The vertex num is: 685231
+The rule num is: 10790
+The step is: 5
+gpu runtime: 14.4927： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0217 
+: 27
+: 6
+The vertex num is: 685231
+The rule num is: 10193
+The step is: 3
+gpu runtime: 12.4324： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6062 
+: 27
+: 8
+The vertex num is: 685231
+The rule num is: 5843
+The step is: 1
+gpu runtime: 10.2813： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0677 
+: 30
+: 1
+The vertex num is: 685231
+The rule num is: 9914
+The step is: 8
+gpu runtime: 16.6192： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0674 
+: 30
+: 2
+The vertex num is: 685231
+The rule num is: 9911
+The step is: 7
+gpu runtime: 15.9287： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0664 
+: 30
+: 3
+The vertex num is: 685231
+The rule num is: 9906
+The step is: 6
+gpu runtime: 15.2293： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0650 
+: 30
+: 4
+The vertex num is: 685231
+The rule num is: 9873
+The step is: 5
+gpu runtime: 14.2029： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0192 
+: 30
+: 6
+The vertex num is: 685231
+The rule num is: 9698
+The step is: 3
+gpu runtime: 12.3327： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6500 
+: 30
+: 8
+The vertex num is: 685231
+The rule num is: 7062
+The step is: 1
+gpu runtime: 10.9441： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0273 
+: 35
+: 1
+The vertex num is: 685231
+The rule num is: 8217
+The step is: 8
+gpu runtime: 16.0279： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0270 
+: 35
+: 2
+The vertex num is: 685231
+The rule num is: 8210
+The step is: 7
+gpu runtime: 15.3288： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0261 
+: 35
+: 3
+The vertex num is: 685231
+The rule num is: 8196
+The step is: 6
+gpu runtime: 14.637： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 2.0250 
+: 35
+: 4
+The vertex num is: 685231
+The rule num is: 8191
+The step is: 5
+gpu runtime: 13.9267： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9805 
+: 35
+: 6
+The vertex num is: 685231
+The rule num is: 8070
+The step is: 3
+gpu runtime: 11.9444： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.5121 
+: 35
+: 8
+The vertex num is: 685231
+The rule num is: 6373
+The step is: 1
+gpu runtime: 10.6558： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9699 
+: 48
+: 1
+The vertex num is: 685231
+The rule num is: 6335
+The step is: 8
+gpu runtime: 15.9965： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9694 
+: 48
+: 2
+The vertex num is: 685231
+The rule num is: 6332
+The step is: 7
+gpu runtime: 15.3197： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9684 
+: 48
+: 3
+The vertex num is: 685231
+The rule num is: 6319
+The step is: 6
+gpu runtime: 14.6266： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9663 
+: 48
+: 4
+The vertex num is: 685231
+The rule num is: 6313
+The step is: 5
+gpu runtime: 13.9028： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9237 
+: 48
+: 6
+The vertex num is: 685231
+The rule num is: 6143
+The step is: 3
+gpu runtime: 11.9433： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6088 
+: 48
+: 8
+The vertex num is: 685231
+The rule num is: 3867
+The step is: 1
+gpu runtime: 9.98319： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9159 
+: 63
+: 1
+The vertex num is: 685231
+The rule num is: 5028
+The step is: 7
+gpu runtime: 14.9381： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9154 
+: 63
+: 2
+The vertex num is: 685231
+The rule num is: 5025
+The step is: 6
+gpu runtime: 14.2374： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9142 
+: 63
+: 3
+The vertex num is: 685231
+The rule num is: 5022
+The step is: 5
+gpu runtime: 13.5452： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.9108 
+: 63
+: 4
+The vertex num is: 685231
+The rule num is: 5004
+The step is: 4
+gpu runtime: 12.6694： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7744 
+: 63
+: 6
+The vertex num is: 685231
+The rule num is: 4842
+The step is: 2
+gpu runtime: 10.7612： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8710 
+: 80
+: 1
+The vertex num is: 685231
+The rule num is: 4188
+The step is: 7
+gpu runtime: 14.8623： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8705 
+: 80
+: 2
+The vertex num is: 685231
+The rule num is: 4185
+The step is: 6
+gpu runtime: 14.1405： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8691 
+: 80
+: 3
+The vertex num is: 685231
+The rule num is: 4182
+The step is: 5
+gpu runtime: 13.4641： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8664 
+: 80
+: 4
+The vertex num is: 685231
+The rule num is: 4172
+The step is: 4
+gpu runtime: 12.5998： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7589 
+: 80
+: 6
+The vertex num is: 685231
+The rule num is: 4071
+The step is: 2
+gpu runtime: 10.7659： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8296 
+: 99
+: 1
+The vertex num is: 685231
+The rule num is: 3568
+The step is: 6
+gpu runtime: 14.0228： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8287 
+: 99
+: 2
+The vertex num is: 685231
+The rule num is: 3561
+The step is: 5
+gpu runtime: 13.3331： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8253 
+: 99
+: 3
+The vertex num is: 685231
+The rule num is: 3557
+The step is: 4
+gpu runtime: 12.4263： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.8157 
+: 99
+: 4
+The vertex num is: 685231
+The rule num is: 3535
+The step is: 3
+gpu runtime: 11.5127： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.5364 
+: 99
+: 6
+The vertex num is: 685231
+The rule num is: 1896
+The step is: 1
+gpu runtime: 9.57922： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7867 
+: 120
+: 1
+The vertex num is: 685231
+The rule num is: 3058
+The step is: 6
+gpu runtime: 14.4459： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7863 
+: 120
+: 2
+The vertex num is: 685231
+The rule num is: 3055
+The step is: 5
+gpu runtime: 13.7434： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7826 
+: 120
+: 3
+The vertex num is: 685231
+The rule num is: 3051
+The step is: 4
+gpu runtime: 12.8352： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7743 
+: 120
+: 4
+The vertex num is: 685231
+The rule num is: 3034
+The step is: 3
+gpu runtime: 11.9371： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4893 
+: 120
+: 6
+The vertex num is: 685231
+The rule num is: 2807
+The step is: 1
+gpu runtime: 10.199： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7514 
+: 143
+: 1
+The vertex num is: 685231
+The rule num is: 2656
+The step is: 5
+gpu runtime: 13.6441： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7492 
+: 143
+: 2
+The vertex num is: 685231
+The rule num is: 2653
+The step is: 4
+gpu runtime: 12.7592： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7430 
+: 143
+: 3
+The vertex num is: 685231
+The rule num is: 2643
+The step is: 3
+gpu runtime: 11.9168： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7058 
+: 143
+: 4
+The vertex num is: 685231
+The rule num is: 2590
+The step is: 2
+gpu runtime: 10.9411： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7201 
+: 168
+: 1
+The vertex num is: 685231
+The rule num is: 2393
+The step is: 5
+gpu runtime: 13.6485： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7180 
+: 168
+: 2
+The vertex num is: 685231
+The rule num is: 2391
+The step is: 4
+gpu runtime: 12.7556： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.7128 
+: 168
+: 3
+The vertex num is: 685231
+The rule num is: 2385
+The step is: 3
+gpu runtime: 11.8343： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6802 
+: 168
+: 4
+The vertex num is: 685231
+The rule num is: 2340
+The step is: 2
+gpu runtime: 10.8909： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6807 
+: 200
+: 1
+The vertex num is: 685231
+The rule num is: 2075
+The step is: 4
+gpu runtime: 12.6061： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6758 
+: 200
+: 2
+The vertex num is: 685231
+The rule num is: 2070
+The step is: 3
+gpu runtime: 11.6998： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.6454 
+: 200
+: 3
+The vertex num is: 685231
+The rule num is: 2030
+The step is: 2
+gpu runtime: 10.7823： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4335 
+: 200
+: 4
+The vertex num is: 685231
+The rule num is: 1954
+The step is: 1
+gpu runtime: 9.8854： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.5921 
+: 300
+: 1
+The vertex num is: 685231
+The rule num is: 1494
+The step is: 4
+gpu runtime: 12.4291： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.5866 
+: 300
+: 2
+The vertex num is: 685231
+The rule num is: 1490
+The step is: 3
+gpu runtime: 11.5633： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.5375 
+: 300
+: 3
+The vertex num is: 685231
+The rule num is: 1314
+The step is: 2
+gpu runtime: 10.5466： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4054 
+: 300
+: 4
+The vertex num is: 685231
+The rule num is: 1277
+The step is: 1
+gpu runtime: 9.64475： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4941 
+: 400
+: 1
+The vertex num is: 685231
+The rule num is: 637
+The step is: 4
+gpu runtime: 12.2574： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4914 
+: 400
+: 2
+The vertex num is: 685231
+The rule num is: 619
+The step is: 3
+gpu runtime: 11.3983： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4595 
+: 400
+: 3
+The vertex num is: 685231
+The rule num is: 577
+The step is: 2
+gpu runtime: 10.5484： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.3287 
+: 400
+: 4
+The vertex num is: 685231
+The rule num is: 551
+The step is: 1
+gpu runtime: 9.46204： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4700 
+: 500
+: 1
+The vertex num is: 685231
+The rule num is: 514
+The step is: 4
+gpu runtime: 12.2838： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4686 
+: 500
+: 2
+The vertex num is: 685231
+The rule num is: 507
+The step is: 3
+gpu runtime: 11.4175： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4634 
+: 500
+: 3
+The vertex num is: 685231
+The rule num is: 500
+The step is: 2
+gpu runtime: 10.4873： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.3319 
+: 500
+: 4
+The vertex num is: 685231
+The rule num is: 477
+The step is: 1
+gpu runtime: 9.47517： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4504 
+: 600
+: 1
+The vertex num is: 685231
+The rule num is: 422
+The step is: 3
+gpu runtime: 11.3998： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4454 
+: 600
+: 2
+The vertex num is: 685231
+The rule num is: 416
+The step is: 2
+gpu runtime: 10.4754： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.3193 
+: 600
+: 3
+The vertex num is: 685231
+The rule num is: 396
+The step is: 1
+gpu runtime: 9.46257： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4359 
+: 700
+: 1
+The vertex num is: 685231
+The rule num is: 366
+The step is: 2
+gpu runtime: 10.4481： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.3180 
+: 700
+: 2
+The vertex num is: 685231
+The rule num is: 347
+The step is: 1
+gpu runtime: 9.43363： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.4066 
+: 1000
+: 1
+The vertex num is: 685231
+The rule num is: 262
+The step is: 2
+gpu runtime: 10.4756： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.2986 
+: 1000
+: 2
+The vertex num is: 685231
+The rule num is: 248
+The step is: 1
+gpu runtime: 9.40924： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.2419 
+: 2000
+: 1
+The vertex num is: 685231
+The rule num is: 148
+The step is: 1
+gpu runtime: 9.39325： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.2353 
+: 3000
+: 1
+The vertex num is: 685231
+The rule num is: 106
+The step is: 1
+gpu runtime: 9.62331： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.1869 
+: 5000
+: 1
+The vertex num is: 685231
+The rule num is: 66
+The step is: 1
+gpu runtime: 9.54162： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.1692 
+: 7000
+: 1
+The vertex num is: 685231
+The rule num is: 29
+The step is: 1
+gpu runtime: 9.67869： seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比值为: 1.1485 
+: 10000
+: 1
+The vertex num is: 685231
+The rule num is: 27
+The step is: 1
+gpu runtime: 9.49531： seconds
+==================== PPR with FORWARD PUSH ends ====================
+

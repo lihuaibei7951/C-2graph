@@ -1,0 +1,87 @@
+1:1433934
+2:570663
+3:236968
+4:107480
+5:50905
+6:24133
+7:11755
+8:5786
+9:2955
+10:1563
+11:895
+12:501
+13:275
+14:164
+15:95
+16:95
+17:95
+18:101
+19:92
+20:61
+21:37
+22:28
+23:28
+24:33
+25:38
+26:31
+27:17
+28:13
+29:14
+30:11
+31:12
+32:11
+33:10
+34:9
+35:8
+36:8
+37:8
+38:6
+39:7
+40:5
+41:4
+42:4
+43:3
+44:3
+45:2
+46:2
+47:2
+48:2
+49:2
+50:2
+51:2
+52:1
+53:1
+54:1
+55:0
+文件1与文件2的大小比值为: 3.9616 , 1
+1:1433934
+2:570663
+3:236968
+4:107480
+5:50905
+6:24133
+7:11755
+8:5786
+9:2955
+10:1563
+11:0
+11
+test
+Data has been written to output.txt.
+over
+9
+INIT--class Graph is constructed
+The vertex num is:18520486
+The rule num is:2446142
+test:20966629INIT--class DeviceMemory is constructed
+PREP--graph data in device memory are now ready
+test for study how to use cuda
+
+==================== PPR with FORWARD PUSH starts ====================
+==================== PPR with FORWARD PUSH ends====================
+
+gpu runtime: 5.86001 seconds
+main total timeval runtime: 5.86008 seconds
+------------ 
+CLEAR--class DeviceMemory is destroyed
+CLEAR--class Graph is destroyed

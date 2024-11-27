@@ -1,0 +1,1386 @@
+文件1与文件2的大小比值为: 1.6395 , 1 , 1
+gpu runtime: 2.05998 seconds
+文件1与文件2的大小比值为: 2.2927 , 1 , 2
+gpu runtime: 2.16974 seconds
+文件1与文件2的大小比值为: 2.9088 , 1 , 3
+gpu runtime: 2.23724 seconds
+文件1与文件2的大小比值为: 3.3871 , 1 , 4
+gpu runtime: 2.25808 seconds
+文件1与文件2的大小比值为: 3.6797 , 1 , 5
+gpu runtime: 2.28407 seconds
+文件1与文件2的大小比值为: 3.8388 , 1 , 6
+gpu runtime: 2.31747 seconds
+文件1与文件2的大小比值为: 3.9076 , 1 , 7
+gpu runtime: 2.3468 seconds
+文件1与文件2的大小比值为: 3.9322 , 1 , 8
+gpu runtime: 2.36124 seconds
+文件1与文件2的大小比值为: 3.9437 , 1 , 9
+gpu runtime: 2.38113 seconds
+文件1与文件2的大小比值为: 3.9616 , 1 , 10
+gpu runtime: 2.40239 seconds
+文件1与文件2的大小比值为: 3.9665 , 1 , 12
+gpu runtime: 2.44979 seconds
+文件1与文件2的大小比值为: 3.9675 , 1 , 14
+gpu runtime: 2.46234 seconds
+文件1与文件2的大小比值为: 3.9722 , 1 , 16
+gpu runtime: 2.49148 seconds
+文件1与文件2的大小比值为: 3.9732 , 1 , 18
+gpu runtime: 2.52571 seconds
+文件1与文件2的大小比值为: 3.9737 , 1 , 20
+gpu runtime: 2.5576 seconds
+文件1与文件2的大小比值为: 3.9740 , 1 , 23
+gpu runtime: 2.59394 seconds
+文件1与文件2的大小比值为: 3.9744 , 1 , 26
+gpu runtime: 2.65263 seconds
+文件1与文件2的大小比值为: 3.9745 , 1 , 29
+gpu runtime: 2.69645 seconds
+文件1与文件2的大小比值为: 3.9746 , 1 , 32
+gpu runtime: 2.74477 seconds
+文件1与文件2的大小比值为: 3.9747 , 1 , 35
+gpu runtime: 2.78532 seconds
+文件1与文件2的大小比值为: 3.9749 , 1 , 40
+gpu runtime: 2.87429 seconds
+文件1与文件2的大小比值为: 1.6387 , 2 , 1
+gpu runtime: 2.05217 seconds
+文件1与文件2的大小比值为: 2.2889 , 2 , 2
+gpu runtime: 2.03909 seconds
+文件1与文件2的大小比值为: 2.9005 , 2 , 3
+gpu runtime: 2.17225 seconds
+文件1与文件2的大小比值为: 3.3743 , 2 , 4
+gpu runtime: 2.14985 seconds
+文件1与文件2的大小比值为: 3.6635 , 2 , 5
+gpu runtime: 2.13857 seconds
+文件1与文件2的大小比值为: 3.8207 , 2 , 6
+gpu runtime: 2.24701 seconds
+文件1与文件2的大小比值为: 3.8886 , 2 , 7
+gpu runtime: 2.2765 seconds
+文件1与文件2的大小比值为: 3.9129 , 2 , 8
+gpu runtime: 2.27741 seconds
+文件1与文件2的大小比值为: 3.9241 , 2 , 9
+gpu runtime: 2.23801 seconds
+文件1与文件2的大小比值为: 3.9418 , 2 , 10
+gpu runtime: 2.33224 seconds
+文件1与文件2的大小比值为: 3.9467 , 2 , 12
+gpu runtime: 2.36505 seconds
+文件1与文件2的大小比值为: 3.9476 , 2 , 14
+gpu runtime: 2.39998 seconds
+文件1与文件2的大小比值为: 3.9523 , 2 , 16
+gpu runtime: 2.4459 seconds
+文件1与文件2的大小比值为: 3.9533 , 2 , 18
+gpu runtime: 2.46914 seconds
+文件1与文件2的大小比值为: 3.9537 , 2 , 20
+gpu runtime: 2.49767 seconds
+文件1与文件2的大小比值为: 3.9541 , 2 , 23
+gpu runtime: 2.55206 seconds
+文件1与文件2的大小比值为: 3.9545 , 2 , 26
+gpu runtime: 2.57822 seconds
+文件1与文件2的大小比值为: 3.9546 , 2 , 29
+gpu runtime: 2.64183 seconds
+文件1与文件2的大小比值为: 3.9547 , 2 , 32
+gpu runtime: 2.68379 seconds
+文件1与文件2的大小比值为: 3.9547 , 2 , 35
+gpu runtime: 2.7334 seconds
+文件1与文件2的大小比值为: 3.9549 , 2 , 40
+gpu runtime: 2.79665 seconds
+文件1与文件2的大小比值为: 1.6370 , 3 , 1
+gpu runtime: 2.03805 seconds
+文件1与文件2的大小比值为: 2.2814 , 3 , 2
+gpu runtime: 2.1105 seconds
+文件1与文件2的大小比值为: 2.8842 , 3 , 3
+gpu runtime: 2.12234 seconds
+文件1与文件2的大小比值为: 3.3489 , 3 , 4
+gpu runtime: 2.15816 seconds
+文件1与文件2的大小比值为: 3.6317 , 3 , 5
+gpu runtime: 2.17431 seconds
+文件1与文件2的大小比值为: 3.7849 , 3 , 6
+gpu runtime: 2.21437 seconds
+文件1与文件2的大小比值为: 3.8510 , 3 , 7
+gpu runtime: 2.22382 seconds
+文件1与文件2的大小比值为: 3.8746 , 3 , 8
+gpu runtime: 2.24476 seconds
+文件1与文件2的大小比值为: 3.8855 , 3 , 9
+gpu runtime: 2.26362 seconds
+文件1与文件2的大小比值为: 3.9028 , 3 , 10
+gpu runtime: 2.28242 seconds
+文件1与文件2的大小比值为: 3.9074 , 3 , 12
+gpu runtime: 2.31133 seconds
+文件1与文件2的大小比值为: 3.9084 , 3 , 14
+gpu runtime: 2.3487 seconds
+文件1与文件2的大小比值为: 3.9129 , 3 , 16
+gpu runtime: 2.38284 seconds
+文件1与文件2的大小比值为: 3.9139 , 3 , 18
+gpu runtime: 2.40635 seconds
+文件1与文件2的大小比值为: 3.9144 , 3 , 20
+gpu runtime: 2.41738 seconds
+文件1与文件2的大小比值为: 3.9147 , 3 , 23
+gpu runtime: 2.46955 seconds
+文件1与文件2的大小比值为: 3.9150 , 3 , 26
+gpu runtime: 2.51689 seconds
+文件1与文件2的大小比值为: 3.9152 , 3 , 29
+gpu runtime: 2.51877 seconds
+文件1与文件2的大小比值为: 3.9152 , 3 , 32
+gpu runtime: 2.56257 seconds
+文件1与文件2的大小比值为: 3.9153 , 3 , 35
+gpu runtime: 2.58455 seconds
+文件1与文件2的大小比值为: 3.9155 , 3 , 40
+gpu runtime: 2.58468 seconds
+文件1与文件2的大小比值为: 1.6358 , 4 , 1
+gpu runtime: 2.03842 seconds
+文件1与文件2的大小比值为: 2.2765 , 4 , 2
+gpu runtime: 2.09187 seconds
+文件1与文件2的大小比值为: 2.8742 , 4 , 3
+gpu runtime: 2.13448 seconds
+文件1与文件2的大小比值为: 3.3336 , 4 , 4
+gpu runtime: 2.15202 seconds
+文件1与文件2的大小比值为: 3.6126 , 4 , 5
+gpu runtime: 2.17119 seconds
+文件1与文件2的大小比值为: 3.7637 , 4 , 6
+gpu runtime: 2.17075 seconds
+文件1与文件2的大小比值为: 3.8287 , 4 , 7
+gpu runtime: 2.18911 seconds
+文件1与文件2的大小比值为: 3.8519 , 4 , 8
+gpu runtime: 2.21542 seconds
+文件1与文件2的大小比值为: 3.8626 , 4 , 9
+gpu runtime: 2.24669 seconds
+文件1与文件2的大小比值为: 3.8797 , 4 , 10
+gpu runtime: 2.25547 seconds
+文件1与文件2的大小比值为: 3.8842 , 4 , 12
+gpu runtime: 2.2949 seconds
+文件1与文件2的大小比值为: 3.8852 , 4 , 14
+gpu runtime: 2.31404 seconds
+文件1与文件2的大小比值为: 3.8896 , 4 , 16
+gpu runtime: 2.33471 seconds
+文件1与文件2的大小比值为: 3.8906 , 4 , 18
+gpu runtime: 2.37999 seconds
+文件1与文件2的大小比值为: 3.8911 , 4 , 20
+gpu runtime: 2.39666 seconds
+文件1与文件2的大小比值为: 3.8914 , 4 , 23
+gpu runtime: 2.42115 seconds
+文件1与文件2的大小比值为: 3.8917 , 4 , 26
+gpu runtime: 2.47261 seconds
+文件1与文件2的大小比值为: 3.8918 , 4 , 29
+gpu runtime: 2.50011 seconds
+文件1与文件2的大小比值为: 3.8919 , 4 , 32
+gpu runtime: 2.53436 seconds
+文件1与文件2的大小比值为: 3.8920 , 4 , 35
+gpu runtime: 2.55173 seconds
+文件1与文件2的大小比值为: 3.8922 , 4 , 40
+gpu runtime: 2.5593 seconds
+文件1与文件2的大小比值为: 1.6329 , 5 , 1
+gpu runtime: 2.02116 seconds
+文件1与文件2的大小比值为: 2.2654 , 5 , 2
+gpu runtime: 2.06894 seconds
+文件1与文件2的大小比值为: 2.8513 , 5 , 3
+gpu runtime: 2.10989 seconds
+文件1与文件2的大小比值为: 3.2987 , 5 , 4
+gpu runtime: 2.12438 seconds
+文件1与文件2的大小比值为: 3.5691 , 5 , 5
+gpu runtime: 2.12893 seconds
+文件1与文件2的大小比值为: 3.7152 , 5 , 6
+gpu runtime: 2.14774 seconds
+文件1与文件2的大小比值为: 3.7780 , 5 , 7
+gpu runtime: 2.16214 seconds
+文件1与文件2的大小比值为: 3.8003 , 5 , 8
+gpu runtime: 2.18344 seconds
+文件1与文件2的大小比值为: 3.8106 , 5 , 9
+gpu runtime: 2.19887 seconds
+文件1与文件2的大小比值为: 3.8270 , 5 , 10
+gpu runtime: 2.21365 seconds
+文件1与文件2的大小比值为: 3.8314 , 5 , 12
+gpu runtime: 2.26431 seconds
+文件1与文件2的大小比值为: 3.8323 , 5 , 14
+gpu runtime: 2.28244 seconds
+文件1与文件2的大小比值为: 3.8366 , 5 , 16
+gpu runtime: 2.28791 seconds
+文件1与文件2的大小比值为: 3.8376 , 5 , 18
+gpu runtime: 2.30061 seconds
+文件1与文件2的大小比值为: 3.8380 , 5 , 20
+gpu runtime: 2.32148 seconds
+文件1与文件2的大小比值为: 3.8383 , 5 , 23
+gpu runtime: 2.32008 seconds
+文件1与文件2的大小比值为: 3.8387 , 5 , 26
+gpu runtime: 2.34979 seconds
+文件1与文件2的大小比值为: 3.8388 , 5 , 29
+gpu runtime: 2.39279 seconds
+文件1与文件2的大小比值为: 3.8389 , 5 , 32
+gpu runtime: 2.41365 seconds
+文件1与文件2的大小比值为: 3.8389 , 5 , 35
+gpu runtime: 2.44508 seconds
+文件1与文件2的大小比值为: 3.8391 , 5 , 40
+gpu runtime: 2.4769 seconds
+文件1与文件2的大小比值为: 1.6316 , 6 , 1
+gpu runtime: 2.02769 seconds
+文件1与文件2的大小比值为: 2.2613 , 6 , 2
+gpu runtime: 2.06943 seconds
+文件1与文件2的大小比值为: 2.8431 , 6 , 3
+gpu runtime: 2.07636 seconds
+文件1与文件2的大小比值为: 3.2867 , 6 , 4
+gpu runtime: 2.11167 seconds
+文件1与文件2的大小比值为: 3.5542 , 6 , 5
+gpu runtime: 2.13054 seconds
+文件1与文件2的大小比值为: 3.6986 , 6 , 6
+gpu runtime: 2.13891 seconds
+文件1与文件2的大小比值为: 3.7606 , 6 , 7
+gpu runtime: 2.15507 seconds
+文件1与文件2的大小比值为: 3.7826 , 6 , 8
+gpu runtime: 2.17451 seconds
+文件1与文件2的大小比值为: 3.7928 , 6 , 9
+gpu runtime: 2.18525 seconds
+文件1与文件2的大小比值为: 3.8091 , 6 , 10
+gpu runtime: 2.19614 seconds
+文件1与文件2的大小比值为: 3.8134 , 6 , 12
+gpu runtime: 2.24407 seconds
+文件1与文件2的大小比值为: 3.8143 , 6 , 14
+gpu runtime: 2.28596 seconds
+文件1与文件2的大小比值为: 3.8186 , 6 , 16
+gpu runtime: 2.28264 seconds
+文件1与文件2的大小比值为: 3.8195 , 6 , 18
+gpu runtime: 2.29254 seconds
+文件1与文件2的大小比值为: 3.8199 , 6 , 20
+gpu runtime: 2.30887 seconds
+文件1与文件2的大小比值为: 3.8202 , 6 , 23
+gpu runtime: 2.31544 seconds
+文件1与文件2的大小比值为: 3.8206 , 6 , 26
+gpu runtime: 2.34058 seconds
+文件1与文件2的大小比值为: 3.8207 , 6 , 29
+gpu runtime: 2.39713 seconds
+文件1与文件2的大小比值为: 3.8208 , 6 , 32
+gpu runtime: 2.41595 seconds
+文件1与文件2的大小比值为: 3.8208 , 6 , 35
+gpu runtime: 2.44524 seconds
+文件1与文件2的大小比值为: 3.8210 , 6 , 40
+gpu runtime: 2.48617 seconds
+文件1与文件2的大小比值为: 1.6290 , 7 , 1
+gpu runtime: 2.01223 seconds
+文件1与文件2的大小比值为: 2.2518 , 7 , 2
+gpu runtime: 2.05618 seconds
+文件1与文件2的大小比值为: 2.8239 , 7 , 3
+gpu runtime: 2.06232 seconds
+文件1与文件2的大小比值为: 3.2577 , 7 , 4
+gpu runtime: 2.06578 seconds
+文件1与文件2的大小比值为: 3.5183 , 7 , 5
+gpu runtime: 2.1115 seconds
+文件1与文件2的大小比值为: 3.6586 , 7 , 6
+gpu runtime: 2.13394 seconds
+文件1与文件2的大小比值为: 3.7188 , 7 , 7
+gpu runtime: 2.15474 seconds
+文件1与文件2的大小比值为: 3.7400 , 7 , 8
+gpu runtime: 2.17182 seconds
+文件1与文件2的大小比值为: 3.7499 , 7 , 9
+gpu runtime: 2.19204 seconds
+文件1与文件2的大小比值为: 3.7657 , 7 , 10
+gpu runtime: 2.21227 seconds
+文件1与文件2的大小比值为: 3.7699 , 7 , 12
+gpu runtime: 2.23455 seconds
+文件1与文件2的大小比值为: 3.7707 , 7 , 14
+gpu runtime: 2.24728 seconds
+文件1与文件2的大小比值为: 3.7749 , 7 , 16
+gpu runtime: 2.25902 seconds
+文件1与文件2的大小比值为: 3.7758 , 7 , 18
+gpu runtime: 2.26096 seconds
+文件1与文件2的大小比值为: 3.7762 , 7 , 20
+gpu runtime: 2.30463 seconds
+文件1与文件2的大小比值为: 3.7765 , 7 , 23
+gpu runtime: 2.29312 seconds
+文件1与文件2的大小比值为: 3.7768 , 7 , 26
+gpu runtime: 2.32188 seconds
+文件1与文件2的大小比值为: 3.7769 , 7 , 29
+gpu runtime: 2.34854 seconds
+文件1与文件2的大小比值为: 3.7770 , 7 , 32
+gpu runtime: 2.35373 seconds
+文件1与文件2的大小比值为: 3.7771 , 7 , 35
+gpu runtime: 2.36795 seconds
+文件1与文件2的大小比值为: 3.7772 , 7 , 40
+gpu runtime: 2.41058 seconds
+文件1与文件2的大小比值为: 1.6267 , 8 , 1
+gpu runtime: 2.01457 seconds
+文件1与文件2的大小比值为: 2.2445 , 8 , 2
+gpu runtime: 2.04592 seconds
+文件1与文件2的大小比值为: 2.8097 , 8 , 3
+gpu runtime: 2.05738 seconds
+文件1与文件2的大小比值为: 3.2369 , 8 , 4
+gpu runtime: 2.08057 seconds
+文件1与文件2的大小比值为: 3.4927 , 8 , 5
+gpu runtime: 2.08658 seconds
+文件1与文件2的大小比值为: 3.6304 , 8 , 6
+gpu runtime: 2.10782 seconds
+文件1与文件2的大小比值为: 3.6894 , 8 , 7
+gpu runtime: 2.12289 seconds
+文件1与文件2的大小比值为: 3.7102 , 8 , 8
+gpu runtime: 2.12823 seconds
+文件1与文件2的大小比值为: 3.7198 , 8 , 9
+gpu runtime: 2.15745 seconds
+文件1与文件2的大小比值为: 3.7353 , 8 , 10
+gpu runtime: 2.17448 seconds
+文件1与文件2的大小比值为: 3.7394 , 8 , 12
+gpu runtime: 2.21801 seconds
+文件1与文件2的大小比值为: 3.7402 , 8 , 14
+gpu runtime: 2.21455 seconds
+文件1与文件2的大小比值为: 3.7443 , 8 , 16
+gpu runtime: 2.21975 seconds
+文件1与文件2的大小比值为: 3.7452 , 8 , 18
+gpu runtime: 2.22481 seconds
+文件1与文件2的大小比值为: 3.7456 , 8 , 20
+gpu runtime: 2.24453 seconds
+文件1与文件2的大小比值为: 3.7459 , 8 , 23
+gpu runtime: 2.27337 seconds
+文件1与文件2的大小比值为: 3.7462 , 8 , 26
+gpu runtime: 2.29977 seconds
+文件1与文件2的大小比值为: 3.7463 , 8 , 29
+gpu runtime: 2.32376 seconds
+文件1与文件2的大小比值为: 3.7464 , 8 , 32
+gpu runtime: 2.33179 seconds
+文件1与文件2的大小比值为: 3.7464 , 8 , 35
+gpu runtime: 2.34967 seconds
+文件1与文件2的大小比值为: 3.7466 , 8 , 40
+gpu runtime: 2.36547 seconds
+文件1与文件2的大小比值为: 1.6231 , 10 , 1
+gpu runtime: 2.01195 seconds
+文件1与文件2的大小比值为: 2.2334 , 10 , 2
+gpu runtime: 2.03096 seconds
+文件1与文件2的大小比值为: 2.7884 , 10 , 3
+gpu runtime: 2.05279 seconds
+文件1与文件2的大小比值为: 3.2059 , 10 , 4
+gpu runtime: 2.05786 seconds
+文件1与文件2的大小比值为: 3.4550 , 10 , 5
+gpu runtime: 2.0614 seconds
+文件1与文件2的大小比值为: 3.5888 , 10 , 6
+gpu runtime: 2.09017 seconds
+文件1与文件2的大小比值为: 3.6459 , 10 , 7
+gpu runtime: 2.11567 seconds
+文件1与文件2的大小比值为: 3.6661 , 10 , 8
+gpu runtime: 2.13357 seconds
+文件1与文件2的大小比值为: 3.6754 , 10 , 9
+gpu runtime: 2.13983 seconds
+文件1与文件2的大小比值为: 3.6905 , 10 , 10
+gpu runtime: 2.16852 seconds
+文件1与文件2的大小比值为: 3.6944 , 10 , 12
+gpu runtime: 2.17998 seconds
+文件1与文件2的大小比值为: 3.6952 , 10 , 14
+gpu runtime: 2.19768 seconds
+文件1与文件2的大小比值为: 3.6992 , 10 , 16
+gpu runtime: 2.20312 seconds
+文件1与文件2的大小比值为: 3.7000 , 10 , 18
+gpu runtime: 2.21493 seconds
+文件1与文件2的大小比值为: 3.7004 , 10 , 20
+gpu runtime: 2.22572 seconds
+文件1与文件2的大小比值为: 3.7007 , 10 , 23
+gpu runtime: 2.24443 seconds
+文件1与文件2的大小比值为: 3.7010 , 10 , 26
+gpu runtime: 2.27242 seconds
+文件1与文件2的大小比值为: 3.7011 , 10 , 29
+gpu runtime: 2.27922 seconds
+文件1与文件2的大小比值为: 3.7012 , 10 , 32
+gpu runtime: 2.27939 seconds
+文件1与文件2的大小比值为: 3.7012 , 10 , 35
+gpu runtime: 2.28871 seconds
+文件1与文件2的大小比值为: 3.7014 , 10 , 40
+gpu runtime: 2.32179 seconds
+文件1与文件2的大小比值为: 1.6178 , 12 , 1
+gpu runtime: 2.00576 seconds
+文件1与文件2的大小比值为: 2.2171 , 12 , 2
+gpu runtime: 2.02509 seconds
+文件1与文件2的大小比值为: 2.7575 , 12 , 3
+gpu runtime: 2.03364 seconds
+文件1与文件2的大小比值为: 3.1613 , 12 , 4
+gpu runtime: 2.04249 seconds
+文件1与文件2的大小比值为: 3.4009 , 12 , 5
+gpu runtime: 2.06454 seconds
+文件1与文件2的大小比值为: 3.5294 , 12 , 6
+gpu runtime: 2.07431 seconds
+文件1与文件2的大小比值为: 3.5842 , 12 , 7
+gpu runtime: 2.10059 seconds
+文件1与文件2的大小比值为: 3.6034 , 12 , 8
+gpu runtime: 2.10656 seconds
+文件1与文件2的大小比值为: 3.6122 , 12 , 9
+gpu runtime: 2.13302 seconds
+文件1与文件2的大小比值为: 3.6267 , 12 , 10
+gpu runtime: 2.15681 seconds
+文件1与文件2的大小比值为: 3.6304 , 12 , 12
+gpu runtime: 2.15945 seconds
+文件1与文件2的大小比值为: 3.6311 , 12 , 14
+gpu runtime: 2.18423 seconds
+文件1与文件2的大小比值为: 3.6350 , 12 , 16
+gpu runtime: 2.20159 seconds
+文件1与文件2的大小比值为: 3.6358 , 12 , 18
+gpu runtime: 2.20299 seconds
+文件1与文件2的大小比值为: 3.6362 , 12 , 20
+gpu runtime: 2.20297 seconds
+文件1与文件2的大小比值为: 3.6364 , 12 , 23
+gpu runtime: 2.21791 seconds
+文件1与文件2的大小比值为: 3.6367 , 12 , 26
+gpu runtime: 2.25211 seconds
+文件1与文件2的大小比值为: 3.6368 , 12 , 29
+gpu runtime: 2.24333 seconds
+文件1与文件2的大小比值为: 3.6369 , 12 , 32
+gpu runtime: 2.25567 seconds
+文件1与文件2的大小比值为: 3.6369 , 12 , 35
+gpu runtime: 2.25466 seconds
+文件1与文件2的大小比值为: 3.6371 , 12 , 40
+gpu runtime: 2.25732 seconds
+文件1与文件2的大小比值为: 1.6095 , 15 , 1
+gpu runtime: 1.99733 seconds
+文件1与文件2的大小比值为: 2.1940 , 15 , 2
+gpu runtime: 2.02252 seconds
+文件1与文件2的大小比值为: 2.7158 , 15 , 3
+gpu runtime: 2.03589 seconds
+文件1与文件2的大小比值为: 3.1026 , 15 , 4
+gpu runtime: 2.03005 seconds
+文件1与文件2的大小比值为: 3.3307 , 15 , 5
+gpu runtime: 2.04818 seconds
+文件1与文件2的大小比值为: 3.4528 , 15 , 6
+gpu runtime: 2.05702 seconds
+文件1与文件2的大小比值为: 3.5045 , 15 , 7
+gpu runtime: 2.06795 seconds
+文件1与文件2的大小比值为: 3.5226 , 15 , 8
+gpu runtime: 2.08721 seconds
+文件1与文件2的大小比值为: 3.5309 , 15 , 9
+gpu runtime: 2.11213 seconds
+文件1与文件2的大小比值为: 3.5446 , 15 , 10
+gpu runtime: 2.1343 seconds
+文件1与文件2的大小比值为: 3.5481 , 15 , 12
+gpu runtime: 2.14175 seconds
+文件1与文件2的大小比值为: 3.5488 , 15 , 14
+gpu runtime: 2.15769 seconds
+文件1与文件2的大小比值为: 3.5525 , 15 , 16
+gpu runtime: 2.16969 seconds
+文件1与文件2的大小比值为: 3.5532 , 15 , 18
+gpu runtime: 2.16758 seconds
+文件1与文件2的大小比值为: 3.5536 , 15 , 20
+gpu runtime: 2.18207 seconds
+文件1与文件2的大小比值为: 3.5538 , 15 , 23
+gpu runtime: 2.18488 seconds
+文件1与文件2的大小比值为: 3.5541 , 15 , 26
+gpu runtime: 2.18565 seconds
+文件1与文件2的大小比值为: 3.5542 , 15 , 29
+gpu runtime: 2.18673 seconds
+文件1与文件2的大小比值为: 3.5543 , 15 , 32
+gpu runtime: 2.19734 seconds
+文件1与文件2的大小比值为: 3.5543 , 15 , 35
+gpu runtime: 2.18715 seconds
+文件1与文件2的大小比值为: 3.5544 , 15 , 40
+gpu runtime: 2.19022 seconds
+文件1与文件2的大小比值为: 1.6043 , 17 , 1
+gpu runtime: 1.98199 seconds
+文件1与文件2的大小比值为: 2.1811 , 17 , 2
+gpu runtime: 2.01297 seconds
+文件1与文件2的大小比值为: 2.6940 , 17 , 3
+gpu runtime: 2.0099 seconds
+文件1与文件2的大小比值为: 3.0727 , 17 , 4
+gpu runtime: 2.01199 seconds
+文件1与文件2的大小比值为: 3.2958 , 17 , 5
+gpu runtime: 2.03873 seconds
+文件1与文件2的大小比值为: 3.4150 , 17 , 6
+gpu runtime: 2.06445 seconds
+文件1与文件2的大小比值为: 3.4655 , 17 , 7
+gpu runtime: 2.06438 seconds
+文件1与文件2的大小比值为: 3.4830 , 17 , 8
+gpu runtime: 2.08369 seconds
+文件1与文件2的大小比值为: 3.4911 , 17 , 9
+gpu runtime: 2.09168 seconds
+文件1与文件2的大小比值为: 3.5045 , 17 , 10
+gpu runtime: 2.11748 seconds
+文件1与文件2的大小比值为: 3.5079 , 17 , 12
+gpu runtime: 2.14411 seconds
+文件1与文件2的大小比值为: 3.5086 , 17 , 14
+gpu runtime: 2.14816 seconds
+文件1与文件2的大小比值为: 3.5121 , 17 , 16
+gpu runtime: 2.15487 seconds
+文件1与文件2的大小比值为: 3.5129 , 17 , 18
+gpu runtime: 2.15374 seconds
+文件1与文件2的大小比值为: 3.5132 , 17 , 20
+gpu runtime: 2.15883 seconds
+文件1与文件2的大小比值为: 3.5134 , 17 , 23
+gpu runtime: 2.16284 seconds
+文件1与文件2的大小比值为: 3.5137 , 17 , 26
+gpu runtime: 2.16705 seconds
+文件1与文件2的大小比值为: 3.5138 , 17 , 29
+gpu runtime: 2.15578 seconds
+文件1与文件2的大小比值为: 3.5139 , 17 , 32
+gpu runtime: 2.17935 seconds
+文件1与文件2的大小比值为: 3.5139 , 17 , 35
+gpu runtime: 2.18394 seconds
+文件1与文件2的大小比值为: 3.5140 , 17 , 40
+gpu runtime: 2.17347 seconds
+文件1与文件2的大小比值为: 1.5964 , 20 , 1
+gpu runtime: 1.98349 seconds
+文件1与文件2的大小比值为: 2.1621 , 20 , 2
+gpu runtime: 2.00069 seconds
+文件1与文件2的大小比值为: 2.6618 , 20 , 3
+gpu runtime: 2.0167 seconds
+文件1与文件2的大小比值为: 3.0293 , 20 , 4
+gpu runtime: 2.0111 seconds
+文件1与文件2的大小比值为: 3.2450 , 20 , 5
+gpu runtime: 2.01877 seconds
+文件1与文件2的大小比值为: 3.3601 , 20 , 6
+gpu runtime: 2.04792 seconds
+文件1与文件2的大小比值为: 3.4088 , 20 , 7
+gpu runtime: 2.06444 seconds
+文件1与文件2的大小比值为: 3.4255 , 20 , 8
+gpu runtime: 2.09292 seconds
+文件1与文件2的大小比值为: 3.4333 , 20 , 9
+gpu runtime: 2.0826 seconds
+文件1与文件2的大小比值为: 3.4461 , 20 , 10
+gpu runtime: 2.09256 seconds
+文件1与文件2的大小比值为: 3.4494 , 20 , 12
+gpu runtime: 2.12995 seconds
+文件1与文件2的大小比值为: 3.4500 , 20 , 14
+gpu runtime: 2.11105 seconds
+文件1与文件2的大小比值为: 3.4534 , 20 , 16
+gpu runtime: 2.13193 seconds
+文件1与文件2的大小比值为: 3.4541 , 20 , 18
+gpu runtime: 2.13771 seconds
+文件1与文件2的大小比值为: 3.4545 , 20 , 20
+gpu runtime: 2.13129 seconds
+文件1与文件2的大小比值为: 3.4547 , 20 , 23
+gpu runtime: 2.12961 seconds
+文件1与文件2的大小比值为: 3.4549 , 20 , 26
+gpu runtime: 2.13531 seconds
+文件1与文件2的大小比值为: 3.4550 , 20 , 29
+gpu runtime: 2.14352 seconds
+文件1与文件2的大小比值为: 3.4551 , 20 , 32
+gpu runtime: 2.14772 seconds
+文件1与文件2的大小比值为: 3.4551 , 20 , 35
+gpu runtime: 2.1464 seconds
+文件1与文件2的大小比值为: 3.4552 , 20 , 40
+gpu runtime: 2.17006 seconds
+文件1与文件2的大小比值为: 1.5857 , 24 , 1
+gpu runtime: 1.97965 seconds
+文件1与文件2的大小比值为: 2.1380 , 24 , 2
+gpu runtime: 1.9899 seconds
+文件1与文件2的大小比值为: 2.6230 , 24 , 3
+gpu runtime: 1.99705 seconds
+文件1与文件2的大小比值为: 2.9777 , 24 , 4
+gpu runtime: 2.01412 seconds
+文件1与文件2的大小比值为: 3.1853 , 24 , 5
+gpu runtime: 2.04221 seconds
+文件1与文件2的大小比值为: 3.2961 , 24 , 6
+gpu runtime: 2.05559 seconds
+文件1与文件2的大小比值为: 3.3429 , 24 , 7
+gpu runtime: 2.0588 seconds
+文件1与文件2的大小比值为: 3.3588 , 24 , 8
+gpu runtime: 2.0648 seconds
+文件1与文件2的大小比值为: 3.3662 , 24 , 9
+gpu runtime: 2.06996 seconds
+文件1与文件2的大小比值为: 3.3785 , 24 , 10
+gpu runtime: 2.08058 seconds
+文件1与文件2的大小比值为: 3.3816 , 24 , 12
+gpu runtime: 2.09611 seconds
+文件1与文件2的大小比值为: 3.3822 , 24 , 14
+gpu runtime: 2.1104 seconds
+文件1与文件2的大小比值为: 3.3855 , 24 , 16
+gpu runtime: 2.09618 seconds
+文件1与文件2的大小比值为: 3.3861 , 24 , 18
+gpu runtime: 2.10998 seconds
+文件1与文件2的大小比值为: 3.3864 , 24 , 20
+gpu runtime: 2.09713 seconds
+文件1与文件2的大小比值为: 3.3866 , 24 , 23
+gpu runtime: 2.10545 seconds
+文件1与文件2的大小比值为: 3.3869 , 24 , 26
+gpu runtime: 2.11953 seconds
+文件1与文件2的大小比值为: 3.3870 , 24 , 29
+gpu runtime: 2.1293 seconds
+文件1与文件2的大小比值为: 3.3870 , 24 , 32
+gpu runtime: 2.1198 seconds
+文件1与文件2的大小比值为: 3.3871 , 24 , 35
+gpu runtime: 2.12887 seconds
+文件1与文件2的大小比值为: 3.3872 , 24 , 40
+gpu runtime: 2.1287 seconds
+文件1与文件2的大小比值为: 1.5776 , 27 , 1
+gpu runtime: 1.9699 seconds
+文件1与文件2的大小比值为: 2.1206 , 27 , 2
+gpu runtime: 1.98045 seconds
+文件1与文件2的大小比值为: 2.5959 , 27 , 3
+gpu runtime: 1.99334 seconds
+文件1与文件2的大小比值为: 2.9429 , 27 , 4
+gpu runtime: 2.01622 seconds
+文件1与文件2的大小比值为: 3.1457 , 27 , 5
+gpu runtime: 2.02365 seconds
+文件1与文件2的大小比值为: 3.2538 , 27 , 6
+gpu runtime: 2.03309 seconds
+文件1与文件2的大小比值为: 3.2994 , 27 , 7
+gpu runtime: 2.05032 seconds
+文件1与文件2的大小比值为: 3.3149 , 27 , 8
+gpu runtime: 2.07089 seconds
+文件1与文件2的大小比值为: 3.3223 , 27 , 9
+gpu runtime: 2.06222 seconds
+文件1与文件2的大小比值为: 3.3342 , 27 , 10
+gpu runtime: 2.08109 seconds
+文件1与文件2的大小比值为: 3.3373 , 27 , 12
+gpu runtime: 2.09083 seconds
+文件1与文件2的大小比值为: 3.3379 , 27 , 14
+gpu runtime: 2.09577 seconds
+文件1与文件2的大小比值为: 3.3410 , 27 , 16
+gpu runtime: 2.09788 seconds
+文件1与文件2的大小比值为: 3.3417 , 27 , 18
+gpu runtime: 2.10925 seconds
+文件1与文件2的大小比值为: 3.3420 , 27 , 20
+gpu runtime: 2.10124 seconds
+文件1与文件2的大小比值为: 3.3422 , 27 , 23
+gpu runtime: 2.10962 seconds
+文件1与文件2的大小比值为: 3.3424 , 27 , 26
+gpu runtime: 2.11504 seconds
+文件1与文件2的大小比值为: 3.3425 , 27 , 29
+gpu runtime: 2.11329 seconds
+文件1与文件2的大小比值为: 3.3425 , 27 , 32
+gpu runtime: 2.12429 seconds
+文件1与文件2的大小比值为: 3.3425 , 27 , 35
+gpu runtime: 2.11924 seconds
+文件1与文件2的大小比值为: 3.3427 , 27 , 40
+gpu runtime: 2.11509 seconds
+文件1与文件2的大小比值为: 1.5705 , 30 , 1
+gpu runtime: 1.96395 seconds
+文件1与文件2的大小比值为: 2.1055 , 30 , 2
+gpu runtime: 1.96862 seconds
+文件1与文件2的大小比值为: 2.5726 , 30 , 3
+gpu runtime: 1.9848 seconds
+文件1与文件2的大小比值为: 2.9129 , 30 , 4
+gpu runtime: 2.02083 seconds
+文件1与文件2的大小比值为: 3.1117 , 30 , 5
+gpu runtime: 2.00141 seconds
+文件1与文件2的大小比值为: 3.2172 , 30 , 6
+gpu runtime: 2.03877 seconds
+文件1与文件2的大小比值为: 3.2618 , 30 , 7
+gpu runtime: 2.04777 seconds
+文件1与文件2的大小比值为: 3.2770 , 30 , 8
+gpu runtime: 2.04587 seconds
+文件1与文件2的大小比值为: 3.2843 , 30 , 9
+gpu runtime: 2.06288 seconds
+文件1与文件2的大小比值为: 3.2959 , 30 , 10
+gpu runtime: 2.08964 seconds
+文件1与文件2的大小比值为: 3.2990 , 30 , 12
+gpu runtime: 2.09067 seconds
+文件1与文件2的大小比值为: 3.2995 , 30 , 14
+gpu runtime: 2.09179 seconds
+文件1与文件2的大小比值为: 3.3026 , 30 , 16
+gpu runtime: 2.09976 seconds
+文件1与文件2的大小比值为: 3.3032 , 30 , 18
+gpu runtime: 2.11152 seconds
+文件1与文件2的大小比值为: 3.3035 , 30 , 20
+gpu runtime: 2.11505 seconds
+文件1与文件2的大小比值为: 3.3037 , 30 , 23
+gpu runtime: 2.11216 seconds
+文件1与文件2的大小比值为: 3.3039 , 30 , 26
+gpu runtime: 2.11108 seconds
+文件1与文件2的大小比值为: 3.3040 , 30 , 29
+gpu runtime: 2.09447 seconds
+文件1与文件2的大小比值为: 3.3040 , 30 , 32
+gpu runtime: 2.11351 seconds
+文件1与文件2的大小比值为: 3.3041 , 30 , 35
+gpu runtime: 2.11369 seconds
+文件1与文件2的大小比值为: 3.3042 , 30 , 40
+gpu runtime: 2.10054 seconds
+文件1与文件2的大小比值为: 1.5556 , 35 , 1
+gpu runtime: 1.97036 seconds
+文件1与文件2的大小比值为: 2.0740 , 35 , 2
+gpu runtime: 1.97543 seconds
+文件1与文件2的大小比值为: 2.5246 , 35 , 3
+gpu runtime: 1.98312 seconds
+文件1与文件2的大小比值为: 2.8522 , 35 , 4
+gpu runtime: 1.99482 seconds
+文件1与文件2的大小比值为: 3.0433 , 35 , 5
+gpu runtime: 2.01056 seconds
+文件1与文件2的大小比值为: 3.1445 , 35 , 6
+gpu runtime: 2.02015 seconds
+文件1与文件2的大小比值为: 3.1872 , 35 , 7
+gpu runtime: 2.03873 seconds
+文件1与文件2的大小比值为: 3.2017 , 35 , 8
+gpu runtime: 2.03839 seconds
+文件1与文件2的大小比值为: 3.2086 , 35 , 9
+gpu runtime: 2.04372 seconds
+文件1与文件2的大小比值为: 3.2198 , 35 , 10
+gpu runtime: 2.06497 seconds
+文件1与文件2的大小比值为: 3.2227 , 35 , 12
+gpu runtime: 2.08592 seconds
+文件1与文件2的大小比值为: 3.2233 , 35 , 14
+gpu runtime: 2.09758 seconds
+文件1与文件2的大小比值为: 3.2262 , 35 , 16
+gpu runtime: 2.08693 seconds
+文件1与文件2的大小比值为: 3.2267 , 35 , 18
+gpu runtime: 2.08746 seconds
+文件1与文件2的大小比值为: 3.2270 , 35 , 20
+gpu runtime: 2.08757 seconds
+文件1与文件2的大小比值为: 3.2272 , 35 , 23
+gpu runtime: 2.08069 seconds
+文件1与文件2的大小比值为: 3.2274 , 35 , 26
+gpu runtime: 2.0871 seconds
+文件1与文件2的大小比值为: 3.2274 , 35 , 29
+gpu runtime: 2.0816 seconds
+文件1与文件2的大小比值为: 3.2275 , 35 , 32
+gpu runtime: 2.08504 seconds
+文件1与文件2的大小比值为: 3.2275 , 35 , 35
+gpu runtime: 2.08008 seconds
+文件1与文件2的大小比值为: 3.2276 , 35 , 40
+gpu runtime: 2.08429 seconds
+文件1与文件2的大小比值为: 1.5256 , 48 , 1
+gpu runtime: 1.93791 seconds
+文件1与文件2的大小比值为: 2.0157 , 48 , 2
+gpu runtime: 1.97121 seconds
+文件1与文件2的大小比值为: 2.4420 , 48 , 3
+gpu runtime: 1.96656 seconds
+文件1与文件2的大小比值为: 2.7506 , 48 , 4
+gpu runtime: 1.97663 seconds
+文件1与文件2的大小比值为: 2.9308 , 48 , 5
+gpu runtime: 1.9963 seconds
+文件1与文件2的大小比值为: 3.0260 , 48 , 6
+gpu runtime: 2.01127 seconds
+文件1与文件2的大小比值为: 3.0665 , 48 , 7
+gpu runtime: 2.02446 seconds
+文件1与文件2的大小比值为: 3.0801 , 48 , 8
+gpu runtime: 2.02315 seconds
+文件1与文件2的大小比值为: 3.0865 , 48 , 9
+gpu runtime: 2.02489 seconds
+文件1与文件2的大小比值为: 3.0973 , 48 , 10
+gpu runtime: 2.04164 seconds
+文件1与文件2的大小比值为: 3.0999 , 48 , 12
+gpu runtime: 2.06974 seconds
+文件1与文件2的大小比值为: 3.1003 , 48 , 14
+gpu runtime: 2.08263 seconds
+文件1与文件2的大小比值为: 3.1030 , 48 , 16
+gpu runtime: 2.08175 seconds
+文件1与文件2的大小比值为: 3.1035 , 48 , 18
+gpu runtime: 2.07753 seconds
+文件1与文件2的大小比值为: 3.1038 , 48 , 20
+gpu runtime: 2.06851 seconds
+文件1与文件2的大小比值为: 3.1039 , 48 , 23
+gpu runtime: 2.07096 seconds
+文件1与文件2的大小比值为: 3.1041 , 48 , 26
+gpu runtime: 2.08131 seconds
+文件1与文件2的大小比值为: 3.1041 , 48 , 29
+gpu runtime: 2.08094 seconds
+文件1与文件2的大小比值为: 3.1042 , 48 , 32
+gpu runtime: 2.08536 seconds
+文件1与文件2的大小比值为: 3.1042 , 48 , 35
+gpu runtime: 2.07708 seconds
+文件1与文件2的大小比值为: 3.1043 , 48 , 40
+gpu runtime: 2.08261 seconds
+文件1与文件2的大小比值为: 1.4937 , 63 , 1
+gpu runtime: 1.9271 seconds
+文件1与文件2的大小比值为: 1.9542 , 63 , 2
+gpu runtime: 1.9542 seconds
+文件1与文件2的大小比值为: 2.3573 , 63 , 3
+gpu runtime: 1.96806 seconds
+文件1与文件2的大小比值为: 2.6502 , 63 , 4
+gpu runtime: 1.96239 seconds
+文件1与文件2的大小比值为: 2.8227 , 63 , 5
+gpu runtime: 1.98793 seconds
+文件1与文件2的大小比值为: 2.9133 , 63 , 6
+gpu runtime: 1.96326 seconds
+文件1与文件2的大小比值为: 2.9516 , 63 , 7
+gpu runtime: 1.98896 seconds
+文件1与文件2的大小比值为: 2.9646 , 63 , 8
+gpu runtime: 2.03066 seconds
+文件1与文件2的大小比值为: 2.9707 , 63 , 9
+gpu runtime: 2.03819 seconds
+文件1与文件2的大小比值为: 2.9807 , 63 , 10
+gpu runtime: 2.02787 seconds
+文件1与文件2的大小比值为: 2.9833 , 63 , 12
+gpu runtime: 2.03994 seconds
+文件1与文件2的大小比值为: 2.9837 , 63 , 14
+gpu runtime: 2.04263 seconds
+文件1与文件2的大小比值为: 2.9862 , 63 , 16
+gpu runtime: 2.04445 seconds
+文件1与文件2的大小比值为: 2.9866 , 63 , 18
+gpu runtime: 2.0304 seconds
+文件1与文件2的大小比值为: 2.9868 , 63 , 20
+gpu runtime: 2.01823 seconds
+文件1与文件2的大小比值为: 2.9869 , 63 , 23
+gpu runtime: 2.02328 seconds
+文件1与文件2的大小比值为: 2.9871 , 63 , 26
+gpu runtime: 2.01672 seconds
+文件1与文件2的大小比值为: 2.9872 , 63 , 29
+gpu runtime: 2.01624 seconds
+文件1与文件2的大小比值为: 2.9872 , 63 , 32
+gpu runtime: 2.02902 seconds
+文件1与文件2的大小比值为: 2.9872 , 63 , 35
+gpu runtime: 2.02493 seconds
+文件1与文件2的大小比值为: 2.9873 , 63 , 40
+gpu runtime: 2.02907 seconds
+文件1与文件2的大小比值为: 1.4628 , 80 , 1
+gpu runtime: 1.91678 seconds
+文件1与文件2的大小比值为: 1.8944 , 80 , 2
+gpu runtime: 1.93395 seconds
+文件1与文件2的大小比值为: 2.2749 , 80 , 3
+gpu runtime: 1.95409 seconds
+文件1与文件2的大小比值为: 2.5545 , 80 , 4
+gpu runtime: 1.96603 seconds
+文件1与文件2的大小比值为: 2.7205 , 80 , 5
+gpu runtime: 1.97941 seconds
+文件1与文件2的大小比值为: 2.8080 , 80 , 6
+gpu runtime: 1.9875 seconds
+文件1与文件2的大小比值为: 2.8452 , 80 , 7
+gpu runtime: 2.01112 seconds
+文件1与文件2的大小比值为: 2.8577 , 80 , 8
+gpu runtime: 2.00384 seconds
+文件1与文件2的大小比值为: 2.8634 , 80 , 9
+gpu runtime: 2.02716 seconds
+文件1与文件2的大小比值为: 2.8729 , 80 , 10
+gpu runtime: 2.02667 seconds
+文件1与文件2的大小比值为: 2.8754 , 80 , 12
+gpu runtime: 2.04859 seconds
+文件1与文件2的大小比值为: 2.8757 , 80 , 14
+gpu runtime: 2.05522 seconds
+文件1与文件2的大小比值为: 2.8780 , 80 , 16
+gpu runtime: 2.04612 seconds
+文件1与文件2的大小比值为: 2.8785 , 80 , 18
+gpu runtime: 2.06938 seconds
+文件1与文件2的大小比值为: 2.8786 , 80 , 20
+gpu runtime: 2.06629 seconds
+文件1与文件2的大小比值为: 2.8788 , 80 , 23
+gpu runtime: 2.07223 seconds
+文件1与文件2的大小比值为: 2.8789 , 80 , 26
+gpu runtime: 2.05171 seconds
+文件1与文件2的大小比值为: 2.8789 , 80 , 29
+gpu runtime: 2.04965 seconds
+文件1与文件2的大小比值为: 2.8790 , 80 , 32
+gpu runtime: 2.04471 seconds
+文件1与文件2的大小比值为: 2.8790 , 80 , 35
+gpu runtime: 2.04063 seconds
+文件1与文件2的大小比值为: 2.8790 , 80 , 40
+gpu runtime: 2.05148 seconds
+文件1与文件2的大小比值为: 1.4357 , 99 , 1
+gpu runtime: 1.92685 seconds
+文件1与文件2的大小比值为: 1.8408 , 99 , 2
+gpu runtime: 1.94779 seconds
+文件1与文件2的大小比值为: 2.2018 , 99 , 3
+gpu runtime: 1.93244 seconds
+文件1与文件2的大小比值为: 2.4702 , 99 , 4
+gpu runtime: 1.96349 seconds
+文件1与文件2的大小比值为: 2.6311 , 99 , 5
+gpu runtime: 1.98736 seconds
+文件1与文件2的大小比值为: 2.7165 , 99 , 6
+gpu runtime: 1.9879 seconds
+文件1与文件2的大小比值为: 2.7525 , 99 , 7
+gpu runtime: 1.97712 seconds
+文件1与文件2的大小比值为: 2.7648 , 99 , 8
+gpu runtime: 1.99536 seconds
+文件1与文件2的大小比值为: 2.7703 , 99 , 9
+gpu runtime: 2.00871 seconds
+文件1与文件2的大小比值为: 2.7797 , 99 , 10
+gpu runtime: 2.02879 seconds
+文件1与文件2的大小比值为: 2.7820 , 99 , 12
+gpu runtime: 2.01823 seconds
+文件1与文件2的大小比值为: 2.7822 , 99 , 14
+gpu runtime: 2.02099 seconds
+文件1与文件2的大小比值为: 2.7845 , 99 , 16
+gpu runtime: 2.0207 seconds
+文件1与文件2的大小比值为: 2.7848 , 99 , 18
+gpu runtime: 2.02467 seconds
+文件1与文件2的大小比值为: 2.7850 , 99 , 20
+gpu runtime: 2.0139 seconds
+文件1与文件2的大小比值为: 2.7851 , 99 , 23
+gpu runtime: 2.01194 seconds
+文件1与文件2的大小比值为: 2.7852 , 99 , 26
+gpu runtime: 2.01499 seconds
+文件1与文件2的大小比值为: 2.7852 , 99 , 29
+gpu runtime: 2.02109 seconds
+文件1与文件2的大小比值为: 2.7852 , 99 , 32
+gpu runtime: 2.01445 seconds
+文件1与文件2的大小比值为: 2.7852 , 99 , 35
+gpu runtime: 2.01559 seconds
+文件1与文件2的大小比值为: 2.7853 , 99 , 40
+gpu runtime: 2.01004 seconds
+文件1与文件2的大小比值为: 1.4106 , 120 , 1
+gpu runtime: 1.91164 seconds
+文件1与文件2的大小比值为: 1.7921 , 120 , 2
+gpu runtime: 1.93189 seconds
+文件1与文件2的大小比值为: 2.1359 , 120 , 3
+gpu runtime: 1.952 seconds
+文件1与文件2的大小比值为: 2.3947 , 120 , 4
+gpu runtime: 1.95644 seconds
+文件1与文件2的大小比值为: 2.5513 , 120 , 5
+gpu runtime: 1.97048 seconds
+文件1与文件2的大小比值为: 2.6347 , 120 , 6
+gpu runtime: 1.983 seconds
+文件1与文件2的大小比值为: 2.6698 , 120 , 7
+gpu runtime: 2.00459 seconds
+文件1与文件2的大小比值为: 2.6820 , 120 , 8
+gpu runtime: 2.01172 seconds
+文件1与文件2的大小比值为: 2.6873 , 120 , 9
+gpu runtime: 2.0357 seconds
+文件1与文件2的大小比值为: 2.6963 , 120 , 10
+gpu runtime: 2.02523 seconds
+文件1与文件2的大小比值为: 2.6985 , 120 , 12
+gpu runtime: 2.03658 seconds
+文件1与文件2的大小比值为: 2.6987 , 120 , 14
+gpu runtime: 2.02567 seconds
+文件1与文件2的大小比值为: 2.7010 , 120 , 16
+gpu runtime: 2.01953 seconds
+文件1与文件2的大小比值为: 2.7014 , 120 , 18
+gpu runtime: 2.0221 seconds
+文件1与文件2的大小比值为: 2.7015 , 120 , 20
+gpu runtime: 2.03382 seconds
+文件1与文件2的大小比值为: 2.7016 , 120 , 23
+gpu runtime: 2.02234 seconds
+文件1与文件2的大小比值为: 2.7017 , 120 , 26
+gpu runtime: 2.03419 seconds
+文件1与文件2的大小比值为: 2.7017 , 120 , 29
+gpu runtime: 2.03707 seconds
+文件1与文件2的大小比值为: 2.7017 , 120 , 32
+gpu runtime: 2.02887 seconds
+文件1与文件2的大小比值为: 2.7017 , 120 , 35
+gpu runtime: 2.03429 seconds
+文件1与文件2的大小比值为: 2.7018 , 120 , 40
+gpu runtime: 2.03094 seconds
+文件1与文件2的大小比值为: 1.3876 , 143 , 1
+gpu runtime: 1.92665 seconds
+文件1与文件2的大小比值为: 1.7475 , 143 , 2
+gpu runtime: 1.92307 seconds
+文件1与文件2的大小比值为: 2.0766 , 143 , 3
+gpu runtime: 1.94626 seconds
+文件1与文件2的大小比值为: 2.3267 , 143 , 4
+gpu runtime: 1.95416 seconds
+文件1与文件2的大小比值为: 2.4792 , 143 , 5
+gpu runtime: 1.9798 seconds
+文件1与文件2的大小比值为: 2.5605 , 143 , 6
+gpu runtime: 1.97958 seconds
+文件1与文件2的大小比值为: 2.5947 , 143 , 7
+gpu runtime: 1.99058 seconds
+文件1与文件2的大小比值为: 2.6066 , 143 , 8
+gpu runtime: 2.01093 seconds
+文件1与文件2的大小比值为: 2.6116 , 143 , 9
+gpu runtime: 2.0018 seconds
+文件1与文件2的大小比值为: 2.6204 , 143 , 10
+gpu runtime: 2.01398 seconds
+文件1与文件2的大小比值为: 2.6226 , 143 , 12
+gpu runtime: 2.02749 seconds
+文件1与文件2的大小比值为: 2.6228 , 143 , 14
+gpu runtime: 2.02603 seconds
+文件1与文件2的大小比值为: 2.6252 , 143 , 16
+gpu runtime: 2.03158 seconds
+文件1与文件2的大小比值为: 2.6255 , 143 , 18
+gpu runtime: 2.02273 seconds
+文件1与文件2的大小比值为: 2.6257 , 143 , 20
+gpu runtime: 2.02652 seconds
+文件1与文件2的大小比值为: 2.6257 , 143 , 23
+gpu runtime: 2.02043 seconds
+文件1与文件2的大小比值为: 2.6258 , 143 , 26
+gpu runtime: 2.03078 seconds
+文件1与文件2的大小比值为: 2.6258 , 143 , 29
+gpu runtime: 2.02257 seconds
+文件1与文件2的大小比值为: 2.6258 , 143 , 32
+gpu runtime: 2.03883 seconds
+文件1与文件2的大小比值为: 2.6258 , 143 , 35
+gpu runtime: 2.03414 seconds
+文件1与文件2的大小比值为: 2.6259 , 143 , 40
+gpu runtime: 2.02268 seconds
+文件1与文件2的大小比值为: 1.3671 , 168 , 1
+gpu runtime: 1.90523 seconds
+文件1与文件2的大小比值为: 1.7082 , 168 , 2
+gpu runtime: 1.92962 seconds
+文件1与文件2的大小比值为: 2.0236 , 168 , 3
+gpu runtime: 1.93679 seconds
+文件1与文件2的大小比值为: 2.2663 , 168 , 4
+gpu runtime: 1.96431 seconds
+文件1与文件2的大小比值为: 2.4159 , 168 , 5
+gpu runtime: 1.98696 seconds
+文件1与文件2的大小比值为: 2.4961 , 168 , 6
+gpu runtime: 1.97407 seconds
+文件1与文件2的大小比值为: 2.5297 , 168 , 7
+gpu runtime: 1.98165 seconds
+文件1与文件2的大小比值为: 2.5415 , 168 , 8
+gpu runtime: 2.00428 seconds
+文件1与文件2的大小比值为: 2.5463 , 168 , 9
+gpu runtime: 1.9941 seconds
+文件1与文件2的大小比值为: 2.5551 , 168 , 10
+gpu runtime: 2.02075 seconds
+文件1与文件2的大小比值为: 2.5572 , 168 , 12
+gpu runtime: 2.03057 seconds
+文件1与文件2的大小比值为: 2.5574 , 168 , 14
+gpu runtime: 2.03557 seconds
+文件1与文件2的大小比值为: 2.5599 , 168 , 16
+gpu runtime: 2.03206 seconds
+文件1与文件2的大小比值为: 2.5602 , 168 , 18
+gpu runtime: 2.02951 seconds
+文件1与文件2的大小比值为: 2.5603 , 168 , 20
+gpu runtime: 2.03294 seconds
+文件1与文件2的大小比值为: 2.5603 , 168 , 23
+gpu runtime: 2.02298 seconds
+文件1与文件2的大小比值为: 2.5604 , 168 , 26
+gpu runtime: 2.03034 seconds
+文件1与文件2的大小比值为: 2.5604 , 168 , 29
+gpu runtime: 2.02343 seconds
+文件1与文件2的大小比值为: 2.5604 , 168 , 32
+gpu runtime: 2.02266 seconds
+文件1与文件2的大小比值为: 2.5604 , 168 , 35
+gpu runtime: 2.03214 seconds
+文件1与文件2的大小比值为: 2.5605 , 168 , 40
+gpu runtime: 2.02917 seconds
+文件1与文件2的大小比值为: 1.3447 , 200 , 1
+gpu runtime: 1.89611 seconds
+文件1与文件2的大小比值为: 1.6648 , 200 , 2
+gpu runtime: 1.91961 seconds
+文件1与文件2的大小比值为: 1.9644 , 200 , 3
+gpu runtime: 1.93754 seconds
+文件1与文件2的大小比值为: 2.1982 , 200 , 4
+gpu runtime: 1.9609 seconds
+文件1与文件2的大小比值为: 2.3428 , 200 , 5
+gpu runtime: 1.96279 seconds
+文件1与文件2的大小比值为: 2.4216 , 200 , 6
+gpu runtime: 1.96516 seconds
+文件1与文件2的大小比值为: 2.4547 , 200 , 7
+gpu runtime: 1.97532 seconds
+文件1与文件2的大小比值为: 2.4667 , 200 , 8
+gpu runtime: 1.98966 seconds
+文件1与文件2的大小比值为: 2.4714 , 200 , 9
+gpu runtime: 2.02022 seconds
+文件1与文件2的大小比值为: 2.4800 , 200 , 10
+gpu runtime: 2.01704 seconds
+文件1与文件2的大小比值为: 2.4822 , 200 , 12
+gpu runtime: 2.0262 seconds
+文件1与文件2的大小比值为: 2.4823 , 200 , 14
+gpu runtime: 2.02046 seconds
+文件1与文件2的大小比值为: 2.4847 , 200 , 16
+gpu runtime: 2.01791 seconds
+文件1与文件2的大小比值为: 2.4850 , 200 , 18
+gpu runtime: 2.01296 seconds
+文件1与文件2的大小比值为: 2.4851 , 200 , 20
+gpu runtime: 2.01808 seconds
+文件1与文件2的大小比值为: 2.4851 , 200 , 23
+gpu runtime: 2.02093 seconds
+文件1与文件2的大小比值为: 2.4852 , 200 , 26
+gpu runtime: 2.01712 seconds
+文件1与文件2的大小比值为: 2.4852 , 200 , 29
+gpu runtime: 2.02305 seconds
+文件1与文件2的大小比值为: 2.4852 , 200 , 32
+gpu runtime: 2.02556 seconds
+文件1与文件2的大小比值为: 2.4852 , 200 , 35
+gpu runtime: 2.01171 seconds
+文件1与文件2的大小比值为: 2.4853 , 200 , 40
+gpu runtime: 2.01322 seconds
+文件1与文件2的大小比值为: 1.2935 , 300 , 1
+gpu runtime: 1.87979 seconds
+文件1与文件2的大小比值为: 1.5666 , 300 , 2
+gpu runtime: 1.928 seconds
+文件1与文件2的大小比值为: 1.8295 , 300 , 3
+gpu runtime: 1.93466 seconds
+文件1与文件2的大小比值为: 2.0419 , 300 , 4
+gpu runtime: 1.95172 seconds
+文件1与文件2的大小比值为: 2.1768 , 300 , 5
+gpu runtime: 1.96896 seconds
+文件1与文件2的大小比值为: 2.2523 , 300 , 6
+gpu runtime: 1.96015 seconds
+文件1与文件2的大小比值为: 2.2845 , 300 , 7
+gpu runtime: 1.96404 seconds
+文件1与文件2的大小比值为: 2.2956 , 300 , 8
+gpu runtime: 1.96497 seconds
+文件1与文件2的大小比值为: 2.3001 , 300 , 9
+gpu runtime: 1.97519 seconds
+文件1与文件2的大小比值为: 2.3085 , 300 , 10
+gpu runtime: 1.98321 seconds
+文件1与文件2的大小比值为: 2.3106 , 300 , 12
+gpu runtime: 1.98174 seconds
+文件1与文件2的大小比值为: 2.3108 , 300 , 14
+gpu runtime: 1.99472 seconds
+文件1与文件2的大小比值为: 2.3130 , 300 , 16
+gpu runtime: 2.00375 seconds
+文件1与文件2的大小比值为: 2.3133 , 300 , 18
+gpu runtime: 2.0078 seconds
+文件1与文件2的大小比值为: 2.3134 , 300 , 20
+gpu runtime: 1.99534 seconds
+文件1与文件2的大小比值为: 2.3134 , 300 , 23
+gpu runtime: 1.99324 seconds
+文件1与文件2的大小比值为: 2.3134 , 300 , 26
+gpu runtime: 1.99024 seconds
+文件1与文件2的大小比值为: 2.3134 , 300 , 29
+gpu runtime: 2.00612 seconds
+文件1与文件2的大小比值为: 2.3134 , 300 , 32
+gpu runtime: 2.0069 seconds
+文件1与文件2的大小比值为: 2.3134 , 300 , 35
+gpu runtime: 1.98864 seconds
+文件1与文件2的大小比值为: 2.3135 , 300 , 40
+gpu runtime: 1.99836 seconds
+文件1与文件2的大小比值为: 1.2604 , 400 , 1
+gpu runtime: 1.90714 seconds
+文件1与文件2的大小比值为: 1.5021 , 400 , 2
+gpu runtime: 1.90284 seconds
+文件1与文件2的大小比值为: 1.7398 , 400 , 3
+gpu runtime: 1.94287 seconds
+文件1与文件2的大小比值为: 1.9370 , 400 , 4
+gpu runtime: 1.95114 seconds
+文件1与文件2的大小比值为: 2.0651 , 400 , 5
+gpu runtime: 1.95911 seconds
+文件1与文件2的大小比值为: 2.1368 , 400 , 6
+gpu runtime: 1.93569 seconds
+文件1与文件2的大小比值为: 2.1678 , 400 , 7
+gpu runtime: 1.96501 seconds
+文件1与文件2的大小比值为: 2.1784 , 400 , 8
+gpu runtime: 1.95937 seconds
+文件1与文件2的大小比值为: 2.1828 , 400 , 9
+gpu runtime: 1.97587 seconds
+文件1与文件2的大小比值为: 2.1908 , 400 , 10
+gpu runtime: 1.99186 seconds
+文件1与文件2的大小比值为: 2.1930 , 400 , 12
+gpu runtime: 1.97942 seconds
+文件1与文件2的大小比值为: 2.1931 , 400 , 14
+gpu runtime: 1.9841 seconds
+文件1与文件2的大小比值为: 2.1954 , 400 , 16
+gpu runtime: 1.99016 seconds
+文件1与文件2的大小比值为: 2.1956 , 400 , 18
+gpu runtime: 1.99171 seconds
+文件1与文件2的大小比值为: 2.1957 , 400 , 20
+gpu runtime: 1.98785 seconds
+文件1与文件2的大小比值为: 2.1957 , 400 , 23
+gpu runtime: 1.97919 seconds
+文件1与文件2的大小比值为: 2.1958 , 400 , 26
+gpu runtime: 1.99519 seconds
+文件1与文件2的大小比值为: 2.1958 , 400 , 29
+gpu runtime: 1.9843 seconds
+文件1与文件2的大小比值为: 2.1958 , 400 , 32
+gpu runtime: 1.99104 seconds
+文件1与文件2的大小比值为: 2.1958 , 400 , 35
+gpu runtime: 1.99203 seconds
+文件1与文件2的大小比值为: 2.1959 , 400 , 40
+gpu runtime: 1.97941 seconds
+文件1与文件2的大小比值为: 1.2374 , 500 , 1
+gpu runtime: 1.88054 seconds
+文件1与文件2的大小比值为: 1.4567 , 500 , 2
+gpu runtime: 1.91034 seconds
+文件1与文件2的大小比值为: 1.6752 , 500 , 3
+gpu runtime: 1.93878 seconds
+文件1与文件2的大小比值为: 1.8596 , 500 , 4
+gpu runtime: 1.93119 seconds
+文件1与文件2的大小比值为: 1.9812 , 500 , 5
+gpu runtime: 1.96985 seconds
+文件1与文件2的大小比值为: 2.0503 , 500 , 6
+gpu runtime: 1.94189 seconds
+文件1与文件2的大小比值为: 2.0799 , 500 , 7
+gpu runtime: 1.95901 seconds
+文件1与文件2的大小比值为: 2.0905 , 500 , 8
+gpu runtime: 1.95985 seconds
+文件1与文件2的大小比值为: 2.0950 , 500 , 9
+gpu runtime: 1.98321 seconds
+文件1与文件2的大小比值为: 2.1028 , 500 , 10
+gpu runtime: 1.98548 seconds
+文件1与文件2的大小比值为: 2.1050 , 500 , 12
+gpu runtime: 1.98402 seconds
+文件1与文件2的大小比值为: 2.1050 , 500 , 14
+gpu runtime: 1.97782 seconds
+文件1与文件2的大小比值为: 2.1071 , 500 , 16
+gpu runtime: 1.97705 seconds
+文件1与文件2的大小比值为: 2.1073 , 500 , 18
+gpu runtime: 1.99357 seconds
+文件1与文件2的大小比值为: 2.1074 , 500 , 20
+gpu runtime: 1.98643 seconds
+文件1与文件2的大小比值为: 2.1074 , 500 , 23
+gpu runtime: 1.98458 seconds
+文件1与文件2的大小比值为: 2.1075 , 500 , 26
+gpu runtime: 1.98004 seconds
+文件1与文件2的大小比值为: 2.1075 , 500 , 29
+gpu runtime: 1.99327 seconds
+文件1与文件2的大小比值为: 2.1075 , 500 , 32
+gpu runtime: 1.9815 seconds
+文件1与文件2的大小比值为: 2.1075 , 500 , 35
+gpu runtime: 1.98398 seconds
+文件1与文件2的大小比值为: 2.1075 , 500 , 40
+gpu runtime: 1.99326 seconds
+文件1与文件2的大小比值为: 1.2185 , 600 , 1
+gpu runtime: 1.88229 seconds
+文件1与文件2的大小比值为: 1.4202 , 600 , 2
+gpu runtime: 1.92844 seconds
+文件1与文件2的大小比值为: 1.6232 , 600 , 3
+gpu runtime: 1.93974 seconds
+文件1与文件2的大小比值为: 1.7980 , 600 , 4
+gpu runtime: 1.94726 seconds
+文件1与文件2的大小比值为: 1.9137 , 600 , 5
+gpu runtime: 1.96036 seconds
+文件1与文件2的大小比值为: 1.9790 , 600 , 6
+gpu runtime: 1.96461 seconds
+文件1与文件2的大小比值为: 2.0072 , 600 , 7
+gpu runtime: 1.96851 seconds
+文件1与文件2的大小比值为: 2.0171 , 600 , 8
+gpu runtime: 1.97989 seconds
+文件1与文件2的大小比值为: 2.0217 , 600 , 9
+gpu runtime: 1.96506 seconds
+文件1与文件2的大小比值为: 2.0293 , 600 , 10
+gpu runtime: 1.98379 seconds
+文件1与文件2的大小比值为: 2.0313 , 600 , 12
+gpu runtime: 1.98421 seconds
+文件1与文件2的大小比值为: 2.0313 , 600 , 14
+gpu runtime: 1.98291 seconds
+文件1与文件2的大小比值为: 2.0334 , 600 , 16
+gpu runtime: 1.97913 seconds
+文件1与文件2的大小比值为: 2.0336 , 600 , 18
+gpu runtime: 1.98626 seconds
+文件1与文件2的大小比值为: 2.0337 , 600 , 20
+gpu runtime: 1.98058 seconds
+文件1与文件2的大小比值为: 2.0337 , 600 , 23
+gpu runtime: 1.98757 seconds
+文件1与文件2的大小比值为: 2.0337 , 600 , 26
+gpu runtime: 1.97414 seconds
+文件1与文件2的大小比值为: 2.0337 , 600 , 29
+gpu runtime: 1.98915 seconds
+文件1与文件2的大小比值为: 2.0337 , 600 , 32
+gpu runtime: 1.97775 seconds
+文件1与文件2的大小比值为: 2.0337 , 600 , 35
+gpu runtime: 1.97547 seconds
+文件1与文件2的大小比值为: 2.0338 , 600 , 40
+gpu runtime: 1.97584 seconds
+文件1与文件2的大小比值为: 1.2036 , 700 , 1
+gpu runtime: 1.87903 seconds
+文件1与文件2的大小比值为: 1.3908 , 700 , 2
+gpu runtime: 1.90848 seconds
+文件1与文件2的大小比值为: 1.5811 , 700 , 3
+gpu runtime: 1.93892 seconds
+文件1与文件2的大小比值为: 1.7466 , 700 , 4
+gpu runtime: 1.93855 seconds
+文件1与文件2的大小比值为: 1.8569 , 700 , 5
+gpu runtime: 1.95549 seconds
+文件1与文件2的大小比值为: 1.9196 , 700 , 6
+gpu runtime: 1.96744 seconds
+文件1与文件2的大小比值为: 1.9467 , 700 , 7
+gpu runtime: 1.99072 seconds
+文件1与文件2的大小比值为: 1.9562 , 700 , 8
+gpu runtime: 1.96519 seconds
+文件1与文件2的大小比值为: 1.9604 , 700 , 9
+gpu runtime: 1.979 seconds
+文件1与文件2的大小比值为: 1.9676 , 700 , 10
+gpu runtime: 1.96727 seconds
+文件1与文件2的大小比值为: 1.9693 , 700 , 12
+gpu runtime: 1.96978 seconds
+文件1与文件2的大小比值为: 1.9694 , 700 , 14
+gpu runtime: 1.97882 seconds
+文件1与文件2的大小比值为: 1.9714 , 700 , 16
+gpu runtime: 1.97853 seconds
+文件1与文件2的大小比值为: 1.9716 , 700 , 18
+gpu runtime: 1.97055 seconds
+文件1与文件2的大小比值为: 1.9716 , 700 , 20
+gpu runtime: 1.97285 seconds
+文件1与文件2的大小比值为: 1.9716 , 700 , 23
+gpu runtime: 1.9812 seconds
+文件1与文件2的大小比值为: 1.9717 , 700 , 26
+gpu runtime: 1.96832 seconds
+文件1与文件2的大小比值为: 1.9717 , 700 , 29
+gpu runtime: 1.97421 seconds
+文件1与文件2的大小比值为: 1.9717 , 700 , 32
+gpu runtime: 1.96868 seconds
+文件1与文件2的大小比值为: 1.9717 , 700 , 35
+gpu runtime: 1.97364 seconds
+文件1与文件2的大小比值为: 1.9718 , 700 , 40
+gpu runtime: 1.97217 seconds
+文件1与文件2的大小比值为: 1.1670 , 1000 , 1
+gpu runtime: 1.87936 seconds
+文件1与文件2的大小比值为: 1.3226 , 1000 , 2
+gpu runtime: 1.90321 seconds
+文件1与文件2的大小比值为: 1.4844 , 1000 , 3
+gpu runtime: 1.92334 seconds
+文件1与文件2的大小比值为: 1.6283 , 1000 , 4
+gpu runtime: 1.94136 seconds
+文件1与文件2的大小比值为: 1.7254 , 1000 , 5
+gpu runtime: 1.9432 seconds
+文件1与文件2的大小比值为: 1.7814 , 1000 , 6
+gpu runtime: 1.94486 seconds
+文件1与文件2的大小比值为: 1.8065 , 1000 , 7
+gpu runtime: 1.92899 seconds
+文件1与文件2的大小比值为: 1.8154 , 1000 , 8
+gpu runtime: 1.9396 seconds
+文件1与文件2的大小比值为: 1.8191 , 1000 , 9
+gpu runtime: 1.93954 seconds
+文件1与文件2的大小比值为: 1.8259 , 1000 , 10
+gpu runtime: 1.94017 seconds
+文件1与文件2的大小比值为: 1.8276 , 1000 , 12
+gpu runtime: 1.92926 seconds
+文件1与文件2的大小比值为: 1.8277 , 1000 , 14
+gpu runtime: 1.94552 seconds
+文件1与文件2的大小比值为: 1.8297 , 1000 , 16
+gpu runtime: 1.94081 seconds
+文件1与文件2的大小比值为: 1.8299 , 1000 , 18
+gpu runtime: 1.93374 seconds
+文件1与文件2的大小比值为: 1.8300 , 1000 , 20
+gpu runtime: 1.93423 seconds
+文件1与文件2的大小比值为: 1.8300 , 1000 , 23
+gpu runtime: 1.92869 seconds
+文件1与文件2的大小比值为: 1.8301 , 1000 , 26
+gpu runtime: 1.94127 seconds
+文件1与文件2的大小比值为: 1.8301 , 1000 , 29
+gpu runtime: 1.94404 seconds
+文件1与文件2的大小比值为: 1.8301 , 1000 , 32
+gpu runtime: 1.93789 seconds
+文件1与文件2的大小比值为: 1.8301 , 1000 , 35
+gpu runtime: 1.93278 seconds
+文件1与文件2的大小比值为: 1.8302 , 1000 , 40
+gpu runtime: 1.94533 seconds
+文件1与文件2的大小比值为: 1.1176 , 2000 , 1
+gpu runtime: 1.86892 seconds
+文件1与文件2的大小比值为: 1.2272 , 2000 , 2
+gpu runtime: 1.89509 seconds
+文件1与文件2的大小比值为: 1.3441 , 2000 , 3
+gpu runtime: 1.90536 seconds
+文件1与文件2的大小比值为: 1.4496 , 2000 , 4
+gpu runtime: 1.91998 seconds
+文件1与文件2的大小比值为: 1.5217 , 2000 , 5
+gpu runtime: 1.92411 seconds
+文件1与文件2的大小比值为: 1.5614 , 2000 , 6
+gpu runtime: 1.92624 seconds
+文件1与文件2的大小比值为: 1.5802 , 2000 , 7
+gpu runtime: 1.92421 seconds
+文件1与文件2的大小比值为: 1.5870 , 2000 , 8
+gpu runtime: 1.92747 seconds
+文件1与文件2的大小比值为: 1.5896 , 2000 , 9
+gpu runtime: 1.92517 seconds
+文件1与文件2的大小比值为: 1.5956 , 2000 , 10
+gpu runtime: 1.9358 seconds
+文件1与文件2的大小比值为: 1.5968 , 2000 , 12
+gpu runtime: 1.92409 seconds
+文件1与文件2的大小比值为: 1.5968 , 2000 , 14
+gpu runtime: 1.93874 seconds
+文件1与文件2的大小比值为: 1.5981 , 2000 , 16
+gpu runtime: 1.92446 seconds
+文件1与文件2的大小比值为: 1.5982 , 2000 , 18
+gpu runtime: 1.9327 seconds
+文件1与文件2的大小比值为: 1.5984 , 2000 , 20
+gpu runtime: 1.92981 seconds
+文件1与文件2的大小比值为: 1.5984 , 2000 , 23
+gpu runtime: 1.92675 seconds
+文件1与文件2的大小比值为: 1.5987 , 2000 , 26
+gpu runtime: 1.93113 seconds
+文件1与文件2的大小比值为: 1.5987 , 2000 , 29
+gpu runtime: 1.93367 seconds
+文件1与文件2的大小比值为: 1.5987 , 2000 , 32
+gpu runtime: 1.92881 seconds
+文件1与文件2的大小比值为: 1.5987 , 2000 , 35
+gpu runtime: 1.93415 seconds
+文件1与文件2的大小比值为: 1.5987 , 2000 , 40
+gpu runtime: 1.92466 seconds
+文件1与文件2的大小比值为: 1.0973 , 3000 , 1
+gpu runtime: 1.89612 seconds
+文件1与文件2的大小比值为: 1.1866 , 3000 , 2
+gpu runtime: 1.89121 seconds
+文件1与文件2的大小比值为: 1.2823 , 3000 , 3
+gpu runtime: 1.90272 seconds
+文件1与文件2的大小比值为: 1.3673 , 3000 , 4
+gpu runtime: 1.91126 seconds
+文件1与文件2的大小比值为: 1.4241 , 3000 , 5
+gpu runtime: 1.927 seconds
+文件1与文件2的大小比值为: 1.4544 , 3000 , 6
+gpu runtime: 1.92699 seconds
+文件1与文件2的大小比值为: 1.4696 , 3000 , 7
+gpu runtime: 1.91306 seconds
+文件1与文件2的大小比值为: 1.4748 , 3000 , 8
+gpu runtime: 1.92522 seconds
+文件1与文件2的大小比值为: 1.4771 , 3000 , 9
+gpu runtime: 1.90807 seconds
+文件1与文件2的大小比值为: 1.4828 , 3000 , 10
+gpu runtime: 1.91189 seconds
+文件1与文件2的大小比值为: 1.4842 , 3000 , 12
+gpu runtime: 1.91325 seconds
+文件1与文件2的大小比值为: 1.4842 , 3000 , 14
+gpu runtime: 1.91127 seconds
+文件1与文件2的大小比值为: 1.4854 , 3000 , 16
+gpu runtime: 1.90988 seconds
+文件1与文件2的大小比值为: 1.4856 , 3000 , 18
+gpu runtime: 1.92796 seconds
+文件1与文件2的大小比值为: 1.4859 , 3000 , 20
+gpu runtime: 1.91443 seconds
+文件1与文件2的大小比值为: 1.4859 , 3000 , 23
+gpu runtime: 1.9202 seconds
+文件1与文件2的大小比值为: 1.4859 , 3000 , 26
+gpu runtime: 1.92715 seconds
+文件1与文件2的大小比值为: 1.4859 , 3000 , 29
+gpu runtime: 1.9131 seconds
+文件1与文件2的大小比值为: 1.4859 , 3000 , 32
+gpu runtime: 1.9286 seconds
+文件1与文件2的大小比值为: 1.4859 , 3000 , 35
+gpu runtime: 1.92139 seconds
+文件1与文件2的大小比值为: 1.4859 , 3000 , 40
+gpu runtime: 1.90697 seconds

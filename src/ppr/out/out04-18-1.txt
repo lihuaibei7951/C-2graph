@@ -1,0 +1,415 @@
+文件1与文件2的大小比:值为: 2.8090 , 0 , 50
+29:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 1797049
+The step is: 29
+gpu runtime: 8.02532 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.8090 , 1 , 50
+26:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 1078242
+The step is: 26
+gpu runtime: 7.46 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.7931 , 2 , 50
+24:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 758659
+The step is: 24
+gpu runtime: 7.22416 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.7705 , 3 , 50
+23:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 534947
+The step is: 23
+gpu runtime: 7.19022 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.7557 , 4 , 50
+23:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 436719
+The step is: 23
+gpu runtime: 7.00188 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.7341 , 5 , 50
+20:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 332416
+The step is: 20
+gpu runtime: 6.76482 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.7230 , 6 , 50
+20:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 288302
+The step is: 20
+gpu runtime: 6.86361 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.7069 , 7 , 50
+19:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 237351
+The step is: 19
+gpu runtime: 6.77036 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.6955 , 8 , 50
+18:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 205886
+The step is: 18
+gpu runtime: 6.7067 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.6767 , 10 , 50
+18:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 162496
+The step is: 18
+gpu runtime: 6.6232 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.6573 , 12 , 50
+16:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 127045
+The step is: 16
+gpu runtime: 6.63986 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.6338 , 15 , 50
+16:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 93602
+The step is: 16
+gpu runtime: 6.60945 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.6221 , 17 , 50
+15:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 79871
+The step is: 15
+gpu runtime: 6.48765 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.6069 , 20 , 50
+14:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 64438
+The step is: 14
+gpu runtime: 6.48413 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.5903 , 24 , 50
+14:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 50493
+The step is: 14
+gpu runtime: 6.36546 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.5793 , 27 , 50
+14:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 42755
+The step is: 14
+gpu runtime: 6.34257 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.5709 , 30 , 50
+14:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 37404
+The step is: 14
+gpu runtime: 6.28708 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.5559 , 35 , 50
+13:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 29485
+The step is: 13
+gpu runtime: 6.24293 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.5310 , 48 , 50
+12:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 19113
+The step is: 12
+gpu runtime: 6.21175 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.5100 , 63 , 50
+11:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 12945
+The step is: 11
+gpu runtime: 6.28317 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.4933 , 80 , 50
+10:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 9331
+The step is: 10
+gpu runtime: 6.22333 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.4790 , 99 , 50
+9:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 7010
+The step is: 9
+gpu runtime: 6.19604 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.4670 , 120 , 50
+9:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 5478
+The step is: 9
+gpu runtime: 6.07002 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.4559 , 143 , 50
+10:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 4355
+The step is: 10
+gpu runtime: 6.26388 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.4457 , 168 , 50
+9:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 3576
+The step is: 9
+gpu runtime: 6.20847 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.4358 , 200 , 50
+9:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 2928
+The step is: 9
+gpu runtime: 6.09749 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.4136 , 300 , 50
+9:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 1928
+The step is: 9
+gpu runtime: 6.03162 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.3979 , 400 , 50
+10:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 1536
+The step is: 10
+gpu runtime: 6.17024 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.3862 , 500 , 50
+10:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 1285
+The step is: 10
+gpu runtime: 6.10966 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.3754 , 600 , 50
+7:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 1113
+The step is: 7
+gpu runtime: 5.99497 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.3647 , 700 , 50
+7:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 1039
+The step is: 7
+gpu runtime: 5.91133 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.3401 , 1000 , 50
+6:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 854
+The step is: 6
+gpu runtime: 6.04991 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.2801 , 2000 , 50
+6:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 614
+The step is: 6
+gpu runtime: 5.79396 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.2359 , 3000 , 50
+7:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 504
+The step is: 7
+gpu runtime: 5.9154 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.1713 , 5000 , 50
+6:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 432
+The step is: 6
+gpu runtime: 5.82815 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.1160 , 7000 , 50
+6:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 373
+The step is: 6
+gpu runtime: 5.82783 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 2.0378 , 10000 , 50
+6:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 282
+The step is: 6
+gpu runtime: 6.0683 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.8923 , 20000 , 50
+5:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 240
+The step is: 5
+gpu runtime: 5.89418 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.7288 , 50000 , 50
+3:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 174
+The step is: 3
+gpu runtime: 5.92328 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.6656 , 70000 , 50
+3:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 137
+The step is: 3
+gpu runtime: 5.80364 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.5890 , 100000 , 50
+3:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 119
+The step is: 3
+gpu runtime: 5.87331 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.4492 , 200000 , 50
+2:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 77
+The step is: 2
+gpu runtime: 5.83451 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.2458 , 400000 , 50
+2:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 30
+The step is: 2
+gpu runtime: 5.85356 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.0872 , 600000 , 50
+1:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 10
+The step is: 1
+gpu runtime: 5.83631 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.0303 , 800000 , 50
+1:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 3
+The step is: 1
+gpu runtime: 5.82644 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+文件1与文件2的大小比:值为: 1.0000 , 1000000 , 50
+0:0
+INIT--class Graph is constructed
+The vertex num is: 6650533
+The rule num is: 0
+The step is: 0
+gpu runtime: 0 seconds
+==================== PPR with FORWARD PUSH ends ====================
+
+an illegal memory access was encountered in c1/deviceMemory.cuh at line 138
