@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -rdynamic "CMakeFiles/purn-sssp.dir/src/purn-sssp.cpp.o" -o /home/lihuaibei/code/C-2graph/bin/purn-sssp 

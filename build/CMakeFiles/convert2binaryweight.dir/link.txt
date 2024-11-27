@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -rdynamic CMakeFiles/convert2binaryweight.dir/utils/convert2binaryweight.cpp.o -o /home/lihuaibei/code/C-2graph/bin/convert2binaryweight 

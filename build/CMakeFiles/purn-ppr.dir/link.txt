@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -rdynamic "CMakeFiles/purn-ppr.dir/src/purn-ppr.cpp.o" -o /home/lihuaibei/code/C-2graph/bin/purn-ppr 
