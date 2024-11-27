@@ -30,7 +30,7 @@ Before running it, some softwares must be installed, which is beyond the scope o
 ### 2.1 Requirements
 nvcc-version = 10.1
 gcc/g++ 7.5
- ## Compilation
+### 2.2 Compilation
 ```bash
 git clone https://github.com/lihuaibei7951/C-2graph.git --recursive
 cd CompressGraph
@@ -39,14 +39,13 @@ cd build
 cmake ..
 make -j
 ```
-
-### 2.2 Graph Input Format
+### 2.3 Graph Input Format
 example
-### 2.3 C-2graph-pri
+### 2.4 C-2graph-pri
 example
-### 2.2 C-2graph-P
+### 2.5 C-2graph-P
 example
-### 2.2 C-2graph-PM
+### 2.6 C-2graph-PM
 example
 ## 3. Contact  
 If you encounter any problem with LRCNN, please feel free to contact lihuaibei7951@stu.ouc.edu.cn.
