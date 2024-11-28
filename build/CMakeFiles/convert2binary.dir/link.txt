@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -rdynamic CMakeFiles/convert2binary.dir/utils/convert2binary.cpp.o -o /home/lihuaibei/code/C-2graph/bin/convert2binary 

@@ -114,9 +114,9 @@ public:
         }
         this->vert_num = csr_v.size()-1;
         this->edge_num = csr_e.size();
-        this->csr_ov = read_binary2vector(x,data_folder + "/origin/vlist.bin");
-        this->csr_oe = read_binary2vector(x,data_folder + "/origin/elist.bin");
-        this->csr_ow = read_binary2vector(y,data_folder + "/origin/wlist.bin");
+        this->csr_ov = read_binary2vector(x,data_folder + "/sssp/vlist.bin");
+        this->csr_oe = read_binary2vector(x,data_folder + "/sssp/elist.bin");
+        this->csr_ow = read_binary2vector(y,data_folder + "/sssp/wlist.bin");
         this->indegree.resize(vert_num,0);
 
         for(int i=0;i<vert_num;i++){

@@ -98,8 +98,6 @@ int main(int argc, char **argv) {
     std::string pelist = path + "/origin/elist.bin";
     std::string pwlist = path + "/origin/flist.bin";
 
-
-
     // 1. 打开二进制文件，并清空内容
     std::ofstream files1(path + "/ppr/hvlist.bin", std::ios::binary | std::ios::trunc);
     std::ofstream files2(path + "/ppr/helist.bin", std::ios::binary | std::ios::trunc);
@@ -151,6 +149,8 @@ int main(int argc, char **argv) {
     // 强制释放内存
     std::vector<int>().swap(elist);
 
+    //第二步
+    std::vector<bool> flag(vertex_cnt, true);
 
     int e1=0,e2=0;
     for(int i=0;i<vertex_cnt;i++){
@@ -176,16 +176,18 @@ int main(int argc, char **argv) {
         if(i%1000000==0) std::cout<<i<<std::endl;
         //if(i>1000000) break;
 
-        if(graph[i].size()&&vlist[i]>0&& vlist[i]<=dmax){
+        if(graph[i].size()&&vlist[i]>0&& vlist[i]<=dmax&&flag[i]){
 
             root.resize(vlist[i]);
             dis.resize(vlist[i]);
             id.resize(vlist[i]);
 
+
             int j=0;
             for(auto it=graphT[i].begin();it!=graphT[i].end();++it){
                 if(!it->second) continue;
                 root[j] = it->first;
+                flag[root[j]]=false;
                 //查找权重位置
                 auto itx = std::lower_bound(graph[root[j]].begin(), graph[root[j]].end(), std::make_pair(i, 99999),
                                             [](const std::pair<VertexT, ValueT>& a, const std::pair<VertexT, ValueT>& b) {
@@ -205,23 +207,21 @@ int main(int argc, char **argv) {
                 ++j;
 
             }
-            if(j!=vlist[i]) printf("not equal j&&graphTsize\n");
+            if(j!=graphT[i].size()) printf("not equal j&&graphTsize\n");
             for(int k=0;k<j;++k) id[k]=0;
 
             //需要判定root1->v以及root2->v是否存在
             //由于root1，root2的邻居不会少，即递增，可以记录索引
             for(auto jj=graph[i].begin();jj!=graph[i].end();++jj){
                 int v=jj->first;
-
-                bool flag=false;
+                bool flags=false;
                 for(auto k:root){
-                    if(k==v) flag=true;
+                    if(k==v) flags=true;
                 }
-                if(flag){
+                if(flags){
                     tmp.push_back({v,jj->second});
                     continue;
                 }
-
                 ValueT d3=jj->second;
                 int cnt=0;
                 for(int k=0;k<j;++k){
@@ -235,10 +235,9 @@ int main(int argc, char **argv) {
 
                 }
                 if(cnt+2>j){
+                    flag[v]=false;
                     tmp1.push_back({v,d3});
                     for (int k : tmproot) {
-//                        if(k==v)
-//                            continue;
                         auto it=std::lower_bound(graphT[v].begin(),graphT[v].end(),k,[](const std::pair<VertexT,bool>& a,const VertexT& b){
                             return a.first < b;
                         });
@@ -292,12 +291,11 @@ int main(int argc, char **argv) {
                         ans.push_back(graph[root[k]][ii++]);
                     }
                 }
-                ans.shrink_to_fit(); // 释放多余的内存
                 ans.swap(graph[root[k]]);
-
             }
             tmp.swap(graph[i]);
             tmp.resize(0);
+            tmp.shrink_to_fit(); // 释放多余的内存
             for(auto it:tmp1){
                 tmpedge.emplace_back(it.first);
                 tmpweight.emplace_back(it.second);
@@ -305,7 +303,7 @@ int main(int argc, char **argv) {
             zero+=tmp1.size();
             file1.write(reinterpret_cast<const char*>(&zero),sizeof(int));
             file2.write(reinterpret_cast<const char*>(tmpedge.data()), tmpedge.size() * sizeof(int));
-            file3.write(reinterpret_cast<const char*>(tmpweight.data()), tmpweight.size() * sizeof(ValueT));
+            file3.write(reinterpret_cast<const char*>(tmpweight.data()), tmpweight.size() * sizeof(float));
             tmp1.resize(0);
             tmpedge.resize(0);
             tmpweight.resize(0);
@@ -342,10 +340,10 @@ int main(int argc, char **argv) {
     }
     elist.resize(e1);
     wlist.resize(e1);
-    if(e1!=e2) printf("e1!=e2\n");
+    if(e1!=edge_num) printf("e1!=e2\n");
     printf("2st e1 : %d\n",e1);
-    printf("2st e2 : %d\n",e2);
-    printf("the added gr size is : %d\n",zero);
+    printf("2st e2 : %d\n",edge_num);
+    printf("the added gr size is : %d\n",e2);
 
 
     double end = timestamp();
@@ -360,8 +358,6 @@ int main(int argc, char **argv) {
     felist = fopen((path + "/ppr/elist.bin").c_str(), "w");
     fwlist = fopen((path + "/ppr/wlist.bin").c_str(), "w");
     fwrite(&vlist[0], sizeof(int), vlist.size(), fvlist);
-
-
     fwrite(&elist[0], sizeof(int), elist.size(), felist);
     fwrite(&wlist[0], sizeof(float), wlist.size(), fwlist);
 

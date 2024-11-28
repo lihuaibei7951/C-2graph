@@ -33,18 +33,36 @@ gcc/g++ 7.5
 ### 2.2 Compilation
 ```bash
 git clone https://github.com/lihuaibei7951/C-2graph.git --recursive
-cd CompressGraph
+cd C-2graph
 mkdir -p build
 cd build
 cmake ..
 make -j
 ```
-### 2.3 Graph Input Format
-example
+### 2.3 Graph Input Format&&get binary file
+We can read the adjacency list and generate the corresponding binary file.
+```
+src1   dst1:dst2
+src2   dst3:dst4:dst5
+```
+Run
+```
+../bin/convert2binary input_file_path  dataset_path
+
+```
+out: vlist.bin  elist.bin wlist.bin(int) flight.bin(float)
 ### 2.4 C-2graph-pri
-example
+Run
+```
+../bin/purn-sssp dataset_path
+
+```
 ### 2.5 C-2graph-P
-example
+Run and compare the results
+```
+../bin/sssp-base dataset_path source
+../bin/sssp-purn dataset_path source
+```
 ### 2.6 C-2graph-PM
 example
 ## 3. Contact  

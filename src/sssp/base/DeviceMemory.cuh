@@ -1,5 +1,4 @@
 #include "Graph.h"
-
 class DeviceMemory {
   public:
     Vertex *csr_v;
@@ -80,10 +79,10 @@ class DeviceMemory {
               
         CUDA_ERROR(cudaMalloc(&active_vert, sizeof(Vertex) * vert_num));
         CUDA_ERROR(cudaMalloc(&active_vert_num, sizeof(Vertex) * 1 ));
-        CUDA_ERROR(cudaMalloc(&isactive, sizeof(Vertex) * vert_num ));
+        CUDA_ERROR(cudaMalloc(&isactive, sizeof(bool) * vert_num ));
 
         CUDA_ERROR(cudaMalloc(&iteration_num, sizeof(int)));
-	   CUDA_ERROR(cudaMalloc(&iteration_act_num, sizeof(int)*1000));
+	    CUDA_ERROR(cudaMalloc(&iteration_act_num, sizeof(int)*1000));
     }
 
     // using array to replace vector

@@ -52,7 +52,7 @@ void csr_convert_idx(std::vector<std::vector<std::pair<VertexT,bool>>> &graph,
         }
 
         for(auto it = myset.begin(); it != myset.end(); ++it) {
-            graph[*it].emplace_back(v,1);
+            graph[*it].emplace_back(v,true);
         }
     }
 }
@@ -69,9 +69,9 @@ int main(int argc, char **argv) {
     std::string pwlist = path + "/origin/wlist.bin";
 
     // 1. 打开二进制文件，并清空内容
-    std::ofstream files1(path + "/ppr/hvlist.bin", std::ios::binary | std::ios::trunc);
-    std::ofstream files2(path + "/ppr/helist.bin", std::ios::binary | std::ios::trunc);
-    std::ofstream files3(path + "/ppr/hwlist.bin", std::ios::binary | std::ios::trunc);
+    std::ofstream files1(path + "/sssp/hvlist.bin", std::ios::binary | std::ios::trunc);
+    std::ofstream files2(path + "/sssp/helist.bin", std::ios::binary | std::ios::trunc);
+    std::ofstream files3(path + "/sssp/hwlist.bin", std::ios::binary | std::ios::trunc);
     if (!files1||!files2||!files3) {
         std::cerr << "无法打开文件！" << std::endl;
     }
@@ -80,14 +80,14 @@ int main(int argc, char **argv) {
     files3.close();  // 关闭文件，完成清空操作
 
     // 2. 以追加模式打开文件，依次写入 vector<int> 数据
-    std::ofstream file1(path + "/ppr/hvlist.bin", std::ios::binary | std::ios::app);
-    std::ofstream file2(path + "/ppr/helist.bin", std::ios::binary | std::ios::app);
-    std::ofstream file3(path + "/ppr/hflist.bin", std::ios::binary | std::ios::app);
+    std::ofstream file1(path + "/sssp/hvlist.bin", std::ios::binary | std::ios::app);
+    std::ofstream file2(path + "/sssp/helist.bin", std::ios::binary | std::ios::app);
+    std::ofstream file3(path + "/sssp/hwlist.bin", std::ios::binary | std::ios::app);
     if (!file1||!file2||!file3) {
         std::cerr << "无法打开文件！" << std::endl;
     }
     std::vector<VertexT> tmpedge;
-    std::vector<ValueT> tmpweight;
+    std::vector<VertexT> tmpweight;
     int zero=0;
     file1.write(reinterpret_cast<const char*>(&zero),sizeof(int ));
 
@@ -136,144 +136,161 @@ int main(int argc, char **argv) {
     std::vector<VertexT> dis;
     std::vector<VertexT> id;
     std::vector<VertexT> tmproot;
-    int dmax=5;
+    int dmax=29;
+    std::vector<int> fcnt(30,0);
+    std::vector<bool> fflag(vertex_cnt);
+    for(int k = 0; k < 30; k++){
+        for(int i=0;i<vertex_cnt;i++){
+            if(vlist[i] > k || fflag[i]||vlist[i]==0){
+                continue;
+            }
+            if(i%1000000==0) std::cout<<i<<std::endl;
+            //if(i>1000000) break;
+            fflag[i] = true;
+            if(graph[i].size()&&vlist[i]>0&& vlist[i]<=dmax){
 
-    for(int i=0;i<vertex_cnt;i++){
-        if(i%1000000==0) std::cout<<i<<std::endl;
-        //if(i>1000000) break;
+                root.resize(vlist[i]);
+                dis.resize(vlist[i]);
+                id.resize(vlist[i]);
 
-        if(graph[i].size()&&vlist[i]>0&& vlist[i]<=dmax){
-
-            root.resize(vlist[i]);
-            dis.resize(vlist[i]);
-            id.resize(vlist[i]);
-
-            int j=0;
-            for(auto it=graphT[i].begin();it!=graphT[i].end();++it){
-                if(!it->second) continue;
-                root[j] = it->first;
-                //查找权重位置
-                auto itx = std::lower_bound(graph[root[j]].begin(), graph[root[j]].end(), std::make_pair(i, 99999),
-                                            [](const std::pair<VertexT, VertexT>& a, const std::pair<VertexT, VertexT>& b) {
-                                                return a.first < b.first;
-                                            });
-                //check
-                if (itx != graph[root[j]].end() && itx->first == i) {
-                    dis[j]=itx->second;
-                    if(dis[j]==99999){
-                        std::cout << " error \n" << std::endl;
+                int j=0;
+                for(auto it=graphT[i].begin();it!=graphT[i].end();++it){
+                    if(!it->second) continue;
+                    root[j] = it->first;
+                    //查找权重位置
+                    auto itx = std::lower_bound(graph[root[j]].begin(), graph[root[j]].end(), std::make_pair(i, 99999999),
+                                                [](const std::pair<VertexT, VertexT>& a, const std::pair<VertexT, VertexT>& b) {
+                                                    return a.first < b.first;
+                                                });
+                    //check
+                    if (itx != graph[root[j]].end() && itx->first == i) {
+                        dis[j]=itx->second;
+                        if(dis[j]==99999999){
+                            std::cout << " error \n" << std::endl;
+                            return 1;
+                        }
+                    } else {
+                        std::cout << "something error2 \n" << std::endl;
                         return 1;
                     }
-                } else {
-                    std::cout << "something error2 \n" << std::endl;
-                    return 1;
+                    ++j;
+
                 }
-                ++j;
+                if(j!=vlist[i]) printf("not equal j&&graphTsize\n");
+                for(int k=0;k<j;++k) id[k]=0;
 
-            }
-            if(j!=vlist[i]) printf("not equal j&&graphTsize\n");
-            for(int k=0;k<j;++k) id[k]=0;
+                //需要判定root1->v以及root2->v是否存在
+                //由于root1，root2的邻居不会少，即递增，可以记录索引
+                for(auto jj=graph[i].begin();jj!=graph[i].end();++jj){
+                    int v=jj->first;
 
-            //需要判定root1->v以及root2->v是否存在
-            //由于root1，root2的邻居不会少，即递增，可以记录索引
-            for(auto jj=graph[i].begin();jj!=graph[i].end();++jj){
-                int v=jj->first;
-                int d3=jj->second;
-                int cnt=0;
-                for(int k=0;k<j;++k){
-                    while(id[k]<graph[root[k]].size()-1&&graph[root[k]][id[k]].first<v){
-                        id[k]++;
+                    bool flag=false;
+                    for(auto k:root){
+                        if(k==v) flag=true;
                     }
-                    if(graph[root[k]][id[k]].first==v)
-                        ++cnt;
-                    else
-                        tmproot.emplace_back(root[k]);
+                    if(flag){
+                        tmp.push_back({v,jj->second});
+                        continue;
+                    }
+                    int d3=jj->second;
+                    int cnt=0;
+                    for(int k=0;k<j;++k){
+                        while(id[k]<graph[root[k]].size()-1&&graph[root[k]][id[k]].first<v){
+                            id[k]++;
+                        }
+                        if(graph[root[k]][id[k]].first==v)
+                            ++cnt;
+                        else
+                            tmproot.emplace_back(root[k]);
 
-                }
-                if(cnt+2>j){
-                    tmp1.push_back({v,d3});
-                    for (int k : tmproot) {
-                        if(k==v)
-                            continue;
-                        auto it=std::lower_bound(graphT[v].begin(),graphT[v].end(),k,[](const std::pair<VertexT,bool>& a,const VertexT& b){
+                    }
+                    if(cnt+2>j){
+                        if(cnt+1>j) fcnt[vlist[i]]++;
+                        tmp1.push_back({v,d3});
+                        for (int k : tmproot) {
+                            if(k==v)
+                                continue;
+                            auto it=std::lower_bound(graphT[v].begin(),graphT[v].end(),k,[](const std::pair<VertexT,bool>& a,const VertexT& b){
+                                return a.first < b;
+                            });
+                            if(it==graphT[v].end()||it->first!=k){
+                                graphT[v].insert(it, std::make_pair(k,1));
+                                vlist[v]++;
+                            }
+                            else if(it != graphT[v].end()&&it->first==k&&!it->second){
+                                vlist[v]++;
+                                it->second=true;
+                            }
+
+                        }
+                        // 删除v中的i->v
+
+                        auto it=std::lower_bound(graphT[v].begin(),graphT[v].end(),i,[](const std::pair<VertexT,bool>& a,const VertexT& b){
                             return a.first < b;
                         });
-                        if(it==graphT[v].end()||it->first!=k){
-                            graphT[v].insert(it, std::make_pair(k,1));
-                            vlist[v]++;
-                        }
-                        else if(it != graphT[v].end()&&it->first==k&&!it->second){
-                            vlist[v]++;
-                            it->second=true;
-                        }
+                        vlist[v]--;
+                        it->second= false;
 
+                    }else {
+                        tmp.push_back({v,d3});
                     }
-                    // 删除v中的i->v
-
-                    auto it=std::lower_bound(graphT[v].begin(),graphT[v].end(),i,[](const std::pair<VertexT,bool>& a,const VertexT& b){
-                        return a.first < b;
-                    });
-                    vlist[v]--;
-                    it->second= false;
-
-                }else {
-                    tmp.push_back({v,d3});
+                    tmproot.resize(0);
                 }
-                tmproot.resize(0);
-            }
-            for(int k=0;k<j;k++){
-                int ii=0,jj=0;
-                ans.resize(0);
-                while(ii<graph[root[k]].size()||jj<tmp1.size()){
-                    if(ii==graph[root[k]].size()){
-                        if(tmp1[jj].first==root[k]){
+                for(int k=0;k<j;k++){
+                    int ii=0,jj=0;
+                    ans.resize(0);
+                    while(ii<graph[root[k]].size()||jj<tmp1.size()){
+                        if(ii==graph[root[k]].size()){
+                            if(tmp1[jj].first==root[k]){
+                                ++jj;
+                                continue;
+                            }
+                            ans.push_back({tmp1[jj].first,tmp1[jj].second+dis[k]});
                             ++jj;
                             continue;
                         }
-                        ans.push_back({tmp1[jj].first,tmp1[jj].second+dis[k]});
-                        ++jj;
-                        continue;
-                    }
 
-                    if(jj==tmp1.size()){
-                        ans.push_back(graph[root[k]][ii++]);
-                        continue;
-                    }
-
-                    if(graph[root[k]][ii].first==tmp1[jj].first){
-                        ans.push_back({graph[root[k]][ii].first,std::min(graph[root[k]][ii].second,tmp1[jj].second+dis[k])});
-                        ++ii;
-                        ++jj;
-                    }else if(graph[root[k]][ii].first>tmp1[jj].first){
-                        if(tmp1[jj].first==root[k]){
-                            ++jj;
+                        if(jj==tmp1.size()){
+                            ans.push_back(graph[root[k]][ii++]);
                             continue;
                         }
-                        ans.push_back({tmp1[jj].first,tmp1[jj].second+dis[k]});
-                        ++jj;
-                    }else{
-                        ans.push_back(graph[root[k]][ii++]);
+
+                        if(std::get<0>(graph[root[k]][ii])==tmp1[jj].first){
+                            ans.push_back({std::get<0>(graph[root[k]][ii]),std::min(std::get<1>(graph[root[k]][ii]),tmp1[jj].second+dis[k])});
+                            ++ii;
+                            ++jj;
+                        }else if(std::get<0>(graph[root[k]][ii])>tmp1[jj].first){
+                            if(tmp1[jj].first==root[k]){
+                                ++jj;
+                                continue;
+                            }
+                            ans.push_back({tmp1[jj].first,tmp1[jj].second+dis[k]});
+                            ++jj;
+                        }else{
+                            ans.push_back(graph[root[k]][ii++]);
+                        }
                     }
+                    ans.shrink_to_fit(); // 释放多余的内存
+                    ans.swap(graph[root[k]]);
                 }
-                ans.shrink_to_fit(); // 释放多余的内存
-                ans.swap(graph[root[k]]);
+                tmp.swap(graph[i]);
+                tmp.resize(0);
+                tmp.shrink_to_fit(); // 释放多余的内存
+                for(auto it:tmp1){
+                    tmpedge.emplace_back(it.first);
+                    tmpweight.emplace_back(it.second);
+                }
+                zero+=tmp1.size();
+                file1.write(reinterpret_cast<const char*>(&zero),sizeof(int));
+                file2.write(reinterpret_cast<const char*>(tmpedge.data()), tmpedge.size() * sizeof(int));
+                file3.write(reinterpret_cast<const char*>(tmpweight.data()), tmpweight.size() * sizeof(int));
+                tmp1.resize(0);
+                tmpedge.resize(0);
+                tmpweight.resize(0);
             }
-            tmp.swap(graph[i]);
-            tmp.resize(0);
-            for(auto it:tmp1){
-                tmpedge.emplace_back(it.first);
-                tmpweight.emplace_back(it.second);
-            }
-            zero+=tmp1.size();
-            file1.write(reinterpret_cast<const char*>(&zero),sizeof(int));
-            file2.write(reinterpret_cast<const char*>(tmpedge.data()), tmpedge.size() * sizeof(int));
-            file3.write(reinterpret_cast<const char*>(tmpweight.data()), tmpweight.size() * sizeof(int));
-            tmp1.resize(0);
-            tmpedge.resize(0);
-            tmpweight.resize(0);
+
+
         }
-
-
     }
 
     file1.close();  // 关闭文件，完成清空操作
@@ -309,8 +326,12 @@ int main(int argc, char **argv) {
     if(e1!=e2) printf("e1!=e2\n");
     printf("2st e1 : %d\n",e1);
     printf("2st e2 : %d\n",e2);
+    printf("the ratio is: %f\n",1.0*e1/e_cnt);
     printf("the added gr size is : %d\n",zero);
 
+    for(int i = 0; i < fcnt.size(); i++){
+        std::cout << fcnt[i] << std::endl;
+    }
 
     double end = timestamp();
     fprintf(stderr, "Filter time : %.4f(s)\n", end - start);
@@ -326,9 +347,6 @@ int main(int argc, char **argv) {
 
     fwrite(&elist[0], sizeof(int), elist.size(), felist);
     fwrite(&wlist[0], sizeof(int), wlist.size(), fwlist);
-    fclose(fvlist);
-    fclose(felist);
-    fclose(fwlist);
 
     return 0;
 }

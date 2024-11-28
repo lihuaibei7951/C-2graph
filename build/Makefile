@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named convert2binaryweight
+# Target rules for targets named convert2binary
 
 # Build rule for target.
-convert2binaryweight: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 convert2binaryweight
-.PHONY : convert2binaryweight
+convert2binary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 convert2binary
+.PHONY : convert2binary
 
 # fast build rule for target.
-convert2binaryweight/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binaryweight.dir/build.make CMakeFiles/convert2binaryweight.dir/build
-.PHONY : convert2binaryweight/fast
+convert2binary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binary.dir/build.make CMakeFiles/convert2binary.dir/build
+.PHONY : convert2binary/fast
 
 #=============================================================================
 # Target rules for targets named purn-ppr
@@ -154,6 +154,106 @@ purn-sssp: cmake_check_build_system
 purn-sssp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-sssp.dir/build.make CMakeFiles/purn-sssp.dir/build
 .PHONY : purn-sssp/fast
+
+#=============================================================================
+# Target rules for targets named sssp-base
+
+# Build rule for target.
+sssp-base: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sssp-base
+.PHONY : sssp-base
+
+# fast build rule for target.
+sssp-base/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/build
+.PHONY : sssp-base/fast
+
+#=============================================================================
+# Target rules for targets named sssp-purn
+
+# Build rule for target.
+sssp-purn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sssp-purn
+.PHONY : sssp-purn
+
+# fast build rule for target.
+sssp-purn/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/build
+.PHONY : sssp-purn/fast
+
+#=============================================================================
+# Target rules for targets named ppr-base
+
+# Build rule for target.
+ppr-base: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppr-base
+.PHONY : ppr-base
+
+# fast build rule for target.
+ppr-base/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base.dir/build.make CMakeFiles/ppr-base.dir/build
+.PHONY : ppr-base/fast
+
+#=============================================================================
+# Target rules for targets named ppr-purn
+
+# Build rule for target.
+ppr-purn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppr-purn
+.PHONY : ppr-purn
+
+# fast build rule for target.
+ppr-purn/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/build
+.PHONY : ppr-purn/fast
+
+src/ppr/base/Main.o: src/ppr/base/Main.cu.o
+.PHONY : src/ppr/base/Main.o
+
+# target to build an object file
+src/ppr/base/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base.dir/build.make CMakeFiles/ppr-base.dir/src/ppr/base/Main.cu.o
+.PHONY : src/ppr/base/Main.cu.o
+
+src/ppr/base/Main.i: src/ppr/base/Main.cu.i
+.PHONY : src/ppr/base/Main.i
+
+# target to preprocess a source file
+src/ppr/base/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base.dir/build.make CMakeFiles/ppr-base.dir/src/ppr/base/Main.cu.i
+.PHONY : src/ppr/base/Main.cu.i
+
+src/ppr/base/Main.s: src/ppr/base/Main.cu.s
+.PHONY : src/ppr/base/Main.s
+
+# target to generate assembly for a file
+src/ppr/base/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base.dir/build.make CMakeFiles/ppr-base.dir/src/ppr/base/Main.cu.s
+.PHONY : src/ppr/base/Main.cu.s
+
+src/ppr/purn/Main.o: src/ppr/purn/Main.cu.o
+.PHONY : src/ppr/purn/Main.o
+
+# target to build an object file
+src/ppr/purn/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/src/ppr/purn/Main.cu.o
+.PHONY : src/ppr/purn/Main.cu.o
+
+src/ppr/purn/Main.i: src/ppr/purn/Main.cu.i
+.PHONY : src/ppr/purn/Main.i
+
+# target to preprocess a source file
+src/ppr/purn/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/src/ppr/purn/Main.cu.i
+.PHONY : src/ppr/purn/Main.cu.i
+
+src/ppr/purn/Main.s: src/ppr/purn/Main.cu.s
+.PHONY : src/ppr/purn/Main.s
+
+# target to generate assembly for a file
+src/ppr/purn/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/src/ppr/purn/Main.cu.s
+.PHONY : src/ppr/purn/Main.cu.s
 
 src/purn-ppr.o: src/purn-ppr.cpp.o
 .PHONY : src/purn-ppr.o
@@ -203,29 +303,77 @@ src/purn-sssp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-sssp.dir/build.make CMakeFiles/purn-sssp.dir/src/purn-sssp.cpp.s
 .PHONY : src/purn-sssp.cpp.s
 
-utils/convert2binaryweight.o: utils/convert2binaryweight.cpp.o
-.PHONY : utils/convert2binaryweight.o
+src/sssp/base/Main.o: src/sssp/base/Main.cu.o
+.PHONY : src/sssp/base/Main.o
 
 # target to build an object file
-utils/convert2binaryweight.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binaryweight.dir/build.make CMakeFiles/convert2binaryweight.dir/utils/convert2binaryweight.cpp.o
-.PHONY : utils/convert2binaryweight.cpp.o
+src/sssp/base/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/src/sssp/base/Main.cu.o
+.PHONY : src/sssp/base/Main.cu.o
 
-utils/convert2binaryweight.i: utils/convert2binaryweight.cpp.i
-.PHONY : utils/convert2binaryweight.i
+src/sssp/base/Main.i: src/sssp/base/Main.cu.i
+.PHONY : src/sssp/base/Main.i
 
 # target to preprocess a source file
-utils/convert2binaryweight.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binaryweight.dir/build.make CMakeFiles/convert2binaryweight.dir/utils/convert2binaryweight.cpp.i
-.PHONY : utils/convert2binaryweight.cpp.i
+src/sssp/base/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/src/sssp/base/Main.cu.i
+.PHONY : src/sssp/base/Main.cu.i
 
-utils/convert2binaryweight.s: utils/convert2binaryweight.cpp.s
-.PHONY : utils/convert2binaryweight.s
+src/sssp/base/Main.s: src/sssp/base/Main.cu.s
+.PHONY : src/sssp/base/Main.s
 
 # target to generate assembly for a file
-utils/convert2binaryweight.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binaryweight.dir/build.make CMakeFiles/convert2binaryweight.dir/utils/convert2binaryweight.cpp.s
-.PHONY : utils/convert2binaryweight.cpp.s
+src/sssp/base/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/src/sssp/base/Main.cu.s
+.PHONY : src/sssp/base/Main.cu.s
+
+src/sssp/purn/Main.o: src/sssp/purn/Main.cu.o
+.PHONY : src/sssp/purn/Main.o
+
+# target to build an object file
+src/sssp/purn/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/src/sssp/purn/Main.cu.o
+.PHONY : src/sssp/purn/Main.cu.o
+
+src/sssp/purn/Main.i: src/sssp/purn/Main.cu.i
+.PHONY : src/sssp/purn/Main.i
+
+# target to preprocess a source file
+src/sssp/purn/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/src/sssp/purn/Main.cu.i
+.PHONY : src/sssp/purn/Main.cu.i
+
+src/sssp/purn/Main.s: src/sssp/purn/Main.cu.s
+.PHONY : src/sssp/purn/Main.s
+
+# target to generate assembly for a file
+src/sssp/purn/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/src/sssp/purn/Main.cu.s
+.PHONY : src/sssp/purn/Main.cu.s
+
+utils/convert2binary.o: utils/convert2binary.cpp.o
+.PHONY : utils/convert2binary.o
+
+# target to build an object file
+utils/convert2binary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binary.dir/build.make CMakeFiles/convert2binary.dir/utils/convert2binary.cpp.o
+.PHONY : utils/convert2binary.cpp.o
+
+utils/convert2binary.i: utils/convert2binary.cpp.i
+.PHONY : utils/convert2binary.i
+
+# target to preprocess a source file
+utils/convert2binary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binary.dir/build.make CMakeFiles/convert2binary.dir/utils/convert2binary.cpp.i
+.PHONY : utils/convert2binary.cpp.i
+
+utils/convert2binary.s: utils/convert2binary.cpp.s
+.PHONY : utils/convert2binary.s
+
+# target to generate assembly for a file
+utils/convert2binary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binary.dir/build.make CMakeFiles/convert2binary.dir/utils/convert2binary.cpp.s
+.PHONY : utils/convert2binary.cpp.s
 
 # Help Target
 help:
@@ -235,18 +383,34 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... convert2binaryweight"
+	@echo "... convert2binary"
+	@echo "... ppr-base"
+	@echo "... ppr-purn"
 	@echo "... purn-ppr"
 	@echo "... purn-sssp"
+	@echo "... sssp-base"
+	@echo "... sssp-purn"
+	@echo "... src/ppr/base/Main.o"
+	@echo "... src/ppr/base/Main.i"
+	@echo "... src/ppr/base/Main.s"
+	@echo "... src/ppr/purn/Main.o"
+	@echo "... src/ppr/purn/Main.i"
+	@echo "... src/ppr/purn/Main.s"
 	@echo "... src/purn-ppr.o"
 	@echo "... src/purn-ppr.i"
 	@echo "... src/purn-ppr.s"
 	@echo "... src/purn-sssp.o"
 	@echo "... src/purn-sssp.i"
 	@echo "... src/purn-sssp.s"
-	@echo "... utils/convert2binaryweight.o"
-	@echo "... utils/convert2binaryweight.i"
-	@echo "... utils/convert2binaryweight.s"
+	@echo "... src/sssp/base/Main.o"
+	@echo "... src/sssp/base/Main.i"
+	@echo "... src/sssp/base/Main.s"
+	@echo "... src/sssp/purn/Main.o"
+	@echo "... src/sssp/purn/Main.i"
+	@echo "... src/sssp/purn/Main.s"
+	@echo "... utils/convert2binary.o"
+	@echo "... utils/convert2binary.i"
+	@echo "... utils/convert2binary.s"
 .PHONY : help
 
 

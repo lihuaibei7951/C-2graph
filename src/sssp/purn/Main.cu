@@ -1,5 +1,5 @@
 #include <time.h>
-#include "Util.cuh"
+#include "core/Util.cuh"
 #include "DeviceMemory.cuh"
 
 __device__ volatile int g_mutex1;
@@ -19,11 +19,21 @@ int main(int argc, char **argv) {
     // Initialize graph data in host & device memory
     cudaFree(0);
     // 获取命令行参数
-
     std::string dir = argv[1];
     int source = atoi(argv[2]);
     cout<<dir<<endl;
     Graph graph(dir);
+    int deviceCount;
+    cudaGetDeviceCount(&deviceCount);
+
+    if (deviceCount > 0) {
+        // 选择第一个 GPU 设备
+        cudaSetDevice(deviceCount-1);
+        std::cout << "Using GPU device 0" << std::endl;
+    } else {
+        std::cout << "No GPU available, falling back to CPU" << std::endl;
+        // 在这里执行 CPU 代码
+    }
 
     DeviceMemory device_memory(graph.vert_num, graph.edge_num);
 
@@ -31,7 +41,6 @@ int main(int argc, char **argv) {
     std::cout << "test for study how to use cuda" << endl;
     int vert_num = graph.vert_num;
     int edge_num = graph.edge_num;
-
 
     ValueType *h_distance = new ValueType[vert_num];
     int *iteration_id;
@@ -53,16 +62,13 @@ int main(int argc, char **argv) {
     cudaEventRecord(start);
 
 
-
-
     int cnt = 0;
 
     while (1) {
-   /*     if(graph.csr_ov[source+1]-graph.csr_ov[source]<10||graph.indegree[source]<10){
+        if(graph.csr_v[source+1]-graph.csr_v[source]<1||graph.csr_ov[source+1]-graph.csr_ov[source]>1000){
             ++source;
             continue;
-        }*/
-        cudaDeviceSynchronize();
+        }
         init_active_num = graph.csr_ov[source+1]-graph.csr_ov[source];
 
         CUDA_ERROR(cudaMemcpy(device_memory.active_vert, &graph.csr_oe[graph.csr_ov[source]],
@@ -72,23 +78,12 @@ int main(int argc, char **argv) {
                               sizeof(int)*init_active_num, cudaMemcpyHostToDevice));
         CUDA_ERROR(cudaMemcpy(device_memory.active_vert_num,&init_active_num,
                               sizeof(int), cudaMemcpyHostToDevice));
-
-
-        cudaDeviceSynchronize();
-
-        CUDA_ERROR(cudaMemcpy(device_memory.active_vert+init_active_num, &graph.csr_e[graph.csr_v[source]],
-                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice));
-
-        CUDA_ERROR(cudaMemcpy(wal+init_active_num, &graph.csr_w[graph.csr_v[source]],
-                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice));
-                              cudaDeviceSynchronize();
-        init_active_num += graph.csr_v[source+1]-graph.csr_v[source];
         cudaDeviceSynchronize();
 
         CUDA_ERROR(cudaMemcpy(device_memory.active_vert_num,&init_active_num,
                               sizeof(int), cudaMemcpyHostToDevice));
 
-
+        cudaDeviceSynchronize();
         CalcuSSSP<<<MAX_BLOCKS_NUM, THREADS_PER_BLOCK>>>(
                 device_memory.csr_v, device_memory.csr_e, device_memory.csr_w, device_memory.distance,
                 device_memory.active_vert,device_memory.active_vert_num,device_memory.isactive,
@@ -111,18 +106,21 @@ int main(int argc, char **argv) {
     CUDA_ERROR(cudaMemcpy(iteration_num, device_memory.iteration_num,
                           sizeof(int)*1, cudaMemcpyDeviceToHost));
     cout << "flag 已设置成 -1  终止条件以满足		iteration_num："<<iteration_num[0]<<endl;
-    CUDA_ERROR(cudaMemcpy(iteration_act_num, device_memory.iteration_act_num,
-                          sizeof(int)*1000, cudaMemcpyDeviceToHost));
-    cout << "0	act_num：1"<<endl;
-    for(int i = 1 ;iteration_act_num[i]!=0 ; i++){
-        cout <<i<< "	act_num："<<iteration_act_num[i]<<endl;
-        if(i>998) break;
-    }
+//    CUDA_ERROR(cudaMemcpy(iteration_act_num, device_memory.iteration_act_num,
+//                          sizeof(int)*1000, cudaMemcpyDeviceToHost));
+//    cout << "0	act_num：1"<<endl;
+//    for(int i = 1 ;iteration_act_num[i]!=0 ; i++){
+//        cout <<i<< "	act_num："<<iteration_act_num[i]<<endl;
+//        if(i>998) break;
+//    }
     CUDA_ERROR(cudaMemcpy(h_distance, device_memory.distance,
                           vert_num*sizeof(ValueType), cudaMemcpyDeviceToHost));
+    for (int i = 0; i < 10; i++) {
+        cout<<  i << "\t" << h_distance[i] << endl;
+    }
 
     cout << "gpu runtime: " << runtime/1000.0<< " seconds" <<endl;
-    cout << "源顶点source = " << source-1 <<endl;
+    cout << "源顶点source = " << source <<endl;
 
     return 0;
 }
@@ -148,7 +146,7 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, const ValueTy
         vid = schedule_offset_init + thread_id;
 
         if (vid < vert_num ) {
-            dis[vid] = 99999999;
+            dis[vid] = 1999999999;
             isactive[vid] = false;
         }
         if (vid < 1000) {
@@ -167,6 +165,7 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, const ValueTy
         g_mutex2 = 0;
         g_mutex4 = 0;
         g_mutex5 = 0;
+
     }
     __threadfence();
 
@@ -177,8 +176,8 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, const ValueTy
     }
     __syncthreads();
     if(global_id<*active_vert_num-1){
-        if(dis[active_vert[global_id]])
-            dis[active_vert[global_id]]=ww[global_id];
+        atomicMin(dis+active_vert[global_id], ww[global_id]);
+        //dis[active_vert[global_id]]=ww[global_id];
     }
 
 
@@ -255,9 +254,10 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, const ValueTy
                     if (push_st < push_ed) {
                         v = csr_e[push_st]; //target vertex id
                         weight = commr[0]+csr_w[push_st];
-                        ValueType old = atomicMin(dis+v, weight);
-                        if(old != dis[v])
+                        if( dis[v]>weight){
+                            atomicMin(dis+v, weight);
                             isactive[v] = true;
+                        }
 
                     }
                     push_st += THREADS_PER_BLOCK;//直到u的所有外邻居被处理
@@ -287,9 +287,10 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, const ValueTy
                     if (push_st < push_ed) {
                         v = csr_e[push_st];
                         weight = commr[warp_id] + csr_w[push_st];
-                        ValueType old = atomicMin(dis+v, weight);
-                        if(old != dis[v])
+                        if( dis[v]>weight){
+                            atomicMin(dis+v, weight);
                             isactive[v] = true;
+                        }
                     }
                     push_st += THREADS_PER_WARP; //until all outgoing edges of "u" have been processed
                 }//while<2>, 处理所有outdeg > 32
@@ -320,9 +321,10 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, const ValueTy
                 if (thread_id < cur_batch_count) {
                     v = csr_e[comm2[thread_id]];
                     weight = commr2[thread_id]+csr_w[comm2[thread_id]];
-                    ValueType old = atomicMin(dis+v, weight);
-                    if(old != dis[v])
+                    if( dis[v]>weight){
+                        atomicMin(dis+v, weight);
                         isactive[v] = true;
+                    }
                 }
                 __syncthreads();
                 progress += THREADS_PER_BLOCK;

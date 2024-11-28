@@ -1,0 +1,1 @@
+/usr/bin/g++ @CMakeFiles/ppr-purn.dir/objects1.rsp -o /home/lihuaibei/code/C-2graph/bin/ppr-purn @CMakeFiles/ppr-purn.dir/linkLibs.rsp -L"/usr/local/cuda-11.7/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-11.7/targets/x86_64-linux/lib"

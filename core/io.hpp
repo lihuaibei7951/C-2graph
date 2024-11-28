@@ -21,7 +21,9 @@ inline long file_size(std::string filename) {
     assert(stat(filename.c_str(), &st) == 0);
     return st.st_size;
 }
-int read_binary2vector(std::string filename, std::vector<int> &out) {
+
+template<typename Valtype>
+int read_binary2vector(std::string filename, std::vector<Valtype> &out) {
     if (!file_exists(filename)) {
         fprintf(stderr, "file:%s not exist.\n", filename.c_str());
         exit(0);
@@ -31,7 +33,7 @@ int read_binary2vector(std::string filename, std::vector<int> &out) {
     out.resize(ele_cnt);
     FILE *fp;
     fp = fopen(filename.c_str(), "r");
-    if (fread(&out[0], sizeof(int), ele_cnt, fp) < ele_cnt) {
+    if (fread(&out[0], sizeof(Valtype), ele_cnt, fp) < ele_cnt) {
         fprintf(stderr, "Read failed.\n");
     }
     return ele_cnt;

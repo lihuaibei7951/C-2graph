@@ -4,7 +4,7 @@
 # compile CXX with /usr/local/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lihuaibei/code/C-2graph
+CXX_INCLUDES = -I/home/lihuaibei/code/C-2graph -I/usr/local/cuda-11.7/include
 
 CXX_FLAGS = -std=gnu++11
 

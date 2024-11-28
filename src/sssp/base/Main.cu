@@ -1,5 +1,5 @@
 #include <time.h>
-#include "Util.cuh"
+#include "core/Util.cuh"
 #include "DeviceMemory.cuh"
 
 __device__ volatile int g_mutex1;
@@ -7,21 +7,7 @@ __device__ volatile int g_mutex2;
 __device__ volatile int g_mutex3;
 __device__ volatile int g_mutex4;
 __device__ volatile int g_mutex5;
-//原子操作重写
 
-/*
-__device__ static float atomicMin(float *address, float val) {
-	int *address_as_i = (int *) address;
-	int old = *address_as_i, assumed;
-	do {
-		assumed = old;
-		old = ::atomicCAS(address_as_i, assumed,
-				__float_as_int(::fminf(val, __int_as_float(assumed))));
-	} while (assumed != old);
-	return __int_as_float(old);
-}*/
-
-//kernel_ update
 //template<typename ValueType>
 __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, const ValueType *csr_w, ValueType *dis,
                           Vertex *active_vert, Vertex *active_vert_num, bool *isactive,
@@ -33,10 +19,20 @@ int main(int argc, char **argv) {
     // 获取命令行参数
     std::string dir = argv[1];
     int source = atoi(argv[2]);
-
+    cout<<dir<<endl;
     // 获取，csr_v ,csr_e ,v_r,degree,order;
     Graph graph(dir);
+    int deviceCount;
+    cudaGetDeviceCount(&deviceCount);
 
+    if (deviceCount > 0) {
+        // 选择第一个 GPU 设备
+        cudaSetDevice(deviceCount-1);
+        std::cout << "Using GPU device 0" << std::endl;
+    } else {
+        std::cout << "No GPU available, falling back to CPU" << std::endl;
+        // 在这里执行 CPU 代码
+    }
     DeviceMemory device_memory(graph.vert_num, graph.edge_num);
 
     device_memory.CudaMemcpyGraph(graph);
@@ -44,12 +40,10 @@ int main(int argc, char **argv) {
     int vert_num = graph.vert_num;
     int edge_num = graph.edge_num;
 
-
     ValueType *h_distance = new ValueType[vert_num];
 
     int *iteration_id;
     cudaMalloc(&iteration_id, sizeof(int)*1000);
-
 
 
     int *iteration_num = new int[1];
@@ -62,10 +56,9 @@ int main(int argc, char **argv) {
     cudaEventCreate(&stop);
     cudaEventRecord(start);
 
-
     while (1) {
 
-    if(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){
+        if(graph.csr_v[source+1]-graph.csr_v[source]<1){
             ++source;
             continue;
         }
@@ -85,24 +78,24 @@ int main(int argc, char **argv) {
 
     cudaEventRecord(stop);
     cudaEventSynchronize(stop);
+    cout << "\n==================== SSSP with FORWARD PUSH ends ============" <<endl;
     float runtime = 0;
     cudaEventElapsedTime(&runtime, start, stop);
     CUDA_ERROR(cudaMemcpy(iteration_num, device_memory.iteration_num,
                           sizeof(int)*1, cudaMemcpyDeviceToHost));
     cout << "flag 已设置成 -1  终止条件以满足		iteration_num："<<iteration_num[0]<<endl;
-    CUDA_ERROR(cudaMemcpy(iteration_act_num, device_memory.iteration_act_num,
-                          sizeof(int)*500, cudaMemcpyDeviceToHost));
-    cout << "0	act_num：1"<<endl;
-    for(int i = 1 ;iteration_act_num[i]!=0 ; i++){
-        cout <<i<< "	act_num："<<iteration_act_num[i]<<endl;
-        if(i>500) break;
-    }
+//    CUDA_ERROR(cudaMemcpy(iteration_act_num, device_memory.iteration_act_num,
+//                          sizeof(int)*1000, cudaMemcpyDeviceToHost));
+//    cout << "0	act_num：1"<<endl;
+//    for(int i = 1 ;iteration_act_num[i]!=0 ; i++){
+//        cout <<i<< "	act_num："<<iteration_act_num[i]<<endl;
+//        if(i>998) break;
+//    }
     CUDA_ERROR(cudaMemcpy(h_distance, device_memory.distance,
                           vert_num*sizeof(ValueType), cudaMemcpyDeviceToHost));
-//    for (int i = 0; i < 100; i++) {
-//        cout<<  i << "\t" << h_distance[i] << endl;
-//    }
-
+    for (int i = 0; i < 10; i++) {
+        cout<<  i << "\t" << h_distance[i] << endl;
+    }
     cout << "gpu runtime: " << runtime/1000.0<< " seconds" <<endl;
     cout << "源顶点source = " << source <<endl;
 

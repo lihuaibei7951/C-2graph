@@ -1,0 +1,17 @@
+/home/lihuaibei/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/lihuaibei/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -G Ninja -S /home/lihuaibei/code/C-2graph -B /home/lihuaibei/code/C-2graph/cmake-build-debug
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Error at /home/lihuaibei/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CMakeCUDAArchitecturesValidate.cmake:7 (message):
+  CMAKE_CUDA_ARCHITECTURES must be non-empty if set.
+Call Stack (most recent call first):
+  /home/lihuaibei/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCUDACompiler.cmake:116 (cmake_cuda_architectures_validate)
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!

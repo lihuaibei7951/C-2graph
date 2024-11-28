@@ -1,0 +1,1 @@
+  -L/lib/x64  -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

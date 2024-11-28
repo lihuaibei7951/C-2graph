@@ -63,9 +63,13 @@ CMAKE_BINARY_DIR = /home/lihuaibei/code/C-2graph/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/convert2binaryweight.dir/all
+all: CMakeFiles/convert2binary.dir/all
 all: CMakeFiles/purn-ppr.dir/all
 all: CMakeFiles/purn-sssp.dir/all
+all: CMakeFiles/sssp-base.dir/all
+all: CMakeFiles/sssp-purn.dir/all
+all: CMakeFiles/ppr-base.dir/all
+all: CMakeFiles/ppr-purn.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,36 +77,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/convert2binaryweight.dir/clean
+clean: CMakeFiles/convert2binary.dir/clean
 clean: CMakeFiles/purn-ppr.dir/clean
 clean: CMakeFiles/purn-sssp.dir/clean
+clean: CMakeFiles/sssp-base.dir/clean
+clean: CMakeFiles/sssp-purn.dir/clean
+clean: CMakeFiles/ppr-base.dir/clean
+clean: CMakeFiles/ppr-purn.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/convert2binaryweight.dir
+# Target rules for target CMakeFiles/convert2binary.dir
 
 # All Build rule for target.
-CMakeFiles/convert2binaryweight.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binaryweight.dir/build.make CMakeFiles/convert2binaryweight.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binaryweight.dir/build.make CMakeFiles/convert2binaryweight.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=1,2 "Built target convert2binaryweight"
-.PHONY : CMakeFiles/convert2binaryweight.dir/all
+CMakeFiles/convert2binary.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binary.dir/build.make CMakeFiles/convert2binary.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binary.dir/build.make CMakeFiles/convert2binary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=1,2 "Built target convert2binary"
+.PHONY : CMakeFiles/convert2binary.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/convert2binaryweight.dir/rule: cmake_check_build_system
+CMakeFiles/convert2binary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/convert2binaryweight.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/convert2binary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 0
-.PHONY : CMakeFiles/convert2binaryweight.dir/rule
+.PHONY : CMakeFiles/convert2binary.dir/rule
 
 # Convenience name for target.
-convert2binaryweight: CMakeFiles/convert2binaryweight.dir/rule
-.PHONY : convert2binaryweight
+convert2binary: CMakeFiles/convert2binary.dir/rule
+.PHONY : convert2binary
 
 # clean rule for target.
-CMakeFiles/convert2binaryweight.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binaryweight.dir/build.make CMakeFiles/convert2binaryweight.dir/clean
-.PHONY : CMakeFiles/convert2binaryweight.dir/clean
+CMakeFiles/convert2binary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert2binary.dir/build.make CMakeFiles/convert2binary.dir/clean
+.PHONY : CMakeFiles/convert2binary.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/purn-ppr.dir
@@ -111,7 +119,7 @@ CMakeFiles/convert2binaryweight.dir/clean:
 CMakeFiles/purn-ppr.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-ppr.dir/build.make CMakeFiles/purn-ppr.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-ppr.dir/build.make CMakeFiles/purn-ppr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=3,4 "Built target purn-ppr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=7,8 "Built target purn-ppr"
 .PHONY : CMakeFiles/purn-ppr.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,7 +145,7 @@ CMakeFiles/purn-ppr.dir/clean:
 CMakeFiles/purn-sssp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-sssp.dir/build.make CMakeFiles/purn-sssp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-sssp.dir/build.make CMakeFiles/purn-sssp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=5,6 "Built target purn-sssp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=9,10 "Built target purn-sssp"
 .PHONY : CMakeFiles/purn-sssp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -155,6 +163,110 @@ purn-sssp: CMakeFiles/purn-sssp.dir/rule
 CMakeFiles/purn-sssp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-sssp.dir/build.make CMakeFiles/purn-sssp.dir/clean
 .PHONY : CMakeFiles/purn-sssp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sssp-base.dir
+
+# All Build rule for target.
+CMakeFiles/sssp-base.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=11,12 "Built target sssp-base"
+.PHONY : CMakeFiles/sssp-base.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sssp-base.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sssp-base.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 0
+.PHONY : CMakeFiles/sssp-base.dir/rule
+
+# Convenience name for target.
+sssp-base: CMakeFiles/sssp-base.dir/rule
+.PHONY : sssp-base
+
+# clean rule for target.
+CMakeFiles/sssp-base.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/clean
+.PHONY : CMakeFiles/sssp-base.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sssp-purn.dir
+
+# All Build rule for target.
+CMakeFiles/sssp-purn.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=13,14 "Built target sssp-purn"
+.PHONY : CMakeFiles/sssp-purn.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sssp-purn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sssp-purn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 0
+.PHONY : CMakeFiles/sssp-purn.dir/rule
+
+# Convenience name for target.
+sssp-purn: CMakeFiles/sssp-purn.dir/rule
+.PHONY : sssp-purn
+
+# clean rule for target.
+CMakeFiles/sssp-purn.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/clean
+.PHONY : CMakeFiles/sssp-purn.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ppr-base.dir
+
+# All Build rule for target.
+CMakeFiles/ppr-base.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base.dir/build.make CMakeFiles/ppr-base.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base.dir/build.make CMakeFiles/ppr-base.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=3,4 "Built target ppr-base"
+.PHONY : CMakeFiles/ppr-base.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ppr-base.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ppr-base.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 0
+.PHONY : CMakeFiles/ppr-base.dir/rule
+
+# Convenience name for target.
+ppr-base: CMakeFiles/ppr-base.dir/rule
+.PHONY : ppr-base
+
+# clean rule for target.
+CMakeFiles/ppr-base.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base.dir/build.make CMakeFiles/ppr-base.dir/clean
+.PHONY : CMakeFiles/ppr-base.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ppr-purn.dir
+
+# All Build rule for target.
+CMakeFiles/ppr-purn.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=5,6 "Built target ppr-purn"
+.PHONY : CMakeFiles/ppr-purn.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ppr-purn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ppr-purn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 0
+.PHONY : CMakeFiles/ppr-purn.dir/rule
+
+# Convenience name for target.
+ppr-purn: CMakeFiles/ppr-purn.dir/rule
+.PHONY : ppr-purn
+
+# clean rule for target.
+CMakeFiles/ppr-purn.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/clean
+.PHONY : CMakeFiles/ppr-purn.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
