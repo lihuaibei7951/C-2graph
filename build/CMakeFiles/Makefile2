@@ -70,6 +70,8 @@ all: CMakeFiles/sssp-base.dir/all
 all: CMakeFiles/sssp-purn.dir/all
 all: CMakeFiles/ppr-base.dir/all
 all: CMakeFiles/ppr-purn.dir/all
+all: CMakeFiles/sssp-base-M.dir/all
+all: CMakeFiles/sssp-purn-M.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -84,6 +86,8 @@ clean: CMakeFiles/sssp-base.dir/clean
 clean: CMakeFiles/sssp-purn.dir/clean
 clean: CMakeFiles/ppr-base.dir/clean
 clean: CMakeFiles/ppr-purn.dir/clean
+clean: CMakeFiles/sssp-base-M.dir/clean
+clean: CMakeFiles/sssp-purn-M.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -197,7 +201,7 @@ CMakeFiles/sssp-base.dir/clean:
 CMakeFiles/sssp-purn.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn.dir/build.make CMakeFiles/sssp-purn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=13,14 "Built target sssp-purn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=17,18 "Built target sssp-purn"
 .PHONY : CMakeFiles/sssp-purn.dir/all
 
 # Build rule for subdir invocation for target.
@@ -267,6 +271,58 @@ ppr-purn: CMakeFiles/ppr-purn.dir/rule
 CMakeFiles/ppr-purn.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/clean
 .PHONY : CMakeFiles/ppr-purn.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sssp-base-M.dir
+
+# All Build rule for target.
+CMakeFiles/sssp-base-M.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=13,14,15,16 "Built target sssp-base-M"
+.PHONY : CMakeFiles/sssp-base-M.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sssp-base-M.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sssp-base-M.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 0
+.PHONY : CMakeFiles/sssp-base-M.dir/rule
+
+# Convenience name for target.
+sssp-base-M: CMakeFiles/sssp-base-M.dir/rule
+.PHONY : sssp-base-M
+
+# clean rule for target.
+CMakeFiles/sssp-base-M.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/clean
+.PHONY : CMakeFiles/sssp-base-M.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sssp-purn-M.dir
+
+# All Build rule for target.
+CMakeFiles/sssp-purn-M.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lihuaibei/code/C-2graph/build/CMakeFiles --progress-num=19,20,21,22 "Built target sssp-purn-M"
+.PHONY : CMakeFiles/sssp-purn-M.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sssp-purn-M.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sssp-purn-M.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lihuaibei/code/C-2graph/build/CMakeFiles 0
+.PHONY : CMakeFiles/sssp-purn-M.dir/rule
+
+# Convenience name for target.
+sssp-purn-M: CMakeFiles/sssp-purn-M.dir/rule
+.PHONY : sssp-purn-M
+
+# clean rule for target.
+CMakeFiles/sssp-purn-M.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/clean
+.PHONY : CMakeFiles/sssp-purn-M.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -5,5 +5,7 @@
 /home/lihuaibei/code/C-2graph/build/CMakeFiles/sssp-purn.dir
 /home/lihuaibei/code/C-2graph/build/CMakeFiles/ppr-base.dir
 /home/lihuaibei/code/C-2graph/build/CMakeFiles/ppr-purn.dir
+/home/lihuaibei/code/C-2graph/build/CMakeFiles/sssp-base-M.dir
+/home/lihuaibei/code/C-2graph/build/CMakeFiles/sssp-purn-M.dir
 /home/lihuaibei/code/C-2graph/build/CMakeFiles/edit_cache.dir
 /home/lihuaibei/code/C-2graph/build/CMakeFiles/rebuild_cache.dir

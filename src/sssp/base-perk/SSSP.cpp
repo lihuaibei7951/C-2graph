@@ -2,7 +2,6 @@
 #include <queue>
 #include <algorithm>
 #include "Graph.h"
-//#include "CilkUtil.h"
 #include "SSSP.h"
 #include <sys/time.h>
 #include <unistd.h>

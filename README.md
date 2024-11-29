@@ -26,11 +26,12 @@ To further enhance the performance of graph traversal queries, the paper introdu
 
 ## 2. Quick Start
 
-Before running it, some softwares must be installed, which is beyond the scope of this document. 
+This section will guide you through the installation and usage of C-2graph. Before running the program, certain software dependencies must be installed, which are outlined below.
 ### 2.1 Requirements
-nvcc-version = 10.1
+nvcc-version >= 11.6
 gcc/g++ 7.5
 ### 2.2 Compilation
+Once the prerequisites are met, follow these steps to compile the C-2graph project:
 ```bash
 git clone https://github.com/lihuaibei7951/C-2graph.git --recursive
 cd C-2graph
@@ -40,31 +41,58 @@ cmake ..
 make -j
 ```
 ### 2.3 Graph Input Format&&get binary file
-We can read the adjacency list and generate the corresponding binary file.
+C-2graph expects the graph data in a specific text-based adjacency list format. 
+Each line in the input file represents a vertex and its outgoing edges. For example:
 ```
 src1   dst1:dst2
 src2   dst3:dst4:dst5
 ```
-Run
+To convert the graph into binary format, use the convert2binary tool, 
+which will generate the necessary binary files for further processing.
+
+Run the following command:
 ```
 ../bin/convert2binary input_file_path  dataset_path
 
 ```
-out: vlist.bin  elist.bin wlist.bin(int) flight.bin(float)
+out: vlist.bin  elist.bin wlist.bin(int) flist.bin(float)
 ### 2.4 C-2graph-pri
-Run
+The C-2graph-pri utility is used to preprocess the graph and run the primary graph algorithms. 
+It is essential for preparing the graph data before executing specific algorithms.
+
+To run this step, use the following command:
 ```
 ../bin/purn-sssp dataset_path
 
 ```
+This command will perform preprocessing on the graph data stored at dataset_path, 
+preparing it for efficient execution of graph algorithms like Single-Source Shortest Path (SSSP).
 ### 2.5 C-2graph-P
-Run and compare the results
+The C-2graph-P utility provides two versions of the Single-Source Shortest Path (SSSP) algorithm:
+
+sssp-base: The baseline implementation of SSSP.
+
+sssp-purn: The optimized version of SSSP, incorporating preprocessing for faster execution.
+
+To run and compare the results of both algorithms, use the following commands:
 ```
 ../bin/sssp-base dataset_path source
 ../bin/sssp-purn dataset_path source
 ```
 ### 2.6 C-2graph-PM
-example
+In this program, we need to pay attention to the migration of actual parameters during the switch.
+The C-2graph-PM offers two versions of the SSSP algorithm similar to the previous section:
+
+sssp-base-M: Baseline SSSP with multi-threading/GPU support.
+
+sssp-purn-M: Optimized SSSP with multi-threading/GPU support.
+
+To run and compare these versions, use the following commands:
+
+```
+../bin/sssp-base-M dataset_path source migration
+../bin/sssp-purn-M dataset_path source migration
+```
 ## 3. Contact  
 If you encounter any problem with LRCNN, please feel free to contact lihuaibei7951@stu.ouc.edu.cn.
 

@@ -17,7 +17,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
   "/usr/local/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
   "/usr/local/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
-  "/usr/local/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake"
   "/usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/local/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake"
@@ -30,7 +29,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.28/Modules/Compiler/NVIDIA.cmake"
   "/usr/local/share/cmake-3.28/Modules/FindCUDA.cmake"
   "/usr/local/share/cmake-3.28/Modules/FindCUDA/select_compute_arch.cmake"
-  "/usr/local/share/cmake-3.28/Modules/FindOpenMP.cmake"
   "/usr/local/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/share/cmake-3.28/Modules/FindPackageMessage.cmake"
   "/usr/local/share/cmake-3.28/Modules/FindThreads.cmake"
@@ -62,4 +60,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sssp-purn.dir/DependInfo.cmake"
   "CMakeFiles/ppr-base.dir/DependInfo.cmake"
   "CMakeFiles/ppr-purn.dir/DependInfo.cmake"
+  "CMakeFiles/sssp-base-M.dir/DependInfo.cmake"
+  "CMakeFiles/sssp-purn-M.dir/DependInfo.cmake"
   )

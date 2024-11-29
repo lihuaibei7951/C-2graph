@@ -1,0 +1,1 @@
+  -L/lib/x64  -L"/usr/local/cuda-11.7/targets/x86_64-linux/lib/stubs"  -L"/usr/local/cuda-11.7/targets/x86_64-linux/lib"  -lpthread "/usr/local/cuda-11.7/lib64/libcudart_static.a" -ldl -lrt -lcudadevrt -lcudart_static 

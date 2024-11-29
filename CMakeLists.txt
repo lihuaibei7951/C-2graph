@@ -3,9 +3,6 @@ project(C-2graph CXX CUDA)
 
 set(CMAKE_CXX_STANDARD 14)
 
-find_package(OpenMP REQUIRED)
-
-
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 include_directories(${PROJECT_SOURCE_DIR})
 
@@ -38,3 +35,42 @@ add_executable(sssp-purn src/sssp/purn/Main.cu)
 add_executable(ppr-base src/ppr/base/Main.cu)
 
 add_executable(ppr-purn src/ppr/purn/Main.cu)
+
+# 添加 CUDA 和 C++ 源文件
+set(SOURCE_FILES1
+        src/sssp/base-perk/SSSP.cpp
+        src/sssp/base-perk/Main.cu
+)
+
+set(SOURCE_FILES2
+        src/sssp/purn-perk/SSSP.cpp
+        src/sssp/purn-perk/Main.cu
+)
+
+# 创建可执行文件
+add_executable(sssp-base-M ${SOURCE_FILES1})
+add_executable(sssp-purn-M ${SOURCE_FILES2})  # 假设有多个可执行文件
+
+# 设置编译选项
+foreach(target sssp-base-M sssp-purn-M)  # 对每个目标应用编译选项
+    target_compile_options(${target} PRIVATE -std=c++14)  # 确保使用 C++14 标准
+endforeach()
+
+# 设置链接选项
+foreach(target sssp-base-M sssp-purn-M)  # 对每个目标应用链接选项
+    target_link_libraries(${target} PRIVATE
+            pthread
+            ${CUDA_LIBRARIES}  # 包含 cudart 库
+    )
+endforeach()
+
+# 指定 CMake 使用 CUDA 编译器进行 CUDA 文件编译
+foreach(target sssp-base-M sssp-purn-M)  # 对每个目标应用目标属性
+    set_target_properties(${target} PROPERTIES
+            CUDA_SEPARABLE_COMPILATION ON  # 启用可分离编译（如果需要的话）
+    )
+endforeach()
+
+
+
+

@@ -207,6 +207,32 @@ ppr-purn/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/build
 .PHONY : ppr-purn/fast
 
+#=============================================================================
+# Target rules for targets named sssp-base-M
+
+# Build rule for target.
+sssp-base-M: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sssp-base-M
+.PHONY : sssp-base-M
+
+# fast build rule for target.
+sssp-base-M/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/build
+.PHONY : sssp-base-M/fast
+
+#=============================================================================
+# Target rules for targets named sssp-purn-M
+
+# Build rule for target.
+sssp-purn-M: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sssp-purn-M
+.PHONY : sssp-purn-M
+
+# fast build rule for target.
+sssp-purn-M/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/build
+.PHONY : sssp-purn-M/fast
+
 src/ppr/base/Main.o: src/ppr/base/Main.cu.o
 .PHONY : src/ppr/base/Main.o
 
@@ -303,6 +329,54 @@ src/purn-sssp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/purn-sssp.dir/build.make CMakeFiles/purn-sssp.dir/src/purn-sssp.cpp.s
 .PHONY : src/purn-sssp.cpp.s
 
+src/sssp/base-perk/Main.o: src/sssp/base-perk/Main.cu.o
+.PHONY : src/sssp/base-perk/Main.o
+
+# target to build an object file
+src/sssp/base-perk/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/src/sssp/base-perk/Main.cu.o
+.PHONY : src/sssp/base-perk/Main.cu.o
+
+src/sssp/base-perk/Main.i: src/sssp/base-perk/Main.cu.i
+.PHONY : src/sssp/base-perk/Main.i
+
+# target to preprocess a source file
+src/sssp/base-perk/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/src/sssp/base-perk/Main.cu.i
+.PHONY : src/sssp/base-perk/Main.cu.i
+
+src/sssp/base-perk/Main.s: src/sssp/base-perk/Main.cu.s
+.PHONY : src/sssp/base-perk/Main.s
+
+# target to generate assembly for a file
+src/sssp/base-perk/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/src/sssp/base-perk/Main.cu.s
+.PHONY : src/sssp/base-perk/Main.cu.s
+
+src/sssp/base-perk/SSSP.o: src/sssp/base-perk/SSSP.cpp.o
+.PHONY : src/sssp/base-perk/SSSP.o
+
+# target to build an object file
+src/sssp/base-perk/SSSP.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/src/sssp/base-perk/SSSP.cpp.o
+.PHONY : src/sssp/base-perk/SSSP.cpp.o
+
+src/sssp/base-perk/SSSP.i: src/sssp/base-perk/SSSP.cpp.i
+.PHONY : src/sssp/base-perk/SSSP.i
+
+# target to preprocess a source file
+src/sssp/base-perk/SSSP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/src/sssp/base-perk/SSSP.cpp.i
+.PHONY : src/sssp/base-perk/SSSP.cpp.i
+
+src/sssp/base-perk/SSSP.s: src/sssp/base-perk/SSSP.cpp.s
+.PHONY : src/sssp/base-perk/SSSP.s
+
+# target to generate assembly for a file
+src/sssp/base-perk/SSSP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base-M.dir/build.make CMakeFiles/sssp-base-M.dir/src/sssp/base-perk/SSSP.cpp.s
+.PHONY : src/sssp/base-perk/SSSP.cpp.s
+
 src/sssp/base/Main.o: src/sssp/base/Main.cu.o
 .PHONY : src/sssp/base/Main.o
 
@@ -326,6 +400,54 @@ src/sssp/base/Main.s: src/sssp/base/Main.cu.s
 src/sssp/base/Main.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-base.dir/build.make CMakeFiles/sssp-base.dir/src/sssp/base/Main.cu.s
 .PHONY : src/sssp/base/Main.cu.s
+
+src/sssp/purn-perk/Main.o: src/sssp/purn-perk/Main.cu.o
+.PHONY : src/sssp/purn-perk/Main.o
+
+# target to build an object file
+src/sssp/purn-perk/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/Main.cu.o
+.PHONY : src/sssp/purn-perk/Main.cu.o
+
+src/sssp/purn-perk/Main.i: src/sssp/purn-perk/Main.cu.i
+.PHONY : src/sssp/purn-perk/Main.i
+
+# target to preprocess a source file
+src/sssp/purn-perk/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/Main.cu.i
+.PHONY : src/sssp/purn-perk/Main.cu.i
+
+src/sssp/purn-perk/Main.s: src/sssp/purn-perk/Main.cu.s
+.PHONY : src/sssp/purn-perk/Main.s
+
+# target to generate assembly for a file
+src/sssp/purn-perk/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/Main.cu.s
+.PHONY : src/sssp/purn-perk/Main.cu.s
+
+src/sssp/purn-perk/SSSP.o: src/sssp/purn-perk/SSSP.cpp.o
+.PHONY : src/sssp/purn-perk/SSSP.o
+
+# target to build an object file
+src/sssp/purn-perk/SSSP.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/SSSP.cpp.o
+.PHONY : src/sssp/purn-perk/SSSP.cpp.o
+
+src/sssp/purn-perk/SSSP.i: src/sssp/purn-perk/SSSP.cpp.i
+.PHONY : src/sssp/purn-perk/SSSP.i
+
+# target to preprocess a source file
+src/sssp/purn-perk/SSSP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/SSSP.cpp.i
+.PHONY : src/sssp/purn-perk/SSSP.cpp.i
+
+src/sssp/purn-perk/SSSP.s: src/sssp/purn-perk/SSSP.cpp.s
+.PHONY : src/sssp/purn-perk/SSSP.s
+
+# target to generate assembly for a file
+src/sssp/purn-perk/SSSP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/SSSP.cpp.s
+.PHONY : src/sssp/purn-perk/SSSP.cpp.s
 
 src/sssp/purn/Main.o: src/sssp/purn/Main.cu.o
 .PHONY : src/sssp/purn/Main.o
@@ -389,7 +511,9 @@ help:
 	@echo "... purn-ppr"
 	@echo "... purn-sssp"
 	@echo "... sssp-base"
+	@echo "... sssp-base-M"
 	@echo "... sssp-purn"
+	@echo "... sssp-purn-M"
 	@echo "... src/ppr/base/Main.o"
 	@echo "... src/ppr/base/Main.i"
 	@echo "... src/ppr/base/Main.s"
@@ -402,9 +526,21 @@ help:
 	@echo "... src/purn-sssp.o"
 	@echo "... src/purn-sssp.i"
 	@echo "... src/purn-sssp.s"
+	@echo "... src/sssp/base-perk/Main.o"
+	@echo "... src/sssp/base-perk/Main.i"
+	@echo "... src/sssp/base-perk/Main.s"
+	@echo "... src/sssp/base-perk/SSSP.o"
+	@echo "... src/sssp/base-perk/SSSP.i"
+	@echo "... src/sssp/base-perk/SSSP.s"
 	@echo "... src/sssp/base/Main.o"
 	@echo "... src/sssp/base/Main.i"
 	@echo "... src/sssp/base/Main.s"
+	@echo "... src/sssp/purn-perk/Main.o"
+	@echo "... src/sssp/purn-perk/Main.i"
+	@echo "... src/sssp/purn-perk/Main.s"
+	@echo "... src/sssp/purn-perk/SSSP.o"
+	@echo "... src/sssp/purn-perk/SSSP.i"
+	@echo "... src/sssp/purn-perk/SSSP.s"
 	@echo "... src/sssp/purn/Main.o"
 	@echo "... src/sssp/purn/Main.i"
 	@echo "... src/sssp/purn/Main.s"
