@@ -28,7 +28,8 @@ To further enhance the performance of graph traversal queries, the paper introdu
 
 This section will guide you through the installation and usage of C-2graph. Before running the program, certain software dependencies must be installed, which are outlined below.
 ### 2.1 Requirements
-nvcc-version >= 11.6
+nvcc-version >= 11.0(The CUB library was removed from the CUDA Toolkit starting from CUDA 11.0.)
+
 gcc/g++ 7.5
 ### 2.2 Compilation
 Once the prerequisites are met, follow these steps to compile the C-2graph project:
