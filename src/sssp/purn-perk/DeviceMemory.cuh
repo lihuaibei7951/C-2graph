@@ -14,8 +14,8 @@ public:
     Vertex *active_vert2;
     Vertex * active_vert_num2;
 
-    bool      *isactive;
-
+    bool      *isactive1;
+    bool      *isactive2;
 
     //size_t pitch; // 存储实际行大小的变量
 
@@ -29,7 +29,8 @@ public:
         distance1 = NULL;
         active_vert1 = NULL;
         active_vert_num1 = NULL;
-        isactive = NULL;
+        isactive1 = NULL;
+        isactive2 = NULL;
 
         distance2 = NULL;
         active_vert2 = NULL;
@@ -80,7 +81,8 @@ private:
         CUDA_ERROR(cudaMalloc(&distance1, sizeof(ValueType) * vert_num ));
         CUDA_ERROR(cudaMalloc(&active_vert1, sizeof(Vertex) * vert_num));
         CUDA_ERROR(cudaMalloc(&active_vert_num1, sizeof(Vertex) * 1 ));
-        CUDA_ERROR(cudaMalloc(&isactive, sizeof(Vertex) * vert_num ));
+        CUDA_ERROR(cudaMalloc(&isactive1, sizeof(bool) * vert_num ));
+        CUDA_ERROR(cudaMalloc(&isactive2, sizeof(bool) * vert_num ));
 
         CUDA_ERROR(cudaMalloc(&distance2, sizeof(ValueType) * vert_num ));
         CUDA_ERROR(cudaMalloc(&active_vert2, sizeof(Vertex) * vert_num));
@@ -103,6 +105,8 @@ private:
 
     // Release memory for data in GPU.
     void CudaFreeData() {
+        //
+
         if (csr_e)
             CUDA_ERROR(cudaFree(csr_e));
         if (csr_w)
@@ -116,8 +120,10 @@ private:
             CUDA_ERROR(cudaFree(active_vert_num1));
         if (distance1)
             CUDA_ERROR(cudaFree(distance1));
-        if (isactive)
-            CUDA_ERROR(cudaFree(isactive));
+        if (isactive1)
+            CUDA_ERROR(cudaFree(isactive1));
+        if (isactive2)
+            CUDA_ERROR(cudaFree(isactive2));
 
         if (active_vert2)
             CUDA_ERROR(cudaFree(active_vert2));

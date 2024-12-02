@@ -81,18 +81,14 @@ To run and compare the results of both algorithms, use the following commands:
 ```
 ### 2.6 C-2graph-PM
 In this program, we need to pay attention to the migration of actual parameters during the switch.
-The C-2graph-PM offers two versions of the SSSP algorithm similar to the previous section:
-
-sssp-base-M: Baseline SSSP with multi-threading/GPU support.
 
 sssp-purn-M: Optimized SSSP with multi-threading/GPU support.
 
-To run and compare these versions, use the following commands:
+To run C-2graph-PM, use the following commands:
 
 ```
-../bin/sssp-base-M dataset_path source migration
 ../bin/sssp-purn-M dataset_path source migration
 ```
 ## 3. Contact  
-If you encounter any problem with LRCNN, please feel free to contact lihuaibei7951@stu.ouc.edu.cn.
+If you encounter any problem with C-2graph, please feel free to contact lihuaibei7951@stu.ouc.edu.cn.
 

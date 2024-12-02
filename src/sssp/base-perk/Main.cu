@@ -1,5 +1,5 @@
 #include <time.h>
-#include "Util.cuh"
+#include "core/Util.cuh"
 #include "DeviceMemory.cuh"
 #include "SSSP.h"
 #include <sys/time.h>
@@ -82,7 +82,7 @@ int main(int argc, char **argv) {
 
     // 记录第一个时间点
     timestamps.push_back(high_resolution_clock::now());
-        cudaEvent_t start, stop;
+    cudaEvent_t start, stop;
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
     cudaEventRecord(start);
@@ -90,21 +90,20 @@ int main(int argc, char **argv) {
 
 
 
-    
     while (1) {
-    while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){//
+        while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){//
             ++source;
         }
 
         CalcuSSSP<<<MAX_BLOCKS_NUM, THREADS_PER_BLOCK,0,stream2>>>(
                 device_memory.csr_v, device_memory.csr_e, device_memory.csr_w, device_memory.distance2,
-                device_memory.active_vert2,device_memory.active_vert_num2,device_memory.isactive,
+                device_memory.active_vert2,device_memory.active_vert_num2,device_memory.isactive2,
                 graph.vert_num, source++,iteration_id,iter);
-        
-        
+
+
         if(cnt){
-    
-          CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->distance, device_memory.distance1,
+
+            CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->distance, device_memory.distance1,
                                        graph.vert_num *sizeof(ValueType), cudaMemcpyDeviceToHost, stream1 ));//1
 
             //额外开销
@@ -118,14 +117,14 @@ int main(int argc, char **argv) {
             CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->flag, flagG,
                                        sizeof(int), cudaMemcpyDeviceToHost, stream1));
 
-                                        // 记录结束时间
-                        ////更新队列信息
+            // 记录结束时间
+            ////更新队列信息
             cudaStreamSynchronize(stream1);
             if(bufferqueue->length>2){
-            iter=10000;
-              if(bufferqueue->length<4){
-              
- 
+                iter=10000;
+                if(bufferqueue->length<4){
+
+
                     bufferqueue->front->source = source-1;
                     bufferqueue->front = bufferqueue->front->next; // 指针后移
                     bufferqueue->length++;
@@ -141,15 +140,15 @@ int main(int argc, char **argv) {
             cnt++;
         }
 
-while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){//
+        while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){//
             ++source;
         }
         CalcuSSSP<<<MAX_BLOCKS_NUM, THREADS_PER_BLOCK,0,stream1>>>(
                 device_memory.csr_v, device_memory.csr_e, device_memory.csr_w, device_memory.distance1,
-                device_memory.active_vert1,device_memory.active_vert_num1,device_memory.isactive,
+                device_memory.active_vert1,device_memory.active_vert_num1,device_memory.isactive1,
                 graph.vert_num, source++,iteration_id,iter);
 
-         CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->distance, device_memory.distance2,
+        CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->distance, device_memory.distance2,
                                    graph.vert_num*sizeof(ValueType), cudaMemcpyDeviceToHost, stream2));
 
         //额外开销
@@ -162,35 +161,33 @@ while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){/
 
         CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->flag, flagG,
                                    sizeof(int), cudaMemcpyDeviceToHost, stream2));
-                                   ////更新队列信息
+        ////更新队列信息
         // Stream2 完成后，更新队列
         cudaStreamSynchronize(stream2);
-        
+
         if(bufferqueue->length>2){
-                iter=10000;
-                if(bufferqueue->length<4){
-
-        
-                    bufferqueue->front->source = source-1;
-                    bufferqueue->front = bufferqueue->front->next; // 指针后移
-                    bufferqueue->length++;
-                }
-
-            }else{
-
+            iter=10000;
+            if(bufferqueue->length<4){
                 bufferqueue->front->source = source-1;
                 bufferqueue->front = bufferqueue->front->next; // 指针后移
                 bufferqueue->length++;
-                iter=iterx;
             }
+
+        }else{
+
+            bufferqueue->front->source = source-1;
+            bufferqueue->front = bufferqueue->front->next; // 指针后移
+            bufferqueue->length++;
+            iter=iterx;
+        }
         cnt++;
-          timestamps.push_back(high_resolution_clock::now());
-         cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
+        timestamps.push_back(high_resolution_clock::now());
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
 
 
-        if (cnt >= 100) {
-     
-         
+        if (cnt >= 2) {
+
+
             CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->distance, device_memory.distance1,
                                        graph.vert_num *sizeof(ValueType), cudaMemcpyDeviceToHost, stream1 ));//1
 
@@ -205,7 +202,7 @@ while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){/
             CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->flag, flagG,
                                        sizeof(int), cudaMemcpyDeviceToHost, stream1));
 
- 
+
             ////更新队列信息
             cudaStreamSynchronize(stream1);
             if(bufferqueue->length>2){
@@ -224,7 +221,7 @@ while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){/
                 bufferqueue->length++;
                 iter=iterx;
             }
-            
+
             cnt++;
             cudaDeviceSynchronize();
             bufferqueue->flag = -1;
@@ -236,10 +233,10 @@ while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){/
     }
 
 
-    
+
     float runtime = 0;
     cudaEventElapsedTime(&runtime, start, stop);
-    
+
 
     pthread_join(Pthread, NULL);
     cout << "gpu runtime: " << runtime/1000.0<< " seconds" <<endl;
@@ -249,12 +246,12 @@ while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<10){/
     timeuse = (t_stop.tv_sec - t_start.tv_sec) + (double)(t_stop.tv_usec - t_start.tv_usec)/1000000.0;
     cout << "main total timeval runtime: " << timeuse << " seconds" << endl;
 
- // 计算并输出时间差
-    for (size_t i = 1; i < timestamps.size(); ++i) {
-        auto duration = duration_cast<milliseconds>(timestamps[i] - timestamps[0]);
-        std::cout << duration.count()  << std::endl;
-    }
- //std::cout << "Average transfer time per iteration: " << totalTime << " ms" << std::endl;
+    // 计算并输出时间差
+//    for (size_t i = 1; i < timestamps.size(); ++i) {
+//        auto duration = duration_cast<milliseconds>(timestamps[i] - timestamps[0]);
+//        std::cout << duration.count()  << std::endl;
+//    }
+    //std::cout << "Average transfer time per iteration: " << totalTime << " ms" << std::endl;
 
     return 0;
 }
@@ -319,10 +316,7 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, ValueType *cs
     volatile __shared__ int commd2[THREADS_PER_BLOCK]; //out-degree
     volatile __shared__ ValueType commr2[THREADS_PER_BLOCK];
 
-     while ((*active_vert_num > 0)&&(l_iteration_id<iter||*active_vert_num>100000) &&l_iteration_id<200){
-    //  if(iter!=10000&&(*active_vert_num<500&&l_iteration_id>10)) return ;||*active_vert_num> 100000
-        //while (l_iteration_id < 1) {
-        
+    while ((*active_vert_num > 0)&&(l_iteration_id<iter)){
         l_iteration_id += 1;
         __syncthreads();
         if (threadIdx.x == 0) {
@@ -372,7 +366,7 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, ValueType *cs
                         weight = commr[0]+csr_w[push_st];
                         ValueType old = atomicMin(dis+v, weight);
                         if(old!=dis[v]){
-                           isactive[v] = true;
+                            isactive[v] = true;
                         }
 
                     }
@@ -402,9 +396,9 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, ValueType *cs
                         v = csr_e[push_st];
                         weight = commr[warp_id] + csr_w[push_st];
                         ValueType old = atomicMin(dis+v, weight);
-                       if(old!=dis[v]){
-                           isactive[v] = true;
-                       }
+                        if(old!=dis[v]){
+                            isactive[v] = true;
+                        }
                     }
                     push_st += THREADS_PER_WARP; //until all outgoing edges of "u" have been processed
                 }//while<2>, 处理所有outdeg > 32
@@ -437,9 +431,9 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, ValueType *cs
                     weight = commr2[thread_id]+csr_w[comm2[thread_id]];
                     ValueType old = atomicMin(dis+v, weight);
                     if(old!=dis[v]){
-                           isactive[v] = true;
+                        isactive[v] = true;
                     }
-                       
+
                 }
                 __syncthreads();
                 progress += THREADS_PER_BLOCK;
@@ -447,7 +441,7 @@ __global__ void CalcuSSSP(const Vertex *csr_v,const Vertex *csr_e, ValueType *cs
             schedule_offset += blockDim.x * gridDim.x;
         }
         __syncthreads();
- __syncthreads();
+        __syncthreads();
         if (threadIdx.x == 0) {
             atomicAdd((int *)&g_mutex5, 1);
             while (g_mutex5 < gridDim.x * iteration_id[l_iteration_id]) {}

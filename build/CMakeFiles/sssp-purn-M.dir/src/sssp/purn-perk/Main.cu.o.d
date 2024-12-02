@@ -156,7 +156,7 @@ CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/Main.cu.o : /home/lihuaibei/code/C
     /usr/local/cuda-11.7/include/surface_indirect_functions.h \
     /usr/local/cuda-11.7/include/crt/cudacc_ext.h \
     /usr/local/cuda-11.7/include/device_launch_parameters.h \
-    /home/lihuaibei/code/C-2graph/src/sssp/purn-perk/Util.cuh \
+    /home/lihuaibei/code/C-2graph/core/Util.cuh \
     /usr/include/c++/9/iostream \
     /usr/include/c++/9/ostream \
     /usr/include/c++/9/ios \
@@ -546,6 +546,7 @@ CMakeFiles/sssp-purn-M.dir/src/sssp/purn-perk/Main.cu.o : /home/lihuaibei/code/C
     /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
     /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
     /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+    /home/lihuaibei/code/C-2graph/core/io.hpp \
     /home/lihuaibei/code/C-2graph/src/sssp/purn-perk/SSSP.h \
     /usr/include/c++/9/queue \
     /usr/include/c++/9/deque \
