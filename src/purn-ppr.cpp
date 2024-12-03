@@ -22,34 +22,6 @@
  *
  */
 
-template <typename T>
-void insert_sorted(std::vector<T>& vec, const T& value) {
-    // 使用 std::lower_bound 找到插入位置
-    auto it = std::lower_bound(vec.begin(), vec.end(), value);
-
-    // 如果元素不存在，则插入元素
-    if (it == vec.end() || *it != value) {
-        vec.insert(it, value);
-    }
-}
-
-template <typename T>
-void insert_sortedw(std::vector<T>& vec, const T& value) {
-    // 使用 std::lower_bound 找到插入位置
-    auto it = std::lower_bound(vec.begin(), vec.end(), value,
-                               [](const std::pair<VertexT, VertexT>& a, const std::pair<VertexT, VertexT>& b) {
-                                   return a.first < b.first;
-                               });
-
-    // 如果元素不存在，则插入元素
-    if (it != vec.end() && it->first == value.first) {
-        it->second=std::min(it->second,value.second);
-
-    }else
-    if(it == vec.end() || it->first != value.first){
-        vec.insert(it, value);
-    }
-}
 void csr_convert_idx(std::vector<std::vector<std::pair<VertexT,bool>>> &graph,
                      std::vector<VertexT> &vlist, std::vector<VertexT> &elist,
                      VertexT vertex_cnt) {
@@ -157,6 +129,7 @@ int main(int argc, char **argv) {
         e1+=graph[i].size();
         e2+=graphT[i].size();
         vlist[i]=graphT[i].size();
+     //   if(i<10) std::cout<<i<<" indeg   "<<graphT[i].size()<<std::endl;
     }
     if(e1!=e2) printf("e1!=e2\n");
     printf("1st e1 : %d\n",e1);
@@ -174,29 +147,27 @@ int main(int argc, char **argv) {
 
     for(int i=0;i<vertex_cnt;i++){
         if(i%1000000==0) std::cout<<i<<std::endl;
-        //if(i>1000000) break;
+    //    if(i<5) continue;
 
         if(graph[i].size()&&vlist[i]>0&& vlist[i]<=dmax&&flag[i]){
 
             root.resize(vlist[i]);
             dis.resize(vlist[i]);
             id.resize(vlist[i]);
-
-
             int j=0;
             for(auto it=graphT[i].begin();it!=graphT[i].end();++it){
                 if(!it->second) continue;
                 root[j] = it->first;
                 flag[root[j]]=false;
                 //查找权重位置
-                auto itx = std::lower_bound(graph[root[j]].begin(), graph[root[j]].end(), std::make_pair(i, 99999),
+                auto itx = std::lower_bound(graph[root[j]].begin(), graph[root[j]].end(), std::make_pair(i, -1),
                                             [](const std::pair<VertexT, ValueT>& a, const std::pair<VertexT, ValueT>& b) {
                                                 return a.first < b.first;
                                             });
                 //check
                 if (itx != graph[root[j]].end() && itx->first == i) {
                     dis[j]=itx->second;
-                    if(dis[j]==99999){
+                    if(dis[j]==-1){
                         std::cout << " error \n" << std::endl;
                         return 1;
                     }
@@ -207,7 +178,7 @@ int main(int argc, char **argv) {
                 ++j;
 
             }
-            if(j!=graphT[i].size()) printf("not equal j&&graphTsize\n");
+            if(j!=vlist[i]) printf("not equal j&&graphTsize\n");
             for(int k=0;k<j;++k) id[k]=0;
 
             //需要判定root1->v以及root2->v是否存在

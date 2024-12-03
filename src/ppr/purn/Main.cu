@@ -77,13 +77,13 @@ int main(int argc, char **argv) {
     cudaEventRecord(start);
     while(1){
 
-        init_active_num = graph.csr_ov[source+1]-graph.csr_ov[source];
-        cudaDeviceSynchronize();
-        CUDA_ERROR(cudaMemcpy(device_memory.active_vert, &graph.csr_oe[graph.csr_ov[source]],
-                              sizeof(int)*init_active_num, cudaMemcpyHostToDevice));
-
-        CUDA_ERROR(cudaMemcpy(wal, &graph.csr_ow[graph.csr_ov[source]],
-                              sizeof(float)*init_active_num, cudaMemcpyHostToDevice));
+//        init_active_num = graph.csr_ov[source+1]-graph.csr_ov[source];
+//        cudaDeviceSynchronize();
+//        CUDA_ERROR(cudaMemcpy(device_memory.active_vert, &graph.csr_oe[graph.csr_ov[source]],
+//                              sizeof(int)*init_active_num, cudaMemcpyHostToDevice));
+//
+//        CUDA_ERROR(cudaMemcpy(wal, &graph.csr_ow[graph.csr_ov[source]],
+//                              sizeof(float)*init_active_num, cudaMemcpyHostToDevice));
         cudaDeviceSynchronize();
 
         CUDA_ERROR(cudaMemcpy(device_memory.active_vert+init_active_num, &graph.csr_e[graph.csr_v[source]],
@@ -136,7 +136,7 @@ int main(int argc, char **argv) {
 
     //cout << "内存开辟耗时: " << timeMalloc << endl;
     gettimeofday(&t_stop, NULL);
-  //  DumpResults(graph.vert_num, device_memory.pagerankStream, device_memory.residualStream, device_memory.messagesStream);
+    DumpResults(graph.vert_num, device_memory.pagerankStream, device_memory.residualStream, device_memory.messagesStream);
 
     timeuse = (t_stop.tv_sec - t_start.tv_sec) + (double)(t_stop.tv_usec - t_start.tv_usec)/1000000.0;
     //cout << "main total timeval runtime: " << timeuse << " seconds" << endl;

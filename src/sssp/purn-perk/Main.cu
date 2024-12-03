@@ -188,8 +188,6 @@ int main(int argc, char **argv) {
         if(bufferqueue->length>2){
             iter=10000;
             if(bufferqueue->length<4){
-
-
                 bufferqueue->front->source = source-1;
                 bufferqueue->front = bufferqueue->front->next; // 指针后移
                 bufferqueue->length++;

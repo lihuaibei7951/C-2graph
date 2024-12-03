@@ -111,7 +111,7 @@ int main(int argc, char **argv) {
 
     //cout << "内存开辟耗时: " << timeMalloc << endl;
     gettimeofday(&t_stop, NULL);
-   // DumpResults(graph.vert_num, device_memory.pagerankStream, device_memory.residualStream, device_memory.messagesStream);
+    DumpResults(graph.vert_num, device_memory.pagerankStream, device_memory.residualStream, device_memory.messagesStream);
     timeuse = (t_stop.tv_sec - t_start.tv_sec) + (double)(t_stop.tv_usec - t_start.tv_usec)/1000000.0;
     //cout << "main total timeval runtime: " << timeuse << " seconds" << endl;
     return 0;
