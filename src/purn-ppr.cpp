@@ -129,7 +129,7 @@ int main(int argc, char **argv) {
         e1+=graph[i].size();
         e2+=graphT[i].size();
         vlist[i]=graphT[i].size();
-     //   if(i<10) std::cout<<i<<" indeg   "<<graphT[i].size()<<std::endl;
+        if(i<10) std::cout<<i<<" indeg   "<<graphT[i].size()<<std::endl;
     }
     if(e1!=e2) printf("e1!=e2\n");
     printf("1st e1 : %d\n",e1);
@@ -158,7 +158,7 @@ int main(int argc, char **argv) {
             for(auto it=graphT[i].begin();it!=graphT[i].end();++it){
                 if(!it->second) continue;
                 root[j] = it->first;
-                flag[root[j]]=false;
+           //     flag[root[j]]=false;
                 //查找权重位置
                 auto itx = std::lower_bound(graph[root[j]].begin(), graph[root[j]].end(), std::make_pair(i, -1),
                                             [](const std::pair<VertexT, ValueT>& a, const std::pair<VertexT, ValueT>& b) {
@@ -206,7 +206,7 @@ int main(int argc, char **argv) {
 
                 }
                 if(cnt+2>j){
-                    flag[v]=false;
+            //        flag[v]=false;
                     tmp1.push_back({v,d3});
                     for (int k : tmproot) {
                         auto it=std::lower_bound(graphT[v].begin(),graphT[v].end(),k,[](const std::pair<VertexT,bool>& a,const VertexT& b){
@@ -278,6 +278,8 @@ int main(int argc, char **argv) {
             tmp1.resize(0);
             tmpedge.resize(0);
             tmpweight.resize(0);
+        }else{
+            file1.write(reinterpret_cast<const char*>(&zero),sizeof(int));
         }
     }
 

@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
     // Initialize parameters for PPR
     
     ValueType alpha = 0.2f;
-    ValueType rmax =0.001f/(graph.vert_num);
+    ValueType rmax =0.001f/(graph.vert_num+1);
     int cnt = 0;
 
     struct timeval t_start, t_stop;
@@ -344,12 +344,9 @@ __global__ void calcuatePPR(const int *csr_v, const int *csr_e, const ValueType 
                     residual[vid] += messages[vid];
                     messages[vid] = 0;
                     isactive[vid] = false;
-                    if (csr_v[vid+1] - csr_v[vid]>0&&(residual[vid]/(csr_v[vid+1] - csr_v[vid])) > rmax) {//执行边界检测标准，符合条件将标志位设>置为1
+                    if (residual[vid] > rmax) {//执行边界检测标准，符合条件将标志位设>置为1
                         pagerank[vid] += alpha * residual[vid];
                         thread_cnt = 1;
-                    } else if(csr_v[vid+1] - csr_v[vid]==0){
-                        pagerank[vid] += alpha * residual[vid];
-                        residual[vid]=0;
                     }
                 }
             }

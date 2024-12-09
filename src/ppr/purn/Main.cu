@@ -76,14 +76,15 @@ int main(int argc, char **argv) {
     cudaEventCreate(&stop);
     cudaEventRecord(start);
     while(1){
+        printf("csr_v %d--%d\n",graph.csr_ov[source+1]-graph.csr_ov[source],graph.csr_v[source+1]-graph.csr_v[source]);
 
-//        init_active_num = graph.csr_ov[source+1]-graph.csr_ov[source];
-//        cudaDeviceSynchronize();
-//        CUDA_ERROR(cudaMemcpy(device_memory.active_vert, &graph.csr_oe[graph.csr_ov[source]],
-//                              sizeof(int)*init_active_num, cudaMemcpyHostToDevice));
-//
-//        CUDA_ERROR(cudaMemcpy(wal, &graph.csr_ow[graph.csr_ov[source]],
-//                              sizeof(float)*init_active_num, cudaMemcpyHostToDevice));
+        init_active_num = graph.csr_ov[source+1]-graph.csr_ov[source];
+        cudaDeviceSynchronize();
+        CUDA_ERROR(cudaMemcpy(device_memory.active_vert, &graph.csr_oe[graph.csr_ov[source]],
+                              sizeof(int)*init_active_num, cudaMemcpyHostToDevice));
+
+        CUDA_ERROR(cudaMemcpy(wal, &graph.csr_ow[graph.csr_ov[source]],
+                              sizeof(float)*init_active_num, cudaMemcpyHostToDevice));
         cudaDeviceSynchronize();
 
         CUDA_ERROR(cudaMemcpy(device_memory.active_vert+init_active_num, &graph.csr_e[graph.csr_v[source]],
@@ -383,12 +384,9 @@ __global__ void calcuatePPR(const int *csr_v, const int *csr_e, const ValueType 
                     residual[vid] += messages[vid];
                     messages[vid] = 0;
                     isactive[vid] = false;
-                    if (csr_v[vid+1] - csr_v[vid]>0&&(residual[vid]/(csr_v[vid+1] - csr_v[vid])) > rmax) {//执行边界检测标准，符合条件将标志位设>置为1
+                    if (residual[vid] > rmax) {//执行边界检测标准，符合条件将标志位设>置为1
                         pagerank[vid] += alpha * residual[vid];
                         thread_cnt = 1;
-                    } else if(csr_v[vid+1] - csr_v[vid]==0){
-                        pagerank[vid] += alpha * residual[vid];
-                        residual[vid]=0;
                     }
                 }
             }

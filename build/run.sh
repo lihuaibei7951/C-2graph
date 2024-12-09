@@ -18,8 +18,8 @@ output_directory_path=../dataset/stanford
 
 
 
-exec_ppr=../bin/purn-ppr
-$exec_ppr $output_directory_path
+#exec_ppr=../bin/purn-ppr
+#$exec_ppr $output_directory_path
 #
 pprbase=../bin/ppr-base
 $pprbase $output_directory_path 1

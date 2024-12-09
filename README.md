@@ -42,13 +42,13 @@ cmake ..
 make -j
 ```
 ### 2.3 Graph Input Format&&get binary file
-C-2graph expects the graph data in a specific text-based adjacency list format. 
+C-2graph expects the graph data in a specific text-based adjacency list format.
 Each line in the input file represents a vertex and its outgoing edges. For example:
 ```
 src1   dst1:dst2
 src2   dst3:dst4:dst5
 ```
-To convert the graph into binary format, use the convert2binary tool, 
+To convert the graph into binary format, use the convert2binary tool,
 which will generate the necessary binary files for further processing.
 
 Run the following command:
@@ -58,7 +58,7 @@ Run the following command:
 ```
 out: vlist.bin  elist.bin wlist.bin(int) flist.bin(float)
 ### 2.4 C-2graph-pri
-The C-2graph-pri utility is used to preprocess the graph and run the primary graph algorithms. 
+The C-2graph-pri utility is used to preprocess the graph and run the primary graph algorithms.
 It is essential for preparing the graph data before executing specific algorithms.
 
 To run this step, use the following command:
@@ -66,7 +66,7 @@ To run this step, use the following command:
 ../bin/purn-sssp dataset_path
 
 ```
-This command will perform preprocessing on the graph data stored at dataset_path, 
+This command will perform preprocessing on the graph data stored at dataset_path,
 preparing it for efficient execution of graph algorithms like Single-Source Shortest Path (SSSP).
 ### 2.5 C-2graph-P
 The C-2graph-P utility provides two versions of the Single-Source Shortest Path (SSSP) algorithm:
@@ -90,6 +90,6 @@ To run C-2graph-PM, use the following commands:
 ```
 ../bin/sssp-purn-M dataset_path source migration
 ```
-## 3. Contact  
+## 3. Contact
 If you encounter any problem with C-2graph, please feel free to contact lihuaibei7951@stu.ouc.edu.cn.
 
