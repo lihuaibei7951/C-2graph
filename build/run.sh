@@ -21,10 +21,11 @@ output_directory_path=../dataset/stanford
 #exec_ppr=../bin/purn-ppr
 #$exec_ppr $output_directory_path
 #
-pprbase=../bin/ppr-base
-$pprbase $output_directory_path 1
-pprpurn=../bin/ppr-purn
-$pprpurn $output_directory_path 1
+#pprbase=../bin/ppr-base
+#$pprbase $output_directory_path 1
+#
+#pprpurn=../bin/ppr-purn
+#$pprpurn $output_directory_path 1
 
 
 
@@ -36,3 +37,12 @@ $pprpurn $output_directory_path 1
 #sssppurnM=../bin/sssp-purn-M
 #
 #$sssppurnM $output_directory_path 5 40
+
+
+#pprbaseM=../bin/ppr-base-M
+#
+#$pprbaseM $output_directory_path 5 40
+
+pprpurnM=../bin/ppr-purn-M
+
+$pprpurnM $output_directory_path 5 40

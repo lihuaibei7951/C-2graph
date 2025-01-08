@@ -233,6 +233,32 @@ sssp-purn-M/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sssp-purn-M.dir/build.make CMakeFiles/sssp-purn-M.dir/build
 .PHONY : sssp-purn-M/fast
 
+#=============================================================================
+# Target rules for targets named ppr-base-M
+
+# Build rule for target.
+ppr-base-M: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppr-base-M
+.PHONY : ppr-base-M
+
+# fast build rule for target.
+ppr-base-M/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base-M.dir/build.make CMakeFiles/ppr-base-M.dir/build
+.PHONY : ppr-base-M/fast
+
+#=============================================================================
+# Target rules for targets named ppr-purn-M
+
+# Build rule for target.
+ppr-purn-M: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ppr-purn-M
+.PHONY : ppr-purn-M
+
+# fast build rule for target.
+ppr-purn-M/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn-M.dir/build.make CMakeFiles/ppr-purn-M.dir/build
+.PHONY : ppr-purn-M/fast
+
 src/ppr/base/Main.o: src/ppr/base/Main.cu.o
 .PHONY : src/ppr/base/Main.o
 
@@ -280,6 +306,102 @@ src/ppr/purn/Main.s: src/ppr/purn/Main.cu.s
 src/ppr/purn/Main.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn.dir/build.make CMakeFiles/ppr-purn.dir/src/ppr/purn/Main.cu.s
 .PHONY : src/ppr/purn/Main.cu.s
+
+src/ppr/w-base-perk/Main.o: src/ppr/w-base-perk/Main.cu.o
+.PHONY : src/ppr/w-base-perk/Main.o
+
+# target to build an object file
+src/ppr/w-base-perk/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base-M.dir/build.make CMakeFiles/ppr-base-M.dir/src/ppr/w-base-perk/Main.cu.o
+.PHONY : src/ppr/w-base-perk/Main.cu.o
+
+src/ppr/w-base-perk/Main.i: src/ppr/w-base-perk/Main.cu.i
+.PHONY : src/ppr/w-base-perk/Main.i
+
+# target to preprocess a source file
+src/ppr/w-base-perk/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base-M.dir/build.make CMakeFiles/ppr-base-M.dir/src/ppr/w-base-perk/Main.cu.i
+.PHONY : src/ppr/w-base-perk/Main.cu.i
+
+src/ppr/w-base-perk/Main.s: src/ppr/w-base-perk/Main.cu.s
+.PHONY : src/ppr/w-base-perk/Main.s
+
+# target to generate assembly for a file
+src/ppr/w-base-perk/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base-M.dir/build.make CMakeFiles/ppr-base-M.dir/src/ppr/w-base-perk/Main.cu.s
+.PHONY : src/ppr/w-base-perk/Main.cu.s
+
+src/ppr/w-base-perk/PPR.o: src/ppr/w-base-perk/PPR.cpp.o
+.PHONY : src/ppr/w-base-perk/PPR.o
+
+# target to build an object file
+src/ppr/w-base-perk/PPR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base-M.dir/build.make CMakeFiles/ppr-base-M.dir/src/ppr/w-base-perk/PPR.cpp.o
+.PHONY : src/ppr/w-base-perk/PPR.cpp.o
+
+src/ppr/w-base-perk/PPR.i: src/ppr/w-base-perk/PPR.cpp.i
+.PHONY : src/ppr/w-base-perk/PPR.i
+
+# target to preprocess a source file
+src/ppr/w-base-perk/PPR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base-M.dir/build.make CMakeFiles/ppr-base-M.dir/src/ppr/w-base-perk/PPR.cpp.i
+.PHONY : src/ppr/w-base-perk/PPR.cpp.i
+
+src/ppr/w-base-perk/PPR.s: src/ppr/w-base-perk/PPR.cpp.s
+.PHONY : src/ppr/w-base-perk/PPR.s
+
+# target to generate assembly for a file
+src/ppr/w-base-perk/PPR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-base-M.dir/build.make CMakeFiles/ppr-base-M.dir/src/ppr/w-base-perk/PPR.cpp.s
+.PHONY : src/ppr/w-base-perk/PPR.cpp.s
+
+src/ppr/w-purn-perk/Main.o: src/ppr/w-purn-perk/Main.cu.o
+.PHONY : src/ppr/w-purn-perk/Main.o
+
+# target to build an object file
+src/ppr/w-purn-perk/Main.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn-M.dir/build.make CMakeFiles/ppr-purn-M.dir/src/ppr/w-purn-perk/Main.cu.o
+.PHONY : src/ppr/w-purn-perk/Main.cu.o
+
+src/ppr/w-purn-perk/Main.i: src/ppr/w-purn-perk/Main.cu.i
+.PHONY : src/ppr/w-purn-perk/Main.i
+
+# target to preprocess a source file
+src/ppr/w-purn-perk/Main.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn-M.dir/build.make CMakeFiles/ppr-purn-M.dir/src/ppr/w-purn-perk/Main.cu.i
+.PHONY : src/ppr/w-purn-perk/Main.cu.i
+
+src/ppr/w-purn-perk/Main.s: src/ppr/w-purn-perk/Main.cu.s
+.PHONY : src/ppr/w-purn-perk/Main.s
+
+# target to generate assembly for a file
+src/ppr/w-purn-perk/Main.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn-M.dir/build.make CMakeFiles/ppr-purn-M.dir/src/ppr/w-purn-perk/Main.cu.s
+.PHONY : src/ppr/w-purn-perk/Main.cu.s
+
+src/ppr/w-purn-perk/PPR.o: src/ppr/w-purn-perk/PPR.cpp.o
+.PHONY : src/ppr/w-purn-perk/PPR.o
+
+# target to build an object file
+src/ppr/w-purn-perk/PPR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn-M.dir/build.make CMakeFiles/ppr-purn-M.dir/src/ppr/w-purn-perk/PPR.cpp.o
+.PHONY : src/ppr/w-purn-perk/PPR.cpp.o
+
+src/ppr/w-purn-perk/PPR.i: src/ppr/w-purn-perk/PPR.cpp.i
+.PHONY : src/ppr/w-purn-perk/PPR.i
+
+# target to preprocess a source file
+src/ppr/w-purn-perk/PPR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn-M.dir/build.make CMakeFiles/ppr-purn-M.dir/src/ppr/w-purn-perk/PPR.cpp.i
+.PHONY : src/ppr/w-purn-perk/PPR.cpp.i
+
+src/ppr/w-purn-perk/PPR.s: src/ppr/w-purn-perk/PPR.cpp.s
+.PHONY : src/ppr/w-purn-perk/PPR.s
+
+# target to generate assembly for a file
+src/ppr/w-purn-perk/PPR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppr-purn-M.dir/build.make CMakeFiles/ppr-purn-M.dir/src/ppr/w-purn-perk/PPR.cpp.s
+.PHONY : src/ppr/w-purn-perk/PPR.cpp.s
 
 src/purn-ppr.o: src/purn-ppr.cpp.o
 .PHONY : src/purn-ppr.o
@@ -507,7 +629,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... convert2binary"
 	@echo "... ppr-base"
+	@echo "... ppr-base-M"
 	@echo "... ppr-purn"
+	@echo "... ppr-purn-M"
 	@echo "... purn-ppr"
 	@echo "... purn-sssp"
 	@echo "... sssp-base"
@@ -520,6 +644,18 @@ help:
 	@echo "... src/ppr/purn/Main.o"
 	@echo "... src/ppr/purn/Main.i"
 	@echo "... src/ppr/purn/Main.s"
+	@echo "... src/ppr/w-base-perk/Main.o"
+	@echo "... src/ppr/w-base-perk/Main.i"
+	@echo "... src/ppr/w-base-perk/Main.s"
+	@echo "... src/ppr/w-base-perk/PPR.o"
+	@echo "... src/ppr/w-base-perk/PPR.i"
+	@echo "... src/ppr/w-base-perk/PPR.s"
+	@echo "... src/ppr/w-purn-perk/Main.o"
+	@echo "... src/ppr/w-purn-perk/Main.i"
+	@echo "... src/ppr/w-purn-perk/Main.s"
+	@echo "... src/ppr/w-purn-perk/PPR.o"
+	@echo "... src/ppr/w-purn-perk/PPR.i"
+	@echo "... src/ppr/w-purn-perk/PPR.s"
 	@echo "... src/purn-ppr.o"
 	@echo "... src/purn-ppr.i"
 	@echo "... src/purn-ppr.s"

@@ -62,4 +62,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ppr-purn.dir/DependInfo.cmake"
   "CMakeFiles/sssp-base-M.dir/DependInfo.cmake"
   "CMakeFiles/sssp-purn-M.dir/DependInfo.cmake"
+  "CMakeFiles/ppr-base-M.dir/DependInfo.cmake"
+  "CMakeFiles/ppr-purn-M.dir/DependInfo.cmake"
   )
