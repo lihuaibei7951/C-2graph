@@ -33,15 +33,15 @@ output_directory_path=../dataset/stanford
 #ssspbaseM=../bin/sssp-base-M
 #
 #$ssspbaseM $output_directory_path 5 40
-
+#
 #sssppurnM=../bin/sssp-purn-M
 #
 #$sssppurnM $output_directory_path 5 40
 
 
-#pprbaseM=../bin/ppr-base-M
-#
-#$pprbaseM $output_directory_path 5 40
+pprbaseM=../bin/ppr-base-M
+
+$pprbaseM $output_directory_path 5 40
 
 pprpurnM=../bin/ppr-purn-M
 

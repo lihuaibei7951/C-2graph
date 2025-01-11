@@ -89,7 +89,7 @@ public:
                 indegree[csr_e[j]]+=1;
             }
         }
-        this->rmax = 0.01f/vert_num;
+        this->rmax = 0.001f/vert_num;
         cout << "INIT--class Graph is constructed" << endl;
         cout<<"The vertex num is:"<<vert_num<<endl;
         cout<<"The edge num is:"<<edge_num<<endl;

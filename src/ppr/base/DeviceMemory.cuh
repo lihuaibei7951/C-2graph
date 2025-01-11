@@ -16,7 +16,6 @@ public:
     int *iteration_act_num;
 
 
-
     //size_t pitch; // 存储实际行大小的变量
 
     DeviceMemory(int _v_num, int _e_num)

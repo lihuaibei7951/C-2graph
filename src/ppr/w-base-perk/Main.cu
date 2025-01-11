@@ -1,16 +1,17 @@
 #include <time.h>
-#include "Util.cuh"
+#include "core/Util.cuh"
 #include "DeviceMemory.cuh"
 #include "PPR.h"
 #include <sys/time.h>
 
-#include <cuda_runtime.h>
+//#include <cuda_runtime.h>
 using namespace std;
 __device__ volatile int g_mutex1;
 __device__ volatile int g_mutex2;
 __device__ volatile int g_mutex3;
 __device__ volatile int g_mutex4; // rule 遍历
 __device__ volatile int g_mutex5; // rule 消息传播
+__device__ volatile int g_mutex6; // rule 消息传播
 __device__ volatile int g_mutex7; // rule 消息传播
 
 
@@ -27,9 +28,9 @@ void DumpResults(const int verts_num, ValueType *d_pagerank, ValueType *d_residu
 
 int main(int argc, char **argv) {
     // Initialize graph data in host & device memory
-        cudaFree(0);
+    cudaFree(0);
 
-    
+
 
     std::string dir = argv[1];
     int source = atoi(argv[2]);
@@ -66,7 +67,7 @@ int main(int argc, char **argv) {
     cudaStreamCreate(&stream1);
     cudaStreamCreate(&stream2);
 
-    
+
     cout << "\n==================== PPR with FORWARD PUSH starts ====================" << endl;
 
 
@@ -79,26 +80,18 @@ int main(int argc, char **argv) {
     struct timeval t_start, t_stop;
     double timeuse;
     gettimeofday(&t_start, NULL);
-    using namespace std::chrono;
-
-    // 存储时间点
-    std::vector<high_resolution_clock::time_point> timestamps;
-
-    // 记录第一个时间点
-    timestamps.push_back(high_resolution_clock::now());
 
     int cnt = 0;
     cudaEvent_t start, stop;
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
     cudaEventRecord(start);
-     while (1) {
+    while (1) {
 
         //cout << "source = " << source << "start ------------" << endl;
-    while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<1){
+        while(graph.csr_v[source+1]-graph.csr_v[source]<10){
             ++source;
         }
-
 
         calcuatePPR<ValueType><<<MAX_BLOCKS_NUM, THREADS_PER_BLOCK, 0, stream2>>>(
                 device_memory.csr_v, device_memory.csr_e,device_memory.csr_w,
@@ -107,7 +100,6 @@ int main(int argc, char **argv) {
                 device_memory.active_verts_numStream2,
                 device_memory.isactive, graph.vert_num,
                 alpha, graph.rmax, source++, iteration_id,iter);
-
         if(cnt){
             CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->global_ft_cnt, device_memory.active_verts_numStream1,
                                        sizeof(int), cudaMemcpyDeviceToHost, stream1));
@@ -126,7 +118,6 @@ int main(int argc, char **argv) {
                                        sizeof(int), cudaMemcpyDeviceToHost, stream1));
 
 
-            cudaStreamSynchronize(stream1);
             if(bufferqueue->length>4){
                 if(bufferqueue->length<7){
                     bufferqueue->front->source = source-1;
@@ -144,11 +135,10 @@ int main(int argc, char **argv) {
             }
             cnt++;
         }
-        //cudaDeviceSynchronize();
-    while(graph.csr_v[source+1]-graph.csr_v[source]<10||graph.indegree[source]<1){
+
+        while(graph.csr_v[source+1]-graph.csr_v[source]<10){
             ++source;
         }
-
         calcuatePPR<ValueType><<<MAX_BLOCKS_NUM, THREADS_PER_BLOCK, 0, stream1>>>(
                 device_memory.csr_v, device_memory.csr_e,device_memory.csr_w,
                 device_memory.pagerankStream1, device_memory.residualStream1,
@@ -156,7 +146,6 @@ int main(int argc, char **argv) {
                 device_memory.active_verts_numStream1,
                 device_memory.isactive, graph.vert_num,
                 alpha, graph.rmax, source++, iteration_id,iter);
-
 
 
         CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->global_ft_cnt, device_memory.active_verts_numStream2,
@@ -174,30 +163,31 @@ int main(int argc, char **argv) {
         CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->flag, flagG,
                                    sizeof(int), cudaMemcpyDeviceToHost, stream2));
 
-
         // Stream2 完成后，更新队列
         cudaStreamSynchronize(stream2);
-        if(bufferqueue->length>4){
-                if(bufferqueue->length<7){
-                    bufferqueue->front->source = source-1;
-                    bufferqueue->front = bufferqueue->front->next; // 指针后移
-                    bufferqueue->length++;
-                    iter=10000;
-                }else{
-                    iter=10000;
-                }
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
 
-            }else{
+
+        if(bufferqueue->length>4){
+            if(bufferqueue->length<7){
                 bufferqueue->front->source = source-1;
                 bufferqueue->front = bufferqueue->front->next; // 指针后移
                 bufferqueue->length++;
-                iter=iterx;
+                iter=10000;
+            }else{
+                iter=10000;
             }
-        cnt++;
-         timestamps.push_back(high_resolution_clock::now());
-         cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
 
-        if (cnt>=100) {
+        }else{
+            bufferqueue->front->source = source-1;
+            bufferqueue->front = bufferqueue->front->next; // 指针后移
+            bufferqueue->length++;
+            iter=iterx;
+        }
+        cnt++;
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
+
+        if (cnt>=5) {
             CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->global_ft_cnt, device_memory.active_verts_numStream1,
                                        sizeof(int), cudaMemcpyDeviceToHost, stream1));
 
@@ -216,7 +206,6 @@ int main(int argc, char **argv) {
 
 
             cudaStreamSynchronize(stream1);
-            cudaStreamSynchronize(stream2);
             cudaDeviceSynchronize();
             bufferqueue->front->source = source-1;
             bufferqueue->front = bufferqueue->front->next; // 指针后移
@@ -225,10 +214,9 @@ int main(int argc, char **argv) {
             bufferqueue->flag = -1;
             cout << "缓冲队列已空  图计算完成" << endl;
 
-
             cudaEventRecord(stop);
             cudaEventSynchronize(stop);
-            
+
             break;
 
 
@@ -239,20 +227,14 @@ int main(int argc, char **argv) {
 
     pthread_join(Pthread, NULL);
 //CPU执行之后的迭代过程
-float runtime = 0; //milliseconds
-            cudaEventElapsedTime(&runtime, start, stop);
-            cout << "gpu runtime: " << runtime/1000.0 << " seconds" << endl;
+    float runtime = 0; //milliseconds
+    cudaEventElapsedTime(&runtime, start, stop);
+    cout << "gpu runtime: " << runtime/1000.0 << " seconds" << endl;
 
     gettimeofday(&t_stop, NULL);
     timeuse = (t_stop.tv_sec - t_start.tv_sec) + (double)(t_stop.tv_usec - t_start.tv_usec)/1000000.0;
     cout << "main total timeval runtime: " << timeuse << " seconds" << endl;
 
-
-     // 计算并输出时间差
-    for (size_t i = 1; i < timestamps.size(); ++i) {
-        auto duration = duration_cast<milliseconds>(timestamps[i] - timestamps[0]);
-        std::cout << duration.count()  << std::endl;
-    }
 
 
     return 0;
@@ -304,6 +286,7 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
         g_mutex2 = 0;
         g_mutex4 = 0;
         g_mutex5 = 0;
+        g_mutex6 = 0;
         // g_mutex3 = 0;
         //printf("source = %d 初始化完成\n", source);
     }
@@ -342,8 +325,9 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
     volatile __shared__ ValueType commd2[THREADS_PER_BLOCK]; // out-degree
 
     volatile __shared__ ValueType commr2[THREADS_PER_BLOCK];
-       while ((*active_verts_num > 0)&&((l_iteration_id<iter)||(*active_verts_num>10000)) ){  //     l_iteration_id<29&&
-          //       if(iter!=10000&&(*active_verts_num<500&&l_iteration_id>10)) return ;
+    while ((*active_verts_num > 0) ){  //     l_iteration_id<29&&
+        //       if(iter!=10000&&(*active_verts_num<500&&l_iteration_id>10)) return ;
+        //&&((l_iteration_id<iter)||(*active_verts_num>10000))
         l_iteration_id += 1;
         // pushmessages 当前活跃顶点发消息
 
@@ -506,7 +490,7 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
             schedule_1 += blockDim.x * gridDim.x;
         }
         //iter[0] = 0;
-         __syncthreads();
+        __syncthreads();
         __threadfence();
         if (thread_id == 0) {
             atomicAdd((int *)&g_mutex4, 1);
@@ -517,7 +501,7 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
 
 
         // 边界检测
-       
+
         //host 有一个操作，将 active_verts_num 设置为0
         *active_verts_num = 0;
 
@@ -545,7 +529,7 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
                     residual[vid] += messages[vid];
                     messages[vid] = 0;
                     isactive[vid] = false;
-                    if (residual[vid]  >(csr_v[vid+1]-csr_v[vid])* rmax) {
+                    if (residual[vid]  > rmax) {
                         // 执行边界检测标准，符合条件将标志位设>置为1
                         pagerank[vid] += alpha * residual[vid];
                         thread_cnt = 1;
@@ -580,8 +564,10 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
         }
         __syncthreads();
         l_active_verts_num = *active_verts_num;
- __syncthreads();
-  __threadfence();
+        __syncthreads();
+        __threadfence();
+
+//        break;
     } // while (*active_verts_num != 0);
 }
 

@@ -1,10 +1,10 @@
 #include <time.h>
-#include "Util.cuh"
+#include "core/Util.cuh"
 #include "DeviceMemory.cuh"
 #include "PPR.h"
 #include <sys/time.h>
 
-#include <cuda_runtime.h>
+//#include <cuda_runtime.h>
 using namespace std;
 __device__ volatile int g_mutex1;
 __device__ volatile int g_mutex2;
@@ -92,7 +92,7 @@ int main(int argc, char **argv) {
 
         //cout << "source = " << source << "start ------------" << endl;
 
-        while(graph.csr_ov[source+1]-graph.csr_ov[source]<10||graph.indegree[source]<10){
+        while(graph.csr_v[source+1]-graph.csr_v[source]<10){
             ++source;
         }
         init_active_num2 = graph.csr_ov[source+1]-graph.csr_ov[source];
@@ -104,17 +104,14 @@ int main(int argc, char **argv) {
                                    sizeof(int)*init_active_num2, cudaMemcpyHostToDevice, stream2));
 
 
-        cudaDeviceSynchronize();
+        CUDA_ERROR(cudaMemcpyAsync(device_memory.active_vert2+init_active_num2, &graph.csr_e[graph.csr_v[source]],
+                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice,stream2));
 
-        CUDA_ERROR(cudaMemcpy(device_memory.active_vert2+init_active_num2, &graph.csr_e[graph.csr_v[source]],
-                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice));
+        CUDA_ERROR(cudaMemcpyAsync(wal+init_active_num2, &graph.csr_w[graph.csr_v[source]],
+                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice,stream2));
 
-        CUDA_ERROR(cudaMemcpy(wal+init_active_num2, &graph.csr_w[graph.csr_v[source]],
-                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice));
-        cudaDeviceSynchronize();
         init_active_num2 += graph.csr_v[source+1]-graph.csr_v[source];
-        cudaDeviceSynchronize();
-
+        cudaStreamSynchronize(stream2);
 
         CUDA_ERROR(cudaMemcpyAsync(device_memory.active_verts_numStream2,&init_active_num2,
                                    sizeof(int), cudaMemcpyHostToDevice, stream2));
@@ -126,6 +123,7 @@ int main(int argc, char **argv) {
                         device_memory.active_verts_numStream2,
                         device_memory.isactive, graph.vert_num,
                         alpha, graph.rmax, source++, iteration_id,wal,iter,acc);
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
         if(cnt){
             CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->global_ft_cnt, device_memory.active_verts_numStream1,
                                        sizeof(int), cudaMemcpyDeviceToHost, stream1));
@@ -162,7 +160,8 @@ int main(int argc, char **argv) {
             cnt++;
         }
         //cudaDeviceSynchronize();
-        while(graph.csr_ov[source+1]-graph.csr_ov[source]<10||graph.indegree[source]<10){
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
+        while(graph.csr_v[source+1]-graph.csr_v[source]<10){
             ++source;
         }
         init_active_num1 = graph.csr_ov[source+1]-graph.csr_ov[source];
@@ -173,18 +172,13 @@ int main(int argc, char **argv) {
         CUDA_ERROR(cudaMemcpyAsync(wal, &graph.csr_ow[graph.csr_ov[source]],
                                    sizeof(int)*init_active_num1, cudaMemcpyHostToDevice, stream1));
 
-        cudaDeviceSynchronize();
+        CUDA_ERROR(cudaMemcpyAsync(device_memory.active_vert1+init_active_num1, &graph.csr_e[graph.csr_v[source]],
+                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice, stream1));
 
-        CUDA_ERROR(cudaMemcpy(device_memory.active_vert1+init_active_num1, &graph.csr_e[graph.csr_v[source]],
-                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice));
-
-        CUDA_ERROR(cudaMemcpy(wal+init_active_num1, &graph.csr_w[graph.csr_v[source]],
-                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice));
-        cudaDeviceSynchronize();
+        CUDA_ERROR(cudaMemcpyAsync(wal+init_active_num1, &graph.csr_w[graph.csr_v[source]],
+                              sizeof(int)*(graph.csr_v[source+1]-graph.csr_v[source]), cudaMemcpyHostToDevice, stream1));
         init_active_num1 += graph.csr_v[source+1]-graph.csr_v[source];
-        cudaDeviceSynchronize();
-
-
+        cudaStreamSynchronize(stream1);
 
         CUDA_ERROR(cudaMemcpyAsync(device_memory.active_verts_numStream1,&init_active_num1,
                                    sizeof(int), cudaMemcpyHostToDevice, stream1));
@@ -198,7 +192,7 @@ int main(int argc, char **argv) {
                         alpha, graph.rmax, source++, iteration_id,wal,iter,acc);
 
 
-
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
         //cout << "source = " << source - 1 << "end ------------" << endl;
 
         CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->global_ft_cnt, device_memory.active_verts_numStream2,
@@ -216,9 +210,10 @@ int main(int argc, char **argv) {
         CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->flag, flagG,
                                    sizeof(int), cudaMemcpyDeviceToHost, stream2));
 
-
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
         // Stream2 完成后，更新队列
-        cudaStreamSynchronize(stream2);
+       // cudaStreamSynchronize(stream2);
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
          if(bufferqueue->length>10){
                 if(bufferqueue->length<15){
                     bufferqueue->front->source = source-1;
@@ -228,18 +223,19 @@ int main(int argc, char **argv) {
                     iter=10000;
                 }
 
-            }else{
+         }else{
                 bufferqueue->front->source = source-1;
                 bufferqueue->front = bufferqueue->front->next; // 指针后移
                 bufferqueue->length++;
                 iter=iterx;
-            }
+         }
+        cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
         cnt++;
 
         //cudaDeviceSynchronize();
 
          cout << "当前bufferqueue长度为:\t" << bufferqueue->length << endl;
-        if (cnt >=50) {
+        if (cnt >=0) {
             CUDA_ERROR(cudaMemcpyAsync(bufferqueue->front->global_ft_cnt, device_memory.active_verts_numStream1,
                                        sizeof(int), cudaMemcpyDeviceToHost, stream1));
 
@@ -380,7 +376,7 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
 
     volatile __shared__ ValueType commr2[THREADS_PER_BLOCK];
 
-    while ((*active_verts_num > 0)&&((l_iteration_id<iter)||(*active_verts_num>50000)) ){
+    while ((*active_verts_num > 0)&&((l_iteration_id<iter)||(*active_verts_num>10000)) ){
 
         l_iteration_id += 1;
         // pushmessages 当前活跃顶点发消息
@@ -569,7 +565,7 @@ calcuatePPR(const int *csr_v, const int *csr_e, const ValueType *csr_w,ValueType
                     residual[vid] += messages[vid];
                     messages[vid] = 0;
                     isactive[vid] = false;
-                    if (residual[vid]  >(csr_v[vid+1]-csr_v[vid])* rmax) {
+                    if (residual[vid]  > rmax) {
                         // 执行边界检测标准，符合条件将标志位设>置为1
                         pagerank[vid] += alpha * residual[vid];
                         thread_cnt = 1;

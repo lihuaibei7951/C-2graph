@@ -30,7 +30,7 @@ static void HandleError(cudaError_t err, const char *file, int line){
 //GPU configuration
 const static size_t THREADS_PER_BLOCK = 512; //maximum is 512
 const static size_t THREADS_PER_WARP = 32; //warp size
-const static size_t MAX_BLOCKS_NUM = 68 * (1536/THREADS_PER_BLOCK);
-//const static size_t MAX_BLOCKS_NUM = 68;
+//const static size_t MAX_BLOCKS_NUM = 68 * (1536/THREADS_PER_BLOCK);
+const static size_t MAX_BLOCKS_NUM = 20;
 const static size_t MAX_THREADS_NUM = MAX_BLOCKS_NUM * THREADS_PER_BLOCK;
 

@@ -156,7 +156,7 @@ CMakeFiles/ppr-purn-M.dir/src/ppr/w-purn-perk/Main.cu.o : /home/lihuaibei/code/C
     /usr/local/cuda-11.7/include/surface_indirect_functions.h \
     /usr/local/cuda-11.7/include/crt/cudacc_ext.h \
     /usr/local/cuda-11.7/include/device_launch_parameters.h \
-    /home/lihuaibei/code/C-2graph/src/ppr/w-purn-perk/Util.cuh \
+    /home/lihuaibei/code/C-2graph/core/Util.cuh \
     /usr/include/c++/9/iostream \
     /usr/include/c++/9/ostream \
     /usr/include/c++/9/ios \

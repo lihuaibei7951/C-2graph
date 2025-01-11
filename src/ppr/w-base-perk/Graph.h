@@ -82,30 +82,8 @@ public:
 
         this->csr_v = read_binary2vector(x,data_folder + "/ppr/vlist.bin");
         this->csr_e = read_binary2vector(x,data_folder + "/ppr/elist.bin");
-
         this->csr_w = read_binary2vector(y,data_folder + "/ppr/wlist.bin");
-          if(csr_e.size()>1000000000){
-            int j=0;
-            for(int i=1;i<csr_v.size();i++){
-                if(csr_v[i]>1000000000){
-                    this->vert_num=i-1;
-                    break;
-                }
-            }
-            this->csr_v.resize(vert_num+1);
-            for(int i=1;i<csr_v.size();i++){
-                for(int k=csr_v[i];k<csr_v[i+1];k++){
-                    if(csr_e[k]<vert_num){
-                        csr_e[j]=csr_e[k];
-                        csr_w[j++]=csr_w[k];
-                    }
-                }
-                csr_v[i]=j;
-            }
-            this->csr_v.resize(vert_num+1);
-            this->csr_e.resize(j);
-            this->csr_w.resize(j);
-        }
+
         this->vert_num = csr_v.size()-1;
         this->edge_num = csr_e.size();
         this->indegree.resize(vert_num,0);
