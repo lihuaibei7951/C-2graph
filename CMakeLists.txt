@@ -21,11 +21,18 @@ if(${CUDA_FOUND})
     set(CUDA_SEPARABLE_COMPILATION ON)
     include_directories(${CUDA_INCLUDE_DIRS})
     set(CUDA_PROPAGATE_HOST_FLAGS OFF)
-    set(CUDA_NVCC_FLAGS --expt-extended-lambda -Xcompiler -fopenmp -Xcompiler -pthread -lgomp -Xcompiler -mavx2 -arch=sm_86;-O3;-G;-g;-std=c++14) #事实证明-O能提高代码2x多的执行时间
-    link_directories($ENV{CUDA_PATH}/lib/x64)
-else(${CUDA_FOUND})
-    MESSAGE(STATUS "cuda not found!")
-endif(${CUDA_FOUND})
+
+    # 添加正确的架构设置
+    set(CUDA_NVCC_FLAGS
+            --expt-extended-lambda
+            -arch=sm_86 # RTX 3080 的架构
+            -O3
+            -std=c++14
+    )
+
+    # 显式覆盖默认选项
+    set_target_properties(${target_name} PROPERTIES CUDA_ARCHITECTURES "86")
+endif()
 
 
 add_executable(sssp-base src/sssp/base/Main.cu)
